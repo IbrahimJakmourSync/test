@@ -53,161 +53,13 @@ Options::add_field(
 	)
 );
 
-
-/**
- * CSS.
- */
-Options::add_section(
-	array(
-		'id'       => 'performance_css',
-		'name'     => esc_html__( 'CSS', 'woodmart' ),
-		'parent'   => 'performance',
-		'priority' => 10,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'google_font_display',
-		'name'        => esc_html__( '"font-display" for Google Fonts', 'woodmart' ),
-		'description' => 'You can specify "font-display" property for fonts loaded from Google. Read more information <a href="https://developers.google.com/web/updates/2016/02/font-display">here</a>',
-		'type'        => 'select',
-		'section'     => 'performance_css',
-		'default'     => 'disable',
-		'options'     => array(
-			'disable'  => array(
-				'name'  => esc_html__( 'Disable', 'woodmart' ),
-				'value' => 'disable',
-			),
-			'block' => array(
-				'name'  => esc_html__( 'Block', 'woodmart' ),
-				'value' => 'block',
-			),
-			'swap' => array(
-				'name'  => esc_html__( 'Swap', 'woodmart' ),
-				'value' => 'swap',
-			),
-			'fallback' => array(
-				'name'  => esc_html__( 'Fallback', 'woodmart' ),
-				'value' => 'fallback',
-			),
-			'optional' => array(
-				'name'  => esc_html__( 'Optional', 'woodmart' ),
-				'value' => 'optional',
-			),
-		),
-		'priority'    => 10,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'icons_font_display',
-		'name'        => esc_html__( '"font-display" for icon fonts (not recommended)', 'woodmart' ),
-		'description' => 'You can specify "font-display" property for fonts used for icons in our theme including Font Awesome. Read more information <a href="https://developers.google.com/web/updates/2016/02/font-display">here</a>',
-		'type'        => 'select',
-		'section'     => 'performance_css',
-		'default'     => 'disable',
-		'options'     => array(
-			'disable'  => array(
-				'name'  => esc_html__( 'Disable', 'woodmart' ),
-				'value' => 'disable',
-			),
-			'block' => array(
-				'name'  => esc_html__( 'Block', 'woodmart' ),
-				'value' => 'block',
-			),
-			'swap' => array(
-				'name'  => esc_html__( 'Swap', 'woodmart' ),
-				'value' => 'swap',
-			),
-			'fallback' => array(
-				'name'  => esc_html__( 'Fallback', 'woodmart' ),
-				'value' => 'fallback',
-			),
-			'optional' => array(
-				'name'  => esc_html__( 'Optional', 'woodmart' ),
-				'value' => 'optional',
-			),
-		),
-		'priority'    => 20,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'disable_font_awesome_theme_css',
-		'name'        => esc_html__( 'Disable Font Awesome font', 'woodmart' ),
-		'description' => esc_html__( 'This option will remove font awesome CSS files that are loaded in our theme. It is useful when you have other plugins that loads font awesome library too.', 'woodmart' ),
-		'type'        => 'switcher',
-		'section'     => 'performance_css',
-		'default'     => false,
-		'priority'    => 30,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'light_font_awesome_version',
-		'name'        => esc_html__( 'Light Font Awesome version', 'woodmart' ),
-		'description' => esc_html__( 'Removes all unnecessary icons that are not used by our theme elements.', 'woodmart' ),
-		'requires'    => array(
-			array(
-				'key'     => 'disable_font_awesome_theme_css',
-				'compare' => 'not_equals', // equals
-				'value'   => '1',
-			),
-		),
-		'type'        => 'switcher',
-		'section'     => 'performance_css',
-		'default'     => false,
-		'priority'    => 40,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'light_bootstrap_version',
-		'name'        => esc_html__( 'Light bootstrap version', 'woodmart' ),
-		'description' => esc_html__( 'Clean bootstrap CSS from code that are not used by the theme.', 'woodmart' ),
-		'type'        => 'switcher',
-		'section'     => 'performance_css',
-		'default'     => false,
-		'priority'    => 50,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'disable_gutenberg_css',
-		'name'        => esc_html__( 'Disable Gutenberg styles', 'woodmart' ),
-		'description' => esc_html__( 'If you are not using Gutenberg elements you will not need these files to be loaded.', 'woodmart' ),
-		'type'        => 'switcher',
-		'section'     => 'performance_css',
-		'default'     => false,
-		'priority'    => 60,
-	)
-);
-
-/**
- * JS
- */
-Options::add_section(
-	array(
-		'id'       => 'performance_js',
-		'name'     => esc_html__( 'JS', 'woodmart' ),
-		'parent'   => 'performance',
-		'priority' => 20,
-	)
-);
-
 Options::add_field(
 	array(
 		'id'          => 'disable_nanoscroller',
 		'name'        => esc_html__( 'Nanoscroller library', 'woodmart' ),
 		'description' => esc_html__( 'This library adds nice style to elements with scroll bar like cart widget, filters widget, AJAX search results etc. In modern browsers we can style them without this JS libary so you can disable it.', 'woodmart' ),
 		'type'        => 'buttons',
-		'section'     => 'performance_js',
+		'section'     => 'performance',
 		'default'     => 'enable',
 		'options'     => array(
 			'enable'  => array(
@@ -223,7 +75,7 @@ Options::add_field(
 				'value' => 'webkit',
 			),
 		),
-		'priority'    => 10,
+		'priority'    => 40,
 	)
 );
 
@@ -233,21 +85,89 @@ Options::add_field(
 		'name'        => esc_html__( 'Disable OWL Carousel script on mobile devices', 'woodmart' ),
 		'description' => esc_html__( 'Using native browser\'s scrolling feature on mobile devices may improve your page loading and performance on some devices. Desktop will be handled with OWL Carousel JS library.', 'woodmart' ),
 		'type'        => 'switcher',
-		'section'     => 'performance_js',
+		'section'     => 'performance',
 		'default'     => false,
-		'priority'    => 20,
+		'priority'    => 41,
 	)
 );
 
-/**
- * Lazy loading
- */
-Options::add_section(
+Options::add_field(
 	array(
-		'id'       => 'performance_lazy_loading',
-		'name'     => esc_html__( 'Lazy loading', 'woodmart' ),
-		'parent'   => 'performance',
-		'priority' => 30,
+		'id'          => 'google_font_display',
+		'name'        => esc_html__( '"font-display" for Google Fonts', 'woodmart' ),
+		'description' => 'You can specify "font-display" property for fonts loaded from Google. Read more information <a href="https://developers.google.com/web/updates/2016/02/font-display">here</a>',
+		'type'        => 'select',
+		'section'     => 'performance',
+		'default'     => 'disable',
+		'options'     => array(
+			'disable'  => array(
+				'name'  => esc_html__( 'Disable', 'woodmart' ),
+				'value' => 'disable',
+			),
+			'block' => array(
+				'name'  => esc_html__( 'Block', 'woodmart' ),
+				'value' => 'block',
+			),
+			'swap' => array(
+				'name'  => esc_html__( 'Swap', 'woodmart' ),
+				'value' => 'swap',
+			),
+			'fallback' => array(
+				'name'  => esc_html__( 'Fallback', 'woodmart' ),
+				'value' => 'fallback',
+			),
+			'optional' => array(
+				'name'  => esc_html__( 'Optional', 'woodmart' ),
+				'value' => 'optional',
+			),
+		),
+		'priority'    => 42,
+	)
+);
+
+Options::add_field(
+	array(
+		'id'          => 'icons_font_display',
+		'name'        => esc_html__( '"font-display" for icon fonts (not recommended)', 'woodmart' ),
+		'description' => 'You can specify "font-display" property for fonts used for icons in our theme including Font Awesome. Read more information <a href="https://developers.google.com/web/updates/2016/02/font-display">here</a>',
+		'type'        => 'select',
+		'section'     => 'performance',
+		'default'     => 'disable',
+		'options'     => array(
+			'disable'  => array(
+				'name'  => esc_html__( 'Disable', 'woodmart' ),
+				'value' => 'disable',
+			),
+			'block' => array(
+				'name'  => esc_html__( 'Block', 'woodmart' ),
+				'value' => 'block',
+			),
+			'swap' => array(
+				'name'  => esc_html__( 'Swap', 'woodmart' ),
+				'value' => 'swap',
+			),
+			'fallback' => array(
+				'name'  => esc_html__( 'Fallback', 'woodmart' ),
+				'value' => 'fallback',
+			),
+			'optional' => array(
+				'name'  => esc_html__( 'Optional', 'woodmart' ),
+				'value' => 'optional',
+			),
+		),
+		'priority'    => 43,
+	)
+);
+
+Options::add_field(
+	array(
+		'id'          => 'disable_font_awesome_theme_css',
+		'name'        => esc_html__( 'Disable Font Awesome font', 'woodmart' ),
+		'description' => esc_html__( 'This option will remove font awesome CSS files that are loaded in our theme. It is useful when you have other plugins that loads font awesome library too.', 'woodmart' ),
+		'type'        => 'switcher',
+		'section'     => 'performance',
+		'default'     => false,
+		'priority'    => 44,
 	)
 );
 
@@ -256,10 +176,11 @@ Options::add_field(
 		'id'          => 'lazy_loading',
 		'name'        => esc_html__( 'Lazy loading for images', 'woodmart' ),
 		'description' => esc_html__( 'Enable this option to optimize your images loading on the website. They will be loaded only when user will scroll the page.', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'switcher',
-		'section'     => 'performance_lazy_loading',
+		'section'     => 'performance',
 		'default'     => false,
-		'priority'    => 10,
+		'priority'    => 50,
 	)
 );
 
@@ -268,13 +189,14 @@ Options::add_field(
 		'id'          => 'lazy_loading_offset',
 		'name'        => esc_html__( 'Offset', 'woodmart' ),
 		'description' => esc_html__( 'Start load images X pixels before the page is scrolled to the item', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'range',
-		'section'     => 'performance_lazy_loading',
+		'section'     => 'performance',
 		'default'     => 0,
 		'min'         => 0,
 		'step'        => 10,
 		'max'         => 1000,
-		'priority'    => 20,
+		'priority'    => 90,
 	)
 );
 
@@ -283,8 +205,9 @@ Options::add_field(
 		'id'          => 'lazy_effect',
 		'name'        => esc_html__( 'Appearance effect', 'woodmart' ),
 		'description' => esc_html__( 'When enabled, your images will be replaced with their blurred small previews. And when the visitor will scroll the page to that image, it will be replaced with an original image.', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'buttons',
-		'section'     => 'performance_lazy_loading',
+		'section'     => 'performance',
 		'default'     => 'fade',
 		'options'     => array(
 			'fade' => array(
@@ -300,7 +223,7 @@ Options::add_field(
 				'value' => 'none',
 			),
 		),
-		'priority'    => 30,
+		'priority'    => 60,
 	)
 );
 
@@ -309,10 +232,11 @@ Options::add_field(
 		'id'          => 'lazy_generate_previews',
 		'name'        => esc_html__( 'Generate previews', 'woodmart' ),
 		'description' => esc_html__( 'Create placeholders previews as miniatures from the original images.', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'switcher',
-		'section'     => 'performance_lazy_loading',
+		'section'     => 'performance',
 		'default'     => '1',
-		'priority'    => 40,
+		'priority'    => 70,
 	)
 );
 
@@ -321,10 +245,11 @@ Options::add_field(
 		'id'          => 'lazy_base_64',
 		'name'        => esc_html__( 'Base 64 encode for placeholders', 'woodmart' ),
 		'description' => esc_html__( 'This option allows you to decrease a number of HTTP requests replacing images with base 64 encoded sources.', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'switcher',
-		'section'     => 'performance_lazy_loading',
+		'section'     => 'performance',
 		'default'     => '1',
-		'priority'    => 50,
+		'priority'    => 80,
 	)
 );
 
@@ -333,10 +258,11 @@ Options::add_field(
 		'id'          => 'lazy_proprtion_size',
 		'name'        => esc_html__( 'Proportional placeholders size', 'woodmart' ),
 		'description' => esc_html__( 'Will generate proportional image size for the placeholder based on original image size.', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'switcher',
-		'section'     => 'performance_lazy_loading',
+		'section'     => 'performance',
 		'default'     => '1',
-		'priority'    => 60,
+		'priority'    => 80,
 	)
 );
 
@@ -345,8 +271,9 @@ Options::add_field(
 		'id'          => 'lazy_custom_placeholder',
 		'name'        => esc_html__( 'Upload custom placeholder image', 'woodmart' ),
 		'description' => esc_html__( 'Add your custom image placeholder that will be used before the original image will be loaded.', 'woodmart' ),
+		'group'       => esc_html__( 'Lazy loading options', 'woodmart' ),
 		'type'        => 'upload',
-		'section'     => 'performance_lazy_loading',
-		'priority'    => 70,
+		'section'     => 'performance',
+		'priority'    => 100,
 	)
 );

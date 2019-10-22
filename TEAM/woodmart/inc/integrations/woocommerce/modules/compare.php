@@ -62,99 +62,19 @@ if ( ! function_exists( 'woodmart_add_to_compare' ) ) {
 	add_action( 'wp_ajax_nopriv_woodmart_add_to_compare', 'woodmart_add_to_compare' );
 }
 
-if ( ! function_exists( 'woodmart_add_to_compare_loop_btn' ) ) {
-	/**
-	 * Add to compare button on loop product.
-	 *
-	 * @since 1.0.0
-	 */
-	function woodmart_add_to_compare_loop_btn() {
-		if ( woodmart_get_opt( 'compare' ) && woodmart_get_opt( 'compare_on_grid' ) ) {
-			woodmart_add_to_compare_btn( 'wd-action-btn wd-compare-btn wd-style-icon' );
-			// return;
-		}
-
-		if ( ! class_exists( 'YITH_Woocompare' ) || 'yes' != get_option( 'yith_woocompare_compare_button_in_products_list' ) ) {
-			return;
-		}
-
-		echo '<div class="product-compare-button wd-action-btn wd-compare-btn wd-style-icon">';
-			global $product;
-			$product_id = $product->get_id();
-
-			// return if product doesn't exist
-			if ( empty( $product_id ) || apply_filters( 'yith_woocompare_remove_compare_link_by_cat', false, $product_id ) ) {
-			echo '</div>';
-			return;
-			}
-
-			$is_button = ! isset( $button_or_link ) || ! $button_or_link ? get_option( 'yith_woocompare_is_button' ) : $button_or_link;
-
-			if ( ! isset( $button_text ) || $button_text == 'default' ) {
-				$button_text = get_option( 'yith_woocompare_button_text', esc_html__( 'Compare', 'woodmart' ) );
-			}
-
-			printf( '<a href="%s" class="%s" data-product_id="%d" rel="nofollow">%s</a>', woodmart_compare_add_product_url( $product_id ), 'compare', $product_id, $button_text );
-		echo '</div>';
-	}
-}
-
-if ( ! function_exists( 'woodmart_add_to_compare_single_btn' ) ) {
-	/**
-	 * Add to compare button on single product.
-	 *
-	 * @since 1.0.0
-	 */
-	function woodmart_add_to_compare_single_btn() {
-		if ( woodmart_get_opt( 'compare' ) ) {
-			woodmart_add_to_compare_btn( 'wd-action-btn wd-compare-btn wd-style-text' );
-			// return;
-		}
-
-		if ( ! class_exists( 'YITH_Woocompare' ) || 'yes' != get_option( 'yith_woocompare_compare_button_in_product_page' ) ) {
-			return;
-		}
-
-		echo '<div class="product-compare-button wd-action-btn wd-compare-btn wd-style-text">';
-			global $product;
-			$product_id = $product->get_id();
-
-			// return if product doesn't exist
-			if ( empty( $product_id ) || apply_filters( 'yith_woocompare_remove_compare_link_by_cat', false, $product_id ) ) {
-			echo '</div>';
-			return;
-			}
-
-			$is_button = ! isset( $button_or_link ) || ! $button_or_link ? get_option( 'yith_woocompare_is_button' ) : $button_or_link;
-
-			if ( ! isset( $button_text ) || $button_text == 'default' ) {
-				$button_text = get_option( 'yith_woocompare_button_text', esc_html__( 'Compare', 'woodmart' ) );
-			}
-
-			printf( '<a href="%s" class="%s" data-product_id="%d" rel="nofollow">%s</a>', woodmart_compare_add_product_url( $product_id ), 'compare', $product_id, $button_text );
-		echo '</div>';
-	}
-}
 
 if ( ! function_exists( 'woodmart_add_to_compare_btn' ) ) {
 	/**
-	 * Add to compare button.
+	 * Add product to comapre button
 	 *
-	 * @since 1.0.0
-	 *
-	 * @param string $classes Extra classes.
+	 * @since 3.3
 	 */
-	function woodmart_add_to_compare_btn( $classes = '' ) {
+	function woodmart_add_to_compare_btn() {
 		global $product;
-		?>
-			<div class="woodmart-compare-btn product-compare-button <?php echo esc_attr( $classes ); ?>">
-				<a href="<?php echo esc_url( woodmart_get_compare_page_url() ); ?>" data-id="<?php echo esc_attr( $product->get_id() ); ?>" data-added-text="<?php esc_html_e( 'Compare products', 'woodmart' ); ?>">
-					<?php esc_html_e( 'Compare', 'woodmart' ); ?>
-				</a>
-			</div>
-		<?php
+		echo '<div class="woodmart-compare-btn product-compare-button"><a href="' . esc_url( woodmart_get_compare_page_url() ) . '" data-added-text="' . __('Compare products', 'woodmart') . '" data-id="' . esc_attr( $product->get_id() ) . '">' . esc_html_x( 'Compare', 'add_button', 'woodmart' ) . '</a></div>';
 	}
 }
+
 
 if ( ! function_exists( 'woodmart_compare_json_response' ) ) {
 	/**
@@ -363,7 +283,7 @@ if ( ! function_exists( 'woodmart_get_compared_products_table' ) ) {
 				}	
 			} else {
 				?>
-					<p class="woodmart-empty-compare woodmart-empty-page">
+					<p class="woodmart-empty-compare">
 						<?php esc_html_e('Compare list is empty.', 'woodmart'); ?>
 					</p>
 					<?php if ( $empty_compare_text ) : ?>
@@ -378,6 +298,7 @@ if ( ! function_exists( 'woodmart_get_compared_products_table' ) ) {
 			}
 
 			?>
+			<div class="compare-loader"></div>
 		</div>
 		<?php
 	}
@@ -510,7 +431,6 @@ if ( ! function_exists( 'woodmart_get_compared_products_data' ) ) {
 
 		$args = array(
 			'include' => $ids,
-			'limit'   => 100,
 		);
 
 		$products = wc_get_products( $args );

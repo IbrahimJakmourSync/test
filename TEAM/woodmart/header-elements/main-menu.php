@@ -8,20 +8,18 @@ $icon_type = $params['icon_type'];
 $classes .= ' navigation-style-' . $menu_style;
 
 if ( $icon_type == 'custom' ) {
-	$extra_class .= ' wd-tools-custom-icon';
+	$extra_class .= ' woodmart-full-screen-custom-icon';
 }
 
 if( $params['full_screen'] ) {
 	?>
-		<div class="woodmart-burger-icon wd-tools-element full-screen-burger-icon<?php echo esc_attr( $extra_class ); ?>">
-			<a href="#">
-				<?php if ( $icon_type == 'custom' ): ?>
-					<span class="woodmart-custom-burger-icon wd-tools-icon"><?php echo whb_get_custom_icon( $params['custom_icon'] ); ?></span>
-				<?php else: ?>
-					<span class="woodmart-burger wd-tools-icon"></span>
-				<?php endif; ?>
-				<span class="woodmart-burger-label wd-tools-text"><?php esc_html_e( 'Menu', 'woodmart' ); ?></span>
-			</a>
+		<div class="woodmart-burger-icon full-screen-burger-icon<?php echo esc_attr( $extra_class ); ?>">
+			<?php if ( $icon_type == 'custom' ): ?>
+				<span class="woodmart-custom-burger-icon"><?php echo whb_get_custom_icon( $params['custom_icon'] ); ?></span>
+			<?php else: ?>
+				<span class="woodmart-burger"></span>
+			<?php endif; ?>
+			<span class="woodmart-burger-label"><?php esc_html_e( 'Menu', 'woodmart' ); ?></span>
 		</div>
 	<?php
 	return;

@@ -19,10 +19,10 @@
 			?>
 		</a>
 		<?php woodmart_hover_image(); ?>
-		<div class="woodmart-buttons wd-pos-r-t">
-			<div class="woodmart-add-btn wd-action-btn wd-style-icon wd-add-cart-btn"><?php do_action( 'woocommerce_after_shop_loop_item' ); ?></div>
+		<div class="woodmart-buttons">
+			<div class="woodmart-add-btn"><?php do_action( 'woocommerce_after_shop_loop_item' ); ?></div>
 			<?php woodmart_quick_view_btn( get_the_ID() ); ?>
-			<?php woodmart_add_to_compare_loop_btn(); ?>
+			<?php woodmart_compare_btn(); ?>
 			<?php do_action( 'woodmart_product_action_buttons' ); ?>
 		</div> 
 		<?php woodmart_quick_shop_wrapper(); ?>

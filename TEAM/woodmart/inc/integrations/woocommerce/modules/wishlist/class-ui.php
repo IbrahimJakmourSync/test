@@ -191,7 +191,7 @@ class Ui extends Singleton {
 							<?php esc_html_e( 'Your products wishlist', 'woodmart' ); ?>
 						</h4>
 
-						<?php if ( is_user_logged_in() && $this->is_editable() && woodmart_is_social_link_enable( 'share' ) ) : ?>
+						<?php if ( is_user_logged_in() && $this->is_editable() ) : ?>
 							<div class="woodmart-wishlist-share">
 								<span>
 									<?php esc_attr_e( 'Share', 'woodmart' ); ?>
@@ -210,7 +210,7 @@ class Ui extends Singleton {
 					<?php remove_action( 'woocommerce_before_shop_loop_item', array( $this, 'remove_btn' ), 10 ); ?>
 
 				<?php else : ?>
-					<p class="woodmart-empty-wishlist woodmart-empty-page">
+					<p class="woodmart-empty-wishlist">
 						<?php esc_html_e( 'Wishlist is empty.', 'woodmart' ); ?>
 					</p>
 
@@ -254,7 +254,7 @@ class Ui extends Singleton {
 	 * @since 1.0.0
 	 */
 	public function add_to_wishlist_loop_btn() {
-		$this->add_to_wishlist_btn( 'wd-action-btn wd-wishlist-btn wd-style-icon' );
+		$this->add_to_wishlist_btn( '' );
 	}
 
 	/**
@@ -263,7 +263,7 @@ class Ui extends Singleton {
 	 * @since 1.0.0
 	 */
 	public function add_to_wishlist_single_btn() {
-		$this->add_to_wishlist_btn( 'wd-action-btn wd-wishlist-btn wd-style-text' );
+		$this->add_to_wishlist_btn( 'woodmart-style-inline' );
 	}
 
 	/**
@@ -272,7 +272,7 @@ class Ui extends Singleton {
 	 * @since 1.0.0
 	 */
 	public function add_to_wishlist_sticky_atc_btn() {
-		$this->add_to_wishlist_btn( 'wd-action-btn wd-wishlist-btn wd-style-icon' );
+		$this->add_to_wishlist_btn( 'woodmart-style-icon' );
 	}
 
 	/**
@@ -303,7 +303,7 @@ class Ui extends Singleton {
 		unset( $items['customer-logout'] );
 
         if ( woodmart_get_opt( 'wishlist' ) && woodmart_get_opt( 'wishlist_page' ) && woodmart_get_opt( 'my_account_wishlist' ) ) {
-            $items['wishlist'] = esc_html__( 'Wishlist', 'woodmart' );
+            $items['wishlist'] = get_the_title( woodmart_get_opt( 'wishlist_page' ) );
         }
 
 		$items['customer-logout'] = esc_html__( 'Logout', 'woodmart' );

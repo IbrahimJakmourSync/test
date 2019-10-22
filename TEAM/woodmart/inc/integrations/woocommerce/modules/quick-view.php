@@ -31,11 +31,8 @@ if( ! function_exists( 'woodmart_quick_view' ) ) {
 			setup_postdata($post);
 			$product = wc_get_product($post);
         	remove_action( 'woocommerce_single_product_summary', 'woodmart_before_compare_button', 33 );
-        	remove_action( 'woocommerce_single_product_summary', 'woodmart_add_to_compare_single_btn', 33 );
+        	remove_action( 'woocommerce_single_product_summary', 'woodmart_add_to_compare_btn', 33 );
 			remove_action( 'woocommerce_single_product_summary', 'woodmart_after_compare_button', 37 );
-			
-			// Remove wishlist.
-			remove_action( 'woocommerce_single_product_summary', array( XTS\WC_Wishlist\UI::get_instance(), 'add_to_wishlist_single_btn' ), 33 );
 			
 			//Remove before and after add to cart button text
 			remove_action( 'woocommerce_single_product_summary', 'woodmart_before_add_to_cart_area', 25 );
@@ -86,7 +83,7 @@ if( ! function_exists( 'woodmart_quick_view_btn' ) ) {
 		if( ! $id ) $id = get_the_ID();
 
 		if ( woodmart_get_opt( 'quick_view' ) ): ?>
-			<div class="quick-view wd-action-btn wd-quick-view-btn wd-style-icon">
+			<div class="quick-view">
 				<a 
 					href="<?php echo esc_url( get_the_permalink( $id ) ); ?>" 
 					class="open-quick-view" 

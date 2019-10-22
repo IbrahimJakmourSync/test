@@ -38,7 +38,7 @@ if ( $login_text && $reg_text ) {
     $class .= ' with-login-reg-info';
 }
 
-if ( isset( $_GET['action'] ) && 'register' === $_GET['action'] && $tabs ) {
+if ( isset( $_GET['action'] ) && 'register' === $_GET['action'] ) {
 	$class .= ' active-register';
 }
 
@@ -121,7 +121,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 	<?php if ( $tabs ): ?>
 		<div class="col-12 col-md-6 col-register-text">
 
-			<span class="register-or wood-login-divider"><?php esc_html_e( 'Or', 'woodmart' ); ?></span>
+			<span class="register-or"><?php esc_html_e( 'Or', 'woodmart' ); ?></span>
 
 			<?php 
 				$reg_title = woodmart_get_opt( 'reg_title' ) ? woodmart_get_opt( 'reg_title' ) : esc_html__( 'Register', 'woocommerce' );
@@ -135,7 +135,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 			?>
 
 			<?php if ( $login_text || $reg_text ): ?>
-				<h2 class="wd-login-title"><?php echo esc_html( $title ); ?></h2>
+				<h2><?php echo esc_html( $title ); ?></h2>
 			<?php endif ?>
 
 			<?php if ( $login_text ): ?>

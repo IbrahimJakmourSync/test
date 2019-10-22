@@ -10,36 +10,30 @@ if ( $icon_type == 'bag' ) {
 }
 
 if ( $icon_type == 'custom' ) {
-	$extra_class .= ' wd-tools-custom-icon';
+	$extra_class .= ' woodmart-cart-custom-icon';
 }
 
 if ( $cart_position == 'side' ) {
 	$extra_class .= ' cart-widget-opener';
 }
 
-
 if ( ! woodmart_woocommerce_installed() || $params['style'] == 'disable' || ( ! is_user_logged_in() && woodmart_get_opt( 'login_prices' ) ) ) return; ?>
 
-<div class="woodmart-shopping-cart wd-tools-element<?php echo esc_attr( $extra_class ); ?>">
+<div class="woodmart-shopping-cart<?php echo esc_attr( $extra_class ); ?>">
 	<a href="<?php echo esc_url( wc_get_cart_url() ); ?>">
-		<span class="woodmart-cart-icon wd-tools-icon">
-			<?php
-				if ( $icon_type == 'custom' ) {
-					echo whb_get_custom_icon( $params['custom_icon'] );
-				}
-			?>
-			
-			<?php if ( '2' == $params['style'] || '5' == $params['style'] ) : ?>
+		<span class="woodmart-cart-wrapper">
+			<span class="woodmart-cart-icon">
+				<?php 
+					if ( $icon_type == 'custom' ) {
+						echo whb_get_custom_icon( $params['custom_icon'] );
+					}
+				?>
+			</span>
+			<span class="woodmart-cart-totals">
 				<?php woodmart_cart_count(); ?>
-			<?php endif; ?>
-		</span>
-		<span class="woodmart-cart-totals wd-tools-text">
-			<?php if ( '2' != $params['style'] && '5' != $params['style'] ) : ?>
-				<?php woodmart_cart_count(); ?>
-			<?php endif; ?>
-
-			<span class="subtotal-divider">/</span>
-			<?php woodmart_cart_subtotal(); ?>
+				<span class="subtotal-divider">/</span> 
+				<?php woodmart_cart_subtotal(); ?>
+			</span>
 		</span>
 	</a>
 	<?php if ( $cart_position != 'side' && $cart_position != 'without' ): ?>

@@ -45,7 +45,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 						<td class="label"><label for="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>"><?php echo wc_attribute_label( $attribute_name ); ?></label></td>
 						<td class="value <?php if ( ! empty( $swatches ) ): ?>with-swatches<?php endif; ?>">
 							<?php if ( ! empty( $swatches ) ): ?>
-								<div class="swatches-select swatches-on-single" data-id="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>">
+								<div class="swatches-select" data-id="<?php echo esc_attr( sanitize_title( $attribute_name ) ); ?>">
 									<?php
 										if ( is_array( $options ) ) {
 
@@ -73,21 +73,23 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 													$key = $options_fliped[$term->slug];
 
 													$style = '';
-													$class = 'woodmart-swatch swatch-on-single ';
+													$class = 'woodmart-swatch ';
 													if( ! empty( $swatches[$key]['color'] )) {
-														$class .= 'swatch-with-bg woodmart-tooltip';
+														$class .= 'colored-swatch woodmart-tooltip';
 														$style = 'background-color:' .  $swatches[$key]['color'];
-													} else if( $swatches_use_variation_images && $grid_swatches_attribute == $attribute_name && isset( $swatches[$key]['image_src'] ) ) {
-														$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $swatches[$key]['variation_id'] ), 'woocommerce_thumbnail');
-														if ( !empty( $thumb ) ) {
-															$style = 'background-image: url(' . $thumb[0] . ')';
-															$class .= ' swatch-with-bg';
-														}
 													} else if( ! empty( $swatches[$key]['image'] )) {
-														$class .= 'swatch-with-bg woodmart-tooltip';
+														$class .= 'image-swatch woodmart-tooltip';
 														$style = 'background-image: url(' . $swatches[$key]['image'] . ')';
 													} else if( ! empty( $swatches[$key]['not_dropdown'] ) ) {
 														$class .= ' text-only';
+													}
+
+													if( $swatches_use_variation_images && $grid_swatches_attribute == $attribute_name && isset( $swatches[$key]['image_src'] ) ) {
+														$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $swatches[$key]['variation_id'] ), 'woocommerce_thumbnail');
+														if ( !empty( $thumb ) ) {
+															$style = 'background-image: url(' . $thumb[0] . ')';
+															$class .= ' variation-image-used image-swatch';
+														}
 													}
 
 													$class .= ' swatch-size-' . $swatch_size;

@@ -623,9 +623,9 @@ if( ! function_exists( 'woodmart_get_products_shortcode_params' ) ) {
 }
 
 // Necessary hooks for blog autocomplete fields
-add_filter( 'vc_autocomplete_woodmart_products_include_callback',	'woodmart_productIdAutocompleteSuggester_new', 10, 1 ); // Get suggestion(find). Must return an array
+add_filter( 'vc_autocomplete_woodmart_products_include_callback',	'vc_include_field_search', 10, 1 ); // Get suggestion(find). Must return an array
 add_filter( 'vc_autocomplete_woodmart_products_include_render',
-	'woodmart_productIdAutocompleteRender', 10, 1 ); // Render exact product. Must return an array (label,value)
+	'vc_include_field_render', 10, 1 ); // Render exact product. Must return an array (label,value)
 
 // Narrow data taxonomies
 add_filter( 'vc_autocomplete_woodmart_products_taxonomies_callback', 'woodmart_vc_autocomplete_taxonomies_field_search', 10, 1 );

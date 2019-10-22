@@ -14,7 +14,7 @@ var woodmartAdminModule, woodmart_media_init;
         this.mainArea = $('.woodmart-main-import-area');
 
         this.responseArea = this.form.find('.woodmart-response');
-
+        
         this.progressBar = this.form.find('.woodmart-import-progress');
 
         this.verSelect = this.form.find('.woodmart_version');
@@ -151,7 +151,7 @@ var woodmartAdminModule, woodmart_media_init;
 
         try {
             rJSON = JSON.parse(response);
-        } catch( e ) {}
+        } catch( e ) {}           
 
         if( ! response ) {
             this.responseArea.html( '<div class="woodmart-warning">Empty AJAX response, please try again.</div>' ).fadeIn();
@@ -169,7 +169,7 @@ var woodmartAdminModule, woodmart_media_init;
 
     ImportBox.prototype.fakeLoading = function(fake1progress, fake2progress, noticeProgress) {
         var that = this;
-
+        
         this.destroyProgressBar(0);
 
         this.updateProgress( this.progressBar, fake1progress, 350 );
@@ -191,7 +191,7 @@ var woodmartAdminModule, woodmart_media_init;
 
     ImportBox.prototype.clearFakeLoading = function() {
         clearTimeout( this.fake2timeout );
-        clearTimeout( this.noticeTimeout );
+        clearTimeout( this.noticeTimeout );                          
         clearTimeout( this.errorTimeout );
     };
 
@@ -281,15 +281,15 @@ var woodmartAdminModule, woodmart_media_init;
                     }, 300 );
                 } );
             },
-
+            
             sizeGuideInit : function(){
                 if ( $.fn.editTable ) {
                     $( '.woodmart-sguide-table-edit' ).each( function() {
-                        $( this ).editTable();
+                        $( this ).editTable(); 
                     } );
                 }
             },
-
+            
             importAction: function() {
 
                 $('.woodmart-import-form').each(function() {
@@ -358,14 +358,14 @@ var woodmartAdminModule, woodmart_media_init;
                             descriptionShowAttr,
                         '</div>',
                     ].join('');
-
+                    
                 if( orderByTableRow.length > 0 ) {
                     orderByTableRow.after( metaHTMLTable );
                 } else {
                     orderByRow.after( metaHTMLParagraph );
                 }
 			},
-
+			
 			variationGallery: function () {
 
 				$('#woocommerce-product-data').on('woocommerce_variations_loaded', function () {
@@ -695,7 +695,7 @@ var woodmartAdminModule, woodmart_media_init;
 
                         var $template = $parent.find('.woodmart-atf-template').clone(),
                             key = $parent.data('key') + 1;
-
+                            
                         $parent.find('.woodmart-atf-sections').append($template);
                         var regex = /{{index}}/gi;
 
@@ -823,24 +823,24 @@ var woodmartAdminModule, woodmart_media_init;
 
                             syncronizeFontVariants( $section, false, true );
                         }
-                    );
+                    );    
 
                     // CSS selector multi select field
                     $selector.select2(select2Defaults)
                         .on(
                             'select2-selecting', function( e ) {
-                                if( e.val != 'custom') return;
+                                if( e.val != 'custom') return; 
                                 $customInput.val(true);
                                 $customSelector.removeClass('hide');
 
                             }
                         ).on(
                             'select2-removing', function( e ) {
-                                if( e.val != 'custom') return;
+                                if( e.val != 'custom') return; 
                                 $customInput.val('');
                                 $customSelector.val('').addClass('hide');
                             }
-                        );
+                        );    
 
                     // Color picker fields
                     $color.wpColorPicker({
@@ -850,8 +850,8 @@ var woodmartAdminModule, woodmart_media_init;
                                 updatePreview( $section );
                             }, 5)
                         }
-                    });
-                    $colorHover.wpColorPicker();
+                    });    
+                    $colorHover.wpColorPicker();    
 
                     // Responsive font size and line height
                     $responsiveControls.on('click', '.woodmart-atf-responsive-opener', function() {
@@ -904,7 +904,7 @@ var woodmartAdminModule, woodmart_media_init;
 
 
 					sectionFields.preview.slideDown();
-
+					
 					$('#redux-compiler-hook').val(1);
                 }
 
@@ -999,7 +999,7 @@ var woodmartAdminModule, woodmart_media_init;
                     sectionFields.subsetInput.val( script );
 
                     // If we changed the font. Selecting variable is set to true only when family field is opened
-                    if ( isSelecting || init || changeFamily) {
+                    if ( isSelecting || init || changeFamily) { 
                         var html = '<option value=""></option>';
 
                         // Google specific stuff
@@ -1135,7 +1135,7 @@ var woodmartAdminModule, woodmart_media_init;
                 $('#vc_ui-panel-edit-element').on('vcPanel.shown', function () {
                     var _this = $(this);
                     var shortcode = _this.data('vc-shortcode');
-
+                    
                     if (shortcode != 'woodmart_image_hotspot' && shortcode != 'woodmart_hotspot') return;
 
                     var _background_id = vc.shortcodes.findWhere({ id: vc.active_panel.model.attributes.parent_id }).attributes.params.img;
@@ -1165,9 +1165,9 @@ var woodmartAdminModule, woodmart_media_init;
                             console.log('ajax error');
                         },
                     });
-                });
+                });   
             },
-
+            
             vcTemplatesLibrary: function () {
                 var $head = $('.woodmart-templates-heading'),
                     $list = $('.woodmart-templates-list'),
@@ -1303,113 +1303,36 @@ var woodmartAdminModule, woodmart_media_init;
                         html += '<h3 class="woodmart-template-title">' + element.title + '</h3>';
                         // html += '<div class="woodmart-template-preview"><a href="' + element.link + '" target="_blank">preview</a></div>';
                         // html += '<div class="vc_ui-template-content" data-js-content>';
-                        // html += '</div>';
+                        // html += '</div>'; 
                     html += '</div>';
 
                     return html;
                 }
 
-            },
+            },  
 
             cssGenerator: function() {
-                // General.
                 var $form = $('.woodmart-generator-form');
+
                 $form.on('change', '[type=\"checkbox\"]', prepare);
+
+                // $form.find('[type=\"checkbox\"]')
+                // $form.find('[type=\"checkbox\"]').trigger('change');
+
                 prepare();
 
-                // Extra section.
-                // var $wcExtraInput = $('input[name="wooComm"]');
-                // var $wcExtraSection = $('.woodmart-woo-extra');
-                // $wcExtraInput.on('change', function () {
-                //     if ($(this).prop('checked')) {
-                //         $wcExtraSection.find("[type=\"checkbox\"]").prop('checked', 'checked');
-                //     } else {
-                //         $wcExtraSection.find("[type=\"checkbox\"]").prop('checked', '');
-                //     }
-                // });
-                //
-                // $wcExtraSection.find("[type=\"checkbox\"]").on('change', function () {
-                //     if ( ! $wcExtraInput.prop('checked') ) {
-                //         $wcExtraInput.prop('checked', 'checked');
-                //     }
-                //     var checked = false;
-                //
-                //     setTimeout(function () {
-                //         $wcExtraSection.find('.css-checkbox').each(function() {
-                //             var $input = $(this).find("[type=\"checkbox\"]");
-                //
-                //             if ($input.prop('checked') ) {
-                //                 checked = true;
-                //             }
-                //         });
-                //
-                //         if ( ! checked ) {
-                //             $wcExtraInput.prop('checked', '');
-                //         }
-                //     }, 100);
-                // });
-
-                // General.
                 function prepare() {
                     var fields = {};
-                    var $this = $(this);
-                    var id = $this.attr('id');
-                    var checked = $this.prop('checked');
-                    var $children = $form.find('[data-parent="' + id + '"] [type=\"checkbox\"]');
 
-                    $children.prop('checked', checked);
+                    var $this = $(this),
+                        id = $this.attr('id'),
+                        checked = $this.prop('checked'),
+                        $children = $form.find('[data-parent="' + id + '"] [type=\"checkbox\"]');
 
-                    var parentChecked = function( $this ) {
-                        $form.find('[name="' + $this.parent().data('parent') + '"]').each(function() {
-                            $(this).prop('checked', 'checked');
-                            if ( 'none' !== $(this).parent().data('parent') ) {
-                                parentChecked($(this));
-                            }
-                        });
-                    };
-
-                    if ( 'none' !== $this.parent().data('parent') ) {
-                        parentChecked($(this));
-                    }
-
-                    var uncheckedEmpty = function( $this ) {
-                        var id = $this.parent().data('parent');
-                        var $children = $form.find('[data-parent="' + id + '"]');
-
-                        // if ( 'wooComm' === id ) {
-                        //     Object.assign($children, $('.woodmart-woo-extra').find('.css-checkbox'));
-                        // }
-                        // console.log(id);
-
-                        if ($children.length > 0) {
-                            var checked = false;
-
-                            $children.each(function() {
-                                if ( $(this).find('[type="checkbox"]').prop('checked') ) {
-                                    checked = true;
-                                }
-                            });
-
-                            if ( ! checked ) {
-                                $form.find('[name="' + id + '"]').prop('checked', '');
-                                uncheckedEmpty($form.find('[name="' + id + '"]'));
-                            }
-                        }
-                    };
-
-                    uncheckedEmpty($(this));
+                    $children.prop('checked', checked).prop('disabled', !checked);
 
                     $form.find("[type=\"checkbox\"]").each(function() {
-                        // if ($(this).parents('.woodmart-column').hasClass('woodmart-woo-extra')) {
-                        //     if ( $('input[name="wooComm"]').prop('checked') ) {
-                        //         fields[$(this).prop('name')] = $(this).prop('checked') ? true : false;
-                        //     } else {
-                        //         fields[$(this).prop('name')] = false;
-                        //     }
-                        //     return true;
-                        // }
-
-                        fields[this.name] = $(this).prop('checked') ? true : false;
+                        fields[this.name] = ( $(this).prop('checked') ) ? true : false;
                     });
 
                     var base64 = btoa(JSON.stringify(fields));
@@ -1420,13 +1343,14 @@ var woodmartAdminModule, woodmart_media_init;
                 $('.css-update-button').on('click', function(e) {
                     e.preventDefault();
                     $form.find('[name="generate-css"]').click();
-                });
+                })
 
                 $form.on('click', '[name="generate-css"]', function() {
                     $form.parents('.woodmart-box-content').addClass('xtemos-loading')
                 });
-			},
 
+			},
+			
 			compilerRunDetect: function () {
 
 				compilerRun();
@@ -1478,7 +1402,7 @@ var woodmartAdminModule, woodmart_media_init;
                         event.preventDefault();
                         var selected_img;
                         clicked_button = $(this);
-
+             
                         // check for media manager instance
                         // if(wp.media.frames.gk_frame) {
                         //     wp.media.frames.gk_frame.open();
@@ -1495,16 +1419,16 @@ var woodmartAdminModule, woodmart_media_init;
                                 text: 'Use selected image'
                             }
                         });
-
+             
                         // Function used for the image selection and media manager closing
                         var gk_media_set_image = function() {
                             var selection = wp.media.frames.gk_frame.state().get('selection');
-
+             
                             // no selection
                             if (!selection) {
                                 return;
                             }
-
+             
                             // iterate through selected elements
                             selection.each(function(attachment) {
                                 var url = attachment.attributes.url;
@@ -1512,7 +1436,7 @@ var woodmartAdminModule, woodmart_media_init;
                                 $(image_selector).attr('src', url).show();
                             });
                         };
-
+             
                         // closing event for media manger
                         wp.media.frames.gk_frame.on('close', gk_media_set_image);
                         // image selection event

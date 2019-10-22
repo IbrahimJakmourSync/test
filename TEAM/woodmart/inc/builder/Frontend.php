@@ -207,10 +207,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN TOP BAR */
 
-				.whb-top-bar .wd-tools-element > a,
+				.whb-top-bar .search-button > a,
+				.whb-top-bar .woodmart-shopping-cart > a,
+				.whb-top-bar .woodmart-wishlist-info-widget > a,
 				.whb-top-bar .main-nav .item-level-0 > a,
 				.whb-top-bar .whb-secondary-menu .item-level-0 > a,
+				.whb-top-bar .woodmart-header-links .item-level-0 > a,
 				.whb-top-bar .categories-menu-opener,
+				.whb-top-bar .woodmart-burger-icon,
 				.whb-top-bar .menu-opener,
 				.whb-top-bar .whb-divider-stretch:before,
 				.whb-top-bar form.woocommerce-currency-switcher-form .dd-selected,
@@ -218,10 +222,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 					height: <?php echo esc_html( $options['top-bar']['height'] ); ?>px;
 				}
 
-				.whb-sticked .whb-top-bar .wd-tools-element > a,
+				.whb-sticked .whb-top-bar .search-button > a,
+				.whb-sticked .whb-top-bar .woodmart-shopping-cart > a,
+				.whb-sticked .whb-top-bar .woodmart-wishlist-info-widget > a,
 				.whb-sticked .whb-top-bar .main-nav .item-level-0 > a,
 				.whb-sticked .whb-top-bar .whb-secondary-menu .item-level-0 > a,
+				.whb-sticked .whb-top-bar .woodmart-header-links .item-level-0 > a,
 				.whb-sticked .whb-top-bar .categories-menu-opener,
+				.whb-sticked .whb-top-bar .woodmart-burger-icon,
 				.whb-sticked .whb-top-bar .menu-opener,
 				.whb-sticked .whb-top-bar .whb-divider-stretch:before,
 				.whb-sticked .whb-top-bar form.woocommerce-currency-switcher-form .dd-selected,
@@ -255,10 +263,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN BOTTOM HEADER */
 
-				.whb-header-bottom .wd-tools-element > a,
+				.whb-header-bottom .search-button > a,
+				.whb-header-bottom .woodmart-shopping-cart > a,
+				.whb-header-bottom .woodmart-wishlist-info-widget > a,
 				.whb-header-bottom .main-nav .item-level-0 > a,
 				.whb-header-bottom .whb-secondary-menu .item-level-0 > a,
+				.whb-header-bottom .woodmart-header-links .item-level-0 > a,
 				.whb-header-bottom .categories-menu-opener,
+				.whb-header-bottom .woodmart-burger-icon,
 				.whb-header-bottom .menu-opener,
 				.whb-header-bottom .whb-divider-stretch:before,
 				.whb-header-bottom form.woocommerce-currency-switcher-form .dd-selected,
@@ -278,10 +290,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 					margin-bottom: -<?php echo esc_html($bottom_border); ?>px;
 				}
 
-				.whb-sticked .whb-header-bottom .wd-tools-element > a,
+				.whb-sticked .whb-header-bottom .search-button > a,
+				.whb-sticked .whb-header-bottom .woodmart-shopping-cart > a,
+				.whb-sticked .whb-header-bottom .woodmart-wishlist-info-widget > a,
 				.whb-sticked .whb-header-bottom .main-nav .item-level-0 > a,
 				.whb-sticked .whb-header-bottom .whb-secondary-menu .item-level-0 > a,
+				.whb-sticked .whb-header-bottom .woodmart-header-links .item-level-0 > a,
 				.whb-sticked .whb-header-bottom .categories-menu-opener,
+				.whb-sticked .whb-header-bottom .woodmart-burger-icon,
 				.whb-sticked .whb-header-bottom .whb-divider-stretch:before,
 				.whb-sticked .whb-header-bottom form.woocommerce-currency-switcher-form .dd-selected,
 				.whb-sticked .whb-header-bottom .whb-text-element .wcml-dropdown a.wcml-cs-item-toggle {
@@ -303,10 +319,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN HEADER CLONE */
 
-				.whb-clone .wd-tools-element > a,
+				.whb-clone .search-button > a,
+				.whb-clone .woodmart-shopping-cart > a,
+				.whb-clone .woodmart-wishlist-info-widget > a,
 				.whb-clone .main-nav .item-level-0 > a,
 				.whb-clone .whb-secondary-menu .item-level-0 > a,
+				.whb-clone .woodmart-header-links .item-level-0 > a,
 				.whb-clone .categories-menu-opener,
+				.whb-clone .woodmart-burger-icon,
 				.whb-clone .menu-opener,
 				.whb-clone .whb-divider-stretch:before,
 				.whb-clone .navigation-style-bordered .item-level-0 > a,
@@ -382,10 +402,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN TOP BAR */
 
-				.whb-top-bar .wd-tools-element > a,
+				.whb-top-bar .search-button > a,
+				.whb-top-bar .woodmart-shopping-cart > a,
+				.whb-top-bar .woodmart-wishlist-info-widget > a,
 				.whb-top-bar .main-nav .item-level-0 > a,
 				.whb-top-bar .whb-secondary-menu .item-level-0 > a,
+				.whb-top-bar .woodmart-header-links .item-level-0 > a,
 				.whb-top-bar .categories-menu-opener,
+				.whb-top-bar .woodmart-burger-icon,
 				.whb-top-bar .whb-divider-stretch:before,
 				.whb-top-bar form.woocommerce-currency-switcher-form .dd-selected,
 				.whb-top-bar .whb-text-element .wcml-dropdown a.wcml-cs-item-toggle {
@@ -394,10 +418,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN GENERAL HEADER */
 
-				.whb-general-header .wd-tools-element > a,
+				.whb-general-header .search-button > a,
+				.whb-general-header .woodmart-shopping-cart > a,
+				.whb-general-header .woodmart-wishlist-info-widget > a,
 				.whb-general-header .main-nav .item-level-0 > a,
 				.whb-general-header .whb-secondary-menu .item-level-0 > a,
+				.whb-general-header .woodmart-header-links .item-level-0 > a,
 				.whb-general-header .categories-menu-opener,
+				.whb-general-header .woodmart-burger-icon,
 				.whb-general-header .whb-divider-stretch:before,
 				.whb-general-header form.woocommerce-currency-switcher-form .dd-selected,
 				.whb-general-header .whb-text-element .wcml-dropdown a.wcml-cs-item-toggle {
@@ -406,10 +434,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN BOTTOM HEADER */
 
-				.whb-header-bottom .wd-tools-element > a,
+				.whb-header-bottom .search-button > a,
+				.whb-header-bottom .woodmart-shopping-cart > a,
+				.whb-header-bottom .woodmart-wishlist-info-widget > a,
 				.whb-header-bottom .main-nav .item-level-0 > a,
 				.whb-header-bottom .whb-secondary-menu .item-level-0 > a,
+				.whb-header-bottom .woodmart-header-links .item-level-0 > a,
 				.whb-header-bottom .categories-menu-opener,
+				.whb-header-bottom .woodmart-burger-icon,
 				.whb-header-bottom .whb-divider-stretch:before,
 				.whb-header-bottom form.woocommerce-currency-switcher-form .dd-selected,
 				.whb-header-bottom .whb-text-element .wcml-dropdown a.wcml-cs-item-toggle {
@@ -418,10 +450,14 @@ if( ! class_exists( 'WOODMART_HB_Frontend' ) ) {
 
 				/* HEIGHT ELEMENTS IN HEADER CLONE */
 
-				.whb-clone .wd-tools-element > a,
+				.whb-clone .search-button > a,
+				.whb-clone .woodmart-shopping-cart > a,
+				.whb-clone .woodmart-wishlist-info-widget > a,
 				.whb-clone .main-nav .item-level-0 > a,
 				.whb-clone .whb-secondary-menu .item-level-0 > a,
+				.whb-clone .woodmart-header-links .item-level-0 > a,
 				.whb-clone .categories-menu-opener,
+				.whb-clone .woodmart-burger-icon,
 				.whb-clone .menu-opener,
 				.whb-clone .whb-divider-stretch:before,
 				.whb-clone form.woocommerce-currency-switcher-form .dd-selected,

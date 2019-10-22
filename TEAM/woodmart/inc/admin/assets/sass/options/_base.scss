@@ -40,7 +40,7 @@
 	// }
 
 	.xts-fields-section {
-		min-height: calc(100% - 48px);
+		height: 100%;
 	}
 
 	.xts-active-section {
@@ -133,18 +133,6 @@
 
 	&.xts-info {
 		background-color: $woodmart-notice-info;
-	}
-
-	&.xts-success {
-		background-color: $woodmart-notice-success;
-	}
-
-	&.xts-warning {
-		background-color: $woodmart-notice-warning;
-	}
-
-	&.xts-error {
-		background-color: $woodmart-notice-critical;
 	}
 
 	a {

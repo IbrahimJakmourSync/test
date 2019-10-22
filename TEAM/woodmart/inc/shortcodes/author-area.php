@@ -44,7 +44,7 @@ if( ! function_exists( 'woodmart_shortcode_author_area' ) ) {
 				<?php endif ?>
 
 				<div class="author-avatar">
-					<?php echo $img['thumbnail']; ?>
+					<?php echo wp_kses( $img['thumbnail'], array( 'img' => array( 'class' => true, 'width' => true, 'height' => true, 'src' => true, 'alt' => true, 'data-wood-src' => true, 'data-srcset' => true ) ) ); ?>
 				</div>
 
 				<?php if ( $author_name ): ?>

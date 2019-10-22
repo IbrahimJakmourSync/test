@@ -47,11 +47,11 @@
 			echo woodmart_swatches_list();
 		?>
 	</div> 
-	<div class="woodmart-buttons wd-pos-r-b">
-		<div class="woodmart-add-btn wd-action-btn wd-add-cart-btn wd-style-icon">
+	<div class="woodmart-buttons">
+		<div class="woodmart-add-btn">
 			<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 		</div>
-		<?php woodmart_add_to_compare_loop_btn(); ?>
+		<?php woodmart_compare_btn(); ?>
 		<?php woodmart_quick_view_btn( get_the_ID() ); ?>
 		<?php do_action( 'woodmart_product_action_buttons' ); ?>
 	</div>

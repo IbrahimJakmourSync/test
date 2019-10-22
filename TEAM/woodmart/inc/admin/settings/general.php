@@ -91,18 +91,6 @@ Options::add_field(
 	)
 );
 
-Options::add_field(
-	array(
-		'id'          => 'insta_token',
-		'name'        => esc_html__( 'Instagram generate token', 'woodmart' ),
-		'group'       => esc_html__( 'Instagram API', 'woodmart' ),
-		'description' => 'Configure your "Valid redirect URIs" in your Instagram application settings with the following URL  <strong>' . admin_url( 'admin.php?page=xtemos_options&tab=general_section' ) . '</strong><br> To get this data, follow the instructions in our documentation <a href="https://xtemos.com/docs/woodmart/faq-guides/setup-instagram-api/" target="_blank">here</a>.',
-		'type'        => 'instagram_api',
-		'section'     => 'general_section',
-		'priority'    => 60,
-	)
-);
-
 /**
  * Mobile bottom navbar.
  */

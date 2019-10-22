@@ -146,7 +146,6 @@ class WOODMART_Theme {
 			'api',
 			'license',
 			'cssgenerator',
-			'wpbcssgenerator',
 			'dynamiccss',
 		);	
 
@@ -195,6 +194,7 @@ class WOODMART_Theme {
 			//Plugin integrations
 			'integrations/wpml',
 			'integrations/wcmp',
+			'integrations/yith-add-to-quote',
 			'integrations/yith-compare',
 			'integrations/yith-wishlist',
 			'integrations/dokan',
@@ -232,7 +232,6 @@ class WOODMART_Theme {
 			'options/controls/custom-fonts/class-custom-fonts',
 			'options/controls/editor/class-editor',
 			'options/controls/image-dimensions/class-image-dimensions',
-			'options/controls/instagram-api/class-instagram-api',
 			'options/controls/notice/class-notice',
 			'options/controls/import/class-import',
 			'options/controls/range/class-range',
@@ -274,7 +273,15 @@ class WOODMART_Theme {
 			'admin/redux/fields/woodmart_multi_fonts',
 			'admin/redux/fields/woodmart_typography',
 			'admin/redux/fields/woodmart_title',
-		);
+
+			//REDUX
+			'admin/redux/settings/config',
+			'admin/redux/fields/woodmart_gradient',
+			'admin/redux/fields/woodmart_multi_fonts',
+			'admin/redux/fields/woodmart_typography',
+			'admin/redux/fields/woodmart_title',
+			
+		);	
 
 		$this->admin_files_include = array(
 			'builder/Builder',

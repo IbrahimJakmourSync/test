@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License version 3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: Woodmart 4.1.0\n"
+"Project-Id-Version: Woodmart 4.0.4\n"
 "Report-Msgid-Bugs-To: http://xtemos.com\n"
-"POT-Creation-Date: 2019-09-12 06:44:08+00:00\n"
+"POT-Creation-Date: 2019-08-20 13:31:28+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,78 +71,78 @@ msgstr ""
 msgid "All rights reserved"
 msgstr ""
 
-#: functions.php:245
+#: functions.php:204
 msgid "Processing"
 msgstr ""
 
-#: functions.php:246
+#: functions.php:205
 msgid "Product was successfully added to your cart."
 msgstr ""
 
-#: functions.php:247
+#: functions.php:206
 msgid "Continue shopping"
 msgstr ""
 
-#: functions.php:248
+#: functions.php:207
 msgid "View Cart"
 msgstr ""
 
-#: functions.php:249 inc/integrations/woocommerce/template-tags.php:36
+#: functions.php:208 inc/integrations/woocommerce/template-tags.php:36
 msgid "Checkout"
 msgstr ""
 
-#: functions.php:250 inc/shortcodes/blog.php:166
+#: functions.php:209 inc/shortcodes/blog.php:166
 #: inc/shortcodes/portfolio.php:158 inc/shortcodes/products.php:233
 #: inc/template-tags.php:81 woocommerce/loop/pagination.php:45
 msgid "Loading..."
 msgstr ""
 
-#: functions.php:251
+#: functions.php:210
 msgid "days"
 msgstr ""
 
-#: functions.php:252
+#: functions.php:211
 msgid "hr"
 msgstr ""
 
-#: functions.php:253
+#: functions.php:212
 msgid "min"
 msgstr ""
 
-#: functions.php:254
+#: functions.php:213
 msgid "sc"
 msgstr ""
 
-#: functions.php:268
+#: functions.php:227
 msgid "View all results"
 msgstr ""
 
-#: functions.php:278 woocommerce/single-product/photo-swipe-template.php:29
+#: functions.php:237 woocommerce/single-product/photo-swipe-template.php:29
 msgid "Close (Esc)"
 msgstr ""
 
-#: functions.php:279
+#: functions.php:238
 msgid "Share on Facebook"
 msgstr ""
 
-#: functions.php:280
+#: functions.php:239
 msgid "Pin it"
 msgstr ""
 
-#: functions.php:281
+#: functions.php:240
 msgid "Tweet"
 msgstr ""
 
-#: functions.php:282
+#: functions.php:241
 msgid "Download image"
 msgstr ""
 
-#: functions.php:307
+#: functions.php:266
 msgid "Custom style"
 msgstr ""
 
-#: header-elements/burger.php:20 header-elements/main-menu.php:23
-#: inc/builder/elements/Menu.php:23 inc/modules/sticky-toolbar.php:447
+#: header-elements/burger.php:19 header-elements/main-menu.php:22
+#: inc/builder/elements/Menu.php:23 inc/modules/sticky-toolbar.php:448
 #: inc/template-tags.php:1452
 msgid "Menu"
 msgstr ""
@@ -151,25 +151,22 @@ msgstr ""
 msgid "Browse Categories"
 msgstr ""
 
-#: header-elements/compare.php:20
-#: inc/integrations/woocommerce/modules/compare.php:151
-#: inc/modules/sticky-toolbar.php:290
+#: header-elements/compare.php:18
+#: inc/integrations/woocommerce/modules/compare.php:74
+#: inc/modules/sticky-toolbar.php:294
 msgid "Compare products"
 msgstr ""
 
-#: header-elements/compare.php:34 inc/admin/settings/shop.php:1374
+#: header-elements/compare.php:33 inc/admin/settings/shop.php:1344
 #: inc/builder/elements/Compare.php:20
 #: inc/integrations/visual-composer/maps/compare.php:19
-#: inc/integrations/woocommerce/modules/compare.php:94
-#: inc/integrations/woocommerce/modules/compare.php:131
-#: inc/integrations/woocommerce/modules/compare.php:152
-#: inc/integrations/woocommerce/template-tags.php:1452
-#: inc/modules/sticky-toolbar.php:46 inc/modules/sticky-toolbar.php:85
-#: inc/modules/sticky-toolbar.php:298
+#: inc/integrations/woocommerce/template-tags.php:1420
+#: inc/integrations/yith-compare.php:105 inc/modules/sticky-toolbar.php:46
+#: inc/modules/sticky-toolbar.php:85 inc/modules/sticky-toolbar.php:304
 msgid "Compare"
 msgstr ""
 
-#: header-elements/main-menu.php:46
+#: header-elements/main-menu.php:44
 msgid ""
 "Create your first <a href=\"%s\"><strong>navigation menu here</strong></a> "
 "and add it to the \"Main menu\" location."
@@ -177,20 +174,19 @@ msgstr ""
 
 #: header-elements/search.php:24 inc/builder/elements/Mobilesearch.php:20
 #: inc/builder/elements/Search.php:22 inc/modules/sticky-toolbar.php:65
-#: inc/modules/sticky-toolbar.php:93 inc/modules/sticky-toolbar.php:318
+#: inc/modules/sticky-toolbar.php:93 inc/modules/sticky-toolbar.php:324
 msgid "Search"
 msgstr ""
 
-#: header-elements/wishlist.php:20
+#: header-elements/wishlist.php:18
 msgid "My Wishlist"
 msgstr ""
 
-#: header-elements/wishlist.php:36 inc/builder/elements/Wishlist.php:20
+#: header-elements/wishlist.php:35 inc/builder/elements/Wishlist.php:20
 #: inc/integrations/visual-composer/maps/wishlist.php:15
-#: inc/integrations/woocommerce/modules/wishlist/class-ui.php:306
 #: inc/integrations/woocommerce/modules/wishlist/class-wc-wishlist.php:334
 #: inc/integrations/woocommerce/modules/wishlist/class-wc-wishlist.php:344
-#: inc/integrations/woocommerce/template-tags.php:1489
+#: inc/integrations/woocommerce/template-tags.php:1457
 #: inc/modules/sticky-toolbar.php:22 inc/modules/sticky-toolbar.php:77
 msgid "Wishlist"
 msgstr ""
@@ -215,11 +211,7 @@ msgstr ""
 msgid "CSS Generator"
 msgstr ""
 
-#: inc/admin/dashboard/dashboard.php:26
-msgid "WPBakery CSS generator"
-msgstr ""
-
-#: inc/admin/dashboard/dashboard.php:49 inc/admin/dashboard/dashboard.php:50
+#: inc/admin/dashboard/dashboard.php:48 inc/admin/dashboard/dashboard.php:49
 msgid "WoodMart"
 msgstr ""
 
@@ -228,7 +220,8 @@ msgstr ""
 #: inc/admin/dashboard/views/tabs/license.php:11
 #: inc/admin/dashboard/views/tabs/shop.php:7
 #: inc/admin/dashboard/views/tabs/shop.php:23
-#: inc/admin/settings/performance.php:95 inc/admin/settings/performance.php:129
+#: inc/admin/settings/performance.php:120
+#: inc/admin/settings/performance.php:154
 msgid "Optional"
 msgstr ""
 
@@ -245,7 +238,6 @@ msgid "Support forum"
 msgstr ""
 
 #: inc/admin/dashboard/views/tabs/css.php:8
-#: inc/admin/dashboard/views/tabs/wpbakery_css.php:8
 msgid "Advanced"
 msgstr ""
 
@@ -402,7 +394,7 @@ msgstr ""
 #: inc/admin/settings/colors.php:371 inc/admin/settings/colors.php:408
 #: inc/admin/settings/colors.php:445 inc/admin/settings/colors.php:483
 #: inc/admin/settings/colors.php:520 inc/admin/settings/footer.php:159
-#: inc/admin/settings/page-title.php:81 inc/admin/settings/shop.php:1811
+#: inc/admin/settings/page-title.php:81 inc/admin/settings/shop.php:1781
 #: inc/builder/elements/Categories.php:90 inc/builder/elements/Row.php:129
 #: inc/integrations/visual-composer/functions.php:537
 #: inc/integrations/visual-composer/maps/author-area.php:116
@@ -428,7 +420,7 @@ msgstr ""
 #: inc/admin/settings/colors.php:367 inc/admin/settings/colors.php:404
 #: inc/admin/settings/colors.php:441 inc/admin/settings/colors.php:479
 #: inc/admin/settings/colors.php:516 inc/admin/settings/footer.php:155
-#: inc/admin/settings/page-title.php:85 inc/admin/settings/shop.php:1807
+#: inc/admin/settings/page-title.php:85 inc/admin/settings/shop.php:1777
 #: inc/builder/elements/Categories.php:86 inc/builder/elements/Row.php:125
 #: inc/integrations/visual-composer/functions.php:538
 #: inc/integrations/visual-composer/maps/author-area.php:117
@@ -469,7 +461,7 @@ msgstr ""
 #: inc/admin/settings/blog.php:315 inc/admin/settings/page-title.php:27
 #: inc/admin/settings/page-title.php:77 inc/admin/settings/page-title.php:104
 #: inc/admin/settings/product.php:130 inc/admin/settings/product.php:494
-#: inc/admin/settings/shop.php:869 inc/builder/elements/Account.php:57
+#: inc/admin/settings/shop.php:839 inc/builder/elements/Account.php:57
 #: inc/builder/elements/Burger.php:61 inc/builder/elements/Categories.php:53
 #: inc/builder/elements/Compare.php:66 inc/builder/elements/Mainmenu.php:42
 #: inc/builder/elements/Mainmenu.php:98 inc/builder/elements/Menu.php:53
@@ -527,7 +519,7 @@ msgstr ""
 #: inc/admin/redux/settings/shop.php:477 inc/admin/settings/blog.php:56
 #: inc/admin/settings/general-layout.php:130
 #: inc/admin/settings/page-title.php:108 inc/admin/settings/product.php:76
-#: inc/admin/settings/shop.php:979
+#: inc/admin/settings/shop.php:949
 #: inc/integrations/visual-composer/maps/button.php:86
 #: inc/integrations/visual-composer/maps/counter.php:62
 #: inc/integrations/visual-composer/maps/info-box.php:856
@@ -545,11 +537,11 @@ msgstr ""
 #: inc/admin/redux/settings/shop.php:479 inc/admin/settings/blog.php:64
 #: inc/admin/settings/general-layout.php:138
 #: inc/admin/settings/page-title.php:112 inc/admin/settings/product.php:84
-#: inc/admin/settings/product.php:333 inc/admin/settings/shop.php:987
+#: inc/admin/settings/product.php:333 inc/admin/settings/shop.php:957
 #: inc/integrations/visual-composer/maps/button.php:87
 #: inc/integrations/visual-composer/maps/counter.php:63
 #: inc/integrations/visual-composer/maps/info-box.php:857
-#: inc/integrations/visual-composer/maps/instagram.php:109
+#: inc/integrations/visual-composer/maps/instagram.php:82
 #: inc/integrations/visual-composer/maps/promo-banner.php:676
 msgid "Large"
 msgstr ""
@@ -645,7 +637,7 @@ msgstr ""
 #: inc/admin/redux/settings/product-page.php:47
 #: inc/admin/redux/settings/shop.php:474
 #: inc/admin/settings/general-layout.php:124 inc/admin/settings/product.php:70
-#: inc/admin/settings/shop.php:973
+#: inc/admin/settings/shop.php:943
 msgid "Sidebar size"
 msgstr ""
 
@@ -662,8 +654,7 @@ msgstr ""
 #: inc/admin/redux/settings/product-page.php:191
 #: inc/admin/redux/settings/shop.php:478 inc/admin/settings/blog.php:60
 #: inc/admin/settings/general-layout.php:134 inc/admin/settings/product.php:80
-#: inc/admin/settings/product.php:328 inc/admin/settings/shop.php:983
-#: inc/integrations/visual-composer/maps/instagram.php:107
+#: inc/admin/settings/product.php:328 inc/admin/settings/shop.php:953
 msgid "Medium"
 msgstr ""
 
@@ -736,7 +727,7 @@ msgstr ""
 
 #: inc/admin/metaboxes/pages.php:329 inc/admin/redux/settings/blog.php:56
 #: inc/admin/redux/settings/shop.php:300 inc/admin/settings/blog.php:98
-#: inc/admin/settings/shop.php:602
+#: inc/admin/settings/shop.php:572
 #: inc/integrations/visual-composer/maps/blog.php:157
 #: inc/integrations/visual-composer/maps/images-gallery.php:64
 #: inc/integrations/visual-composer/maps/products.php:173
@@ -945,7 +936,7 @@ msgid "You can hide related products on this page"
 msgstr ""
 
 #: inc/admin/metaboxes/products.php:367 inc/admin/redux/settings/shop.php:583
-#: inc/admin/settings/shop.php:1170
+#: inc/admin/settings/shop.php:1140
 msgid "Grid swatch attribute to display"
 msgstr ""
 
@@ -1102,8 +1093,8 @@ msgstr ""
 #: inc/admin/redux/settings/perfomance.php:72
 #: inc/admin/redux/settings/product-page.php:267
 #: inc/admin/redux/settings/shop.php:359 inc/admin/redux/settings/shop.php:399
-#: inc/admin/settings/performance.php:299 inc/admin/settings/product.php:431
-#: inc/admin/settings/shop.php:762 inc/admin/settings/shop.php:841
+#: inc/admin/settings/performance.php:222 inc/admin/settings/product.php:431
+#: inc/admin/settings/shop.php:732 inc/admin/settings/shop.php:811
 #: inc/integrations/visual-composer/functions.php:133
 #: inc/integrations/visual-composer/maps/images-gallery.php:273
 #: inc/integrations/visual-composer/maps/info-box.php:961
@@ -1536,7 +1527,7 @@ msgstr ""
 #: inc/admin/redux/fields/woodmart_multi_fonts.php:116
 #: inc/admin/redux/fields/woodmart_multi_fonts.php:171
 #: inc/builder/Backend.php:122
-#: inc/integrations/woocommerce/modules/compare.php:440
+#: inc/integrations/woocommerce/modules/compare.php:361
 #: inc/integrations/woocommerce/modules/wishlist/class-ui.php:244
 #: inc/options/controls/background/class-background.php:45
 #: inc/options/controls/custom-fonts/class-custom-fonts.php:196
@@ -1597,7 +1588,7 @@ msgstr ""
 
 #: inc/admin/redux/settings/blog.php:6 inc/admin/settings/blog.php:12
 #: inc/integrations/visual-composer/maps/blog.php:18
-#: inc/modules/sticky-toolbar.php:372 inc/template-tags.php:898
+#: inc/modules/sticky-toolbar.php:375 inc/template-tags.php:898
 msgid "Blog"
 msgstr ""
 
@@ -1612,21 +1603,21 @@ msgstr ""
 #: inc/admin/redux/settings/blog.php:18
 #: inc/admin/redux/settings/product-page.php:18
 #: inc/admin/redux/settings/shop.php:455 inc/admin/settings/blog.php:27
-#: inc/admin/settings/product.php:27 inc/admin/settings/shop.php:950
+#: inc/admin/settings/product.php:27 inc/admin/settings/shop.php:920
 msgid "1 Column"
 msgstr ""
 
 #: inc/admin/redux/settings/blog.php:23
 #: inc/admin/redux/settings/product-page.php:23
 #: inc/admin/redux/settings/shop.php:460 inc/admin/settings/product.php:32
-#: inc/admin/settings/shop.php:955
+#: inc/admin/settings/shop.php:925
 msgid "2 Column Left"
 msgstr ""
 
 #: inc/admin/redux/settings/blog.php:28
 #: inc/admin/redux/settings/product-page.php:28
 #: inc/admin/redux/settings/shop.php:465 inc/admin/settings/product.php:37
-#: inc/admin/settings/shop.php:960
+#: inc/admin/settings/shop.php:930
 msgid "2 Column Right"
 msgstr ""
 
@@ -1716,14 +1707,14 @@ msgstr ""
 #: inc/admin/redux/settings/blog.php:153
 #: inc/admin/redux/settings/portfolio.php:105
 #: inc/admin/redux/settings/shop.php:256 inc/admin/settings/blog.php:292
-#: inc/admin/settings/portfolio.php:191 inc/admin/settings/shop.php:515
+#: inc/admin/settings/portfolio.php:191 inc/admin/settings/shop.php:485
 msgid "\"Load more\" button"
 msgstr ""
 
 #: inc/admin/redux/settings/blog.php:154
 #: inc/admin/redux/settings/portfolio.php:106
 #: inc/admin/redux/settings/shop.php:257 inc/admin/settings/blog.php:296
-#: inc/admin/settings/portfolio.php:195 inc/admin/settings/shop.php:519
+#: inc/admin/settings/portfolio.php:195 inc/admin/settings/shop.php:489
 #: inc/integrations/visual-composer/maps/blog.php:130
 #: inc/integrations/visual-composer/maps/products.php:365
 msgid "Infinit scrolling"
@@ -1793,7 +1784,8 @@ msgid "Show related posts on single post page (by tags)"
 msgstr ""
 
 #: inc/admin/redux/settings/config.php:29
-#: inc/admin/redux/settings/config.php:30 inc/options/class-page.php:108
+#: inc/admin/redux/settings/config.php:30 inc/options/class-page.php:97
+#: inc/options/class-page.php:100 inc/options/class-page.php:108
 #: inc/options/class-page.php:112 inc/options/class-page.php:149
 #: inc/options/class-page.php:150
 msgid "Theme Settings"
@@ -2048,7 +2040,7 @@ msgstr ""
 
 #: inc/admin/redux/settings/general-layout.php:68
 #: inc/admin/redux/settings/shop.php:489
-#: inc/admin/settings/general-layout.php:113 inc/admin/settings/shop.php:1006
+#: inc/admin/settings/general-layout.php:113 inc/admin/settings/shop.php:976
 msgid "Off canvas sidebar for mobile"
 msgstr ""
 
@@ -2085,69 +2077,69 @@ msgstr ""
 msgid "Sticky notifications"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:57 inc/admin/settings/general.php:113
+#: inc/admin/redux/settings/general.php:57 inc/admin/settings/general.php:101
 msgid "Mobile bottom navbar"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:64 inc/admin/settings/general.php:121
+#: inc/admin/redux/settings/general.php:64 inc/admin/settings/general.php:109
 msgid "Enable Sticky navbar"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:65 inc/admin/settings/general.php:122
+#: inc/admin/redux/settings/general.php:65 inc/admin/settings/general.php:110
 msgid "Sticky navigation toolbar will be shown at the bottom on mobile devices."
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:71 inc/admin/settings/general.php:133
+#: inc/admin/redux/settings/general.php:71 inc/admin/settings/general.php:121
 msgid "Navbar labels"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:72 inc/admin/settings/general.php:134
+#: inc/admin/redux/settings/general.php:72 inc/admin/settings/general.php:122
 msgid "Show/hide labels under icons in the mobile navbar."
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:78 inc/admin/settings/general.php:145
+#: inc/admin/redux/settings/general.php:78 inc/admin/settings/general.php:133
 msgid "Select buttons"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:79 inc/admin/settings/general.php:146
+#: inc/admin/redux/settings/general.php:79 inc/admin/settings/general.php:134
 msgid "Choose which buttons will be used for sticky navbar."
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:86 inc/admin/settings/general.php:168
-#: inc/admin/settings/general.php:179 inc/admin/settings/general.php:190
+#: inc/admin/redux/settings/general.php:86 inc/admin/settings/general.php:156
+#: inc/admin/settings/general.php:167 inc/admin/settings/general.php:178
 #: inc/modules/sticky-toolbar.php:50 inc/modules/sticky-toolbar.php:86
 msgid "Custom button [1]"
 msgstr ""
 
 #: inc/admin/redux/settings/general.php:91
 #: inc/admin/redux/settings/general.php:112
-#: inc/admin/redux/settings/general.php:133 inc/admin/settings/general.php:167
-#: inc/admin/settings/general.php:200 inc/admin/settings/general.php:233
+#: inc/admin/redux/settings/general.php:133 inc/admin/settings/general.php:155
+#: inc/admin/settings/general.php:188 inc/admin/settings/general.php:221
 msgid "Custom button URL"
 msgstr ""
 
 #: inc/admin/redux/settings/general.php:96
 #: inc/admin/redux/settings/general.php:117
-#: inc/admin/redux/settings/general.php:138 inc/admin/settings/general.php:178
-#: inc/admin/settings/general.php:211 inc/admin/settings/general.php:244
+#: inc/admin/redux/settings/general.php:138 inc/admin/settings/general.php:166
+#: inc/admin/settings/general.php:199 inc/admin/settings/general.php:232
 msgid "Custom button text"
 msgstr ""
 
 #: inc/admin/redux/settings/general.php:101
 #: inc/admin/redux/settings/general.php:122
-#: inc/admin/redux/settings/general.php:143 inc/admin/settings/general.php:189
-#: inc/admin/settings/general.php:222 inc/admin/settings/general.php:256
+#: inc/admin/redux/settings/general.php:143 inc/admin/settings/general.php:177
+#: inc/admin/settings/general.php:210 inc/admin/settings/general.php:244
 msgid "Custom button icon"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:107 inc/admin/settings/general.php:201
-#: inc/admin/settings/general.php:212 inc/admin/settings/general.php:223
+#: inc/admin/redux/settings/general.php:107 inc/admin/settings/general.php:189
+#: inc/admin/settings/general.php:200 inc/admin/settings/general.php:211
 #: inc/modules/sticky-toolbar.php:54 inc/modules/sticky-toolbar.php:87
 msgid "Custom button [2]"
 msgstr ""
 
-#: inc/admin/redux/settings/general.php:128 inc/admin/settings/general.php:234
-#: inc/admin/settings/general.php:245 inc/admin/settings/general.php:257
+#: inc/admin/redux/settings/general.php:128 inc/admin/settings/general.php:222
+#: inc/admin/settings/general.php:233 inc/admin/settings/general.php:245
 #: inc/modules/sticky-toolbar.php:58 inc/modules/sticky-toolbar.php:88
 msgid "Custom button [3]"
 msgstr ""
@@ -2328,8 +2320,8 @@ msgstr ""
 #: inc/admin/redux/settings/page-title.php:25
 #: inc/admin/redux/settings/perfomance.php:38
 #: inc/admin/redux/settings/shop.php:425 inc/admin/settings/page-title.php:37
-#: inc/admin/settings/performance.php:79 inc/admin/settings/performance.php:113
-#: inc/admin/settings/performance.php:218 inc/admin/settings/shop.php:905
+#: inc/admin/settings/performance.php:70 inc/admin/settings/performance.php:104
+#: inc/admin/settings/performance.php:138 inc/admin/settings/shop.php:875
 #: inc/integrations/visual-composer/maps/categories.php:278
 #: inc/integrations/visual-composer/maps/portfolio.php:129
 #: inc/integrations/visual-composer/maps/products.php:179
@@ -2456,12 +2448,12 @@ msgid ""
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:34
-#: inc/admin/settings/performance.php:207
+#: inc/admin/settings/performance.php:59
 msgid "Nanoscroller library"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:35
-#: inc/admin/settings/performance.php:208
+#: inc/admin/settings/performance.php:60
 msgid ""
 "This library adds nice style to elements with scroll bar like cart widget, "
 "filters widget, AJAX search results etc. In modern browsers we can style "
@@ -2469,8 +2461,8 @@ msgid ""
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:37
-#: inc/admin/redux/settings/shop.php:424 inc/admin/settings/performance.php:214
-#: inc/admin/settings/shop.php:901
+#: inc/admin/redux/settings/shop.php:424 inc/admin/settings/performance.php:66
+#: inc/admin/settings/shop.php:871
 #: inc/integrations/visual-composer/maps/categories.php:277
 #: inc/integrations/visual-composer/maps/products.php:178
 #: inc/integrations/visual-composer/maps/products.php:194
@@ -2480,17 +2472,17 @@ msgid "Enable"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:39
-#: inc/admin/settings/performance.php:222
+#: inc/admin/settings/performance.php:74
 msgid "Enable for old browsers"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:46
-#: inc/admin/settings/performance.php:233
+#: inc/admin/settings/performance.php:85
 msgid "Disable OWL Carousel script on mobile devices"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:47
-#: inc/admin/settings/performance.php:234
+#: inc/admin/settings/performance.php:86
 msgid ""
 "Using native browser's scrolling feature on mobile devices may improve your "
 "page loading and performance on some devices. Desktop will be handled with "
@@ -2498,11 +2490,18 @@ msgid ""
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:54
+#: inc/admin/settings/performance.php:179
+#: inc/admin/settings/performance.php:192
+#: inc/admin/settings/performance.php:208
+#: inc/admin/settings/performance.php:235
+#: inc/admin/settings/performance.php:248
+#: inc/admin/settings/performance.php:261
+#: inc/admin/settings/performance.php:274
 msgid "Lazy loading options"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:59
-#: inc/admin/settings/performance.php:257
+#: inc/admin/settings/performance.php:177
 #: inc/integrations/visual-composer/maps/blog.php:496
 #: inc/integrations/visual-composer/maps/categories.php:296
 #: inc/integrations/visual-composer/maps/images-gallery.php:325
@@ -2512,19 +2511,19 @@ msgid "Lazy loading for images"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:60
-#: inc/admin/settings/performance.php:258
+#: inc/admin/settings/performance.php:178
 msgid ""
 "Enable this option to optimize your images loading on the website. They "
 "will be loaded only when user will scroll the page."
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:66
-#: inc/admin/settings/performance.php:284
+#: inc/admin/settings/performance.php:206
 msgid "Appearance effect"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:67
-#: inc/admin/settings/performance.php:285
+#: inc/admin/settings/performance.php:207
 msgid ""
 "When enabled, your images will be replaced with their blurred small "
 "previews. And when the visitor will scroll the page to that image, it will "
@@ -2532,51 +2531,51 @@ msgid ""
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:70
-#: inc/admin/settings/performance.php:291
+#: inc/admin/settings/performance.php:214
 msgid "Fade"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:71
-#: inc/admin/settings/performance.php:295
+#: inc/admin/settings/performance.php:218
 msgid "Blur"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:78
-#: inc/admin/settings/performance.php:310
+#: inc/admin/settings/performance.php:233
 msgid "Generate previews"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:79
-#: inc/admin/settings/performance.php:311
+#: inc/admin/settings/performance.php:234
 msgid "Create placeholders previews as miniatures from the original images."
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:85
-#: inc/admin/settings/performance.php:322
+#: inc/admin/settings/performance.php:246
 msgid "Base 64 encode for placeholders"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:86
-#: inc/admin/settings/performance.php:323
+#: inc/admin/settings/performance.php:247
 msgid ""
 "This option allows you to decrease a number of HTTP requests replacing "
 "images with base 64 encoded sources."
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:92
-#: inc/admin/settings/performance.php:334
+#: inc/admin/settings/performance.php:259
 msgid "Proportional placeholders size"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:93
-#: inc/admin/settings/performance.php:335
+#: inc/admin/settings/performance.php:260
 msgid ""
 "Will generate proportional image size for the placeholder based on original "
 "image size."
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:99
-#: inc/admin/settings/performance.php:269
+#: inc/admin/settings/performance.php:190
 #: inc/integrations/visual-composer/maps/blog.php:457
 #: inc/integrations/visual-composer/maps/products.php:511
 #: inc/widgets/class-widget-recent-posts.php:203
@@ -2584,17 +2583,17 @@ msgid "Offset"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:100
-#: inc/admin/settings/performance.php:270
+#: inc/admin/settings/performance.php:191
 msgid "Start load images X pixels before the page is scrolled to the item"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:121
-#: inc/admin/settings/performance.php:346
+#: inc/admin/settings/performance.php:272
 msgid "Upload custom placeholder image"
 msgstr ""
 
 #: inc/admin/redux/settings/perfomance.php:122
-#: inc/admin/settings/performance.php:347
+#: inc/admin/settings/performance.php:273
 msgid ""
 "Add your custom image placeholder that will be used before the original "
 "image will be loaded."
@@ -2635,7 +2634,7 @@ msgid "Show text on mouse over"
 msgstr ""
 
 #: inc/admin/redux/settings/portfolio.php:28
-#: inc/admin/settings/portfolio.php:44 inc/admin/settings/shop.php:874
+#: inc/admin/settings/portfolio.php:44 inc/admin/settings/shop.php:844
 #: inc/configs/categories-designs.php:15
 #: inc/integrations/visual-composer/maps/categories.php:257
 #: inc/integrations/visual-composer/maps/image-hotspot.php:66
@@ -2785,13 +2784,13 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/image-hotspot.php:345
 #: inc/integrations/visual-composer/maps/image-hotspot.php:372
 #: inc/integrations/visual-composer/maps/info-box.php:475
-#: inc/integrations/visual-composer/maps/instagram.php:66
+#: inc/integrations/visual-composer/maps/instagram.php:40
 #: inc/integrations/visual-composer/maps/mega-menu.php:33
 #: inc/integrations/visual-composer/maps/menu-price.php:33
 #: inc/integrations/visual-composer/maps/portfolio.php:89
 #: inc/integrations/visual-composer/maps/product-filters.php:72
-#: inc/integrations/visual-composer/maps/product-filters.php:149
-#: inc/integrations/visual-composer/maps/product-filters.php:229
+#: inc/integrations/visual-composer/maps/product-filters.php:148
+#: inc/integrations/visual-composer/maps/product-filters.php:228
 #: inc/integrations/visual-composer/maps/products-tabs.php:34
 #: inc/integrations/visual-composer/maps/products-tabs.php:169
 #: inc/integrations/visual-composer/maps/products-widget.php:24
@@ -3206,28 +3205,28 @@ msgstr ""
 
 #: inc/admin/redux/settings/product-page.php:349
 #: inc/admin/redux/settings/shop.php:369 inc/admin/settings/product.php:576
-#: inc/admin/settings/shop.php:781
+#: inc/admin/settings/shop.php:751
 #: inc/integrations/visual-composer/maps/products.php:440
 msgid "Stock progress bar"
 msgstr ""
 
 #: inc/admin/redux/settings/product-page.php:350
 #: inc/admin/redux/settings/shop.php:370 inc/admin/settings/product.php:577
-#: inc/admin/settings/shop.php:782
+#: inc/admin/settings/shop.php:752
 #: inc/integrations/visual-composer/maps/products.php:441
 msgid "Display a number of sold and in stock products as a progress bar."
 msgstr ""
 
 #: inc/admin/redux/settings/product-page.php:356
 #: inc/admin/redux/settings/shop.php:376 inc/admin/settings/product.php:588
-#: inc/admin/settings/shop.php:793
+#: inc/admin/settings/shop.php:763
 #: inc/integrations/visual-composer/maps/countdown-timer.php:15
 msgid "Countdown timer"
 msgstr ""
 
 #: inc/admin/redux/settings/product-page.php:357
 #: inc/admin/redux/settings/shop.php:377 inc/admin/settings/product.php:589
-#: inc/admin/settings/shop.php:794
+#: inc/admin/settings/shop.php:764
 msgid "Show timer for products that have scheduled date for the sale price"
 msgstr ""
 
@@ -3262,9 +3261,9 @@ msgid "Standard"
 msgstr ""
 
 #: inc/admin/redux/settings/product-page.php:374
-#: inc/admin/settings/product.php:622 inc/admin/settings/shop.php:1242
+#: inc/admin/settings/product.php:622 inc/admin/settings/shop.php:1212
 #: inc/builder/elements/Account.php:112 inc/configs/base-options.php:89
-#: inc/integrations/woocommerce/template-tags.php:1293
+#: inc/integrations/woocommerce/template-tags.php:1261
 msgid "Sidebar"
 msgstr ""
 
@@ -3343,7 +3342,7 @@ msgstr ""
 #: inc/admin/settings/social.php:41
 #: inc/integrations/visual-composer/maps/social.php:49
 #: inc/integrations/woocommerce/modules/wishlist/class-ui.php:197
-#: inc/integrations/woocommerce/template-tags.php:397
+#: inc/integrations/woocommerce/template-tags.php:364
 #: woocommerce/single-product/photo-swipe-template.php:31
 msgid "Share"
 msgstr ""
@@ -3352,7 +3351,7 @@ msgstr ""
 #: inc/admin/redux/settings/social.php:23 inc/admin/settings/product.php:753
 #: inc/admin/settings/social.php:45
 #: inc/integrations/visual-composer/maps/social.php:50
-#: inc/integrations/woocommerce/template-tags.php:397
+#: inc/integrations/woocommerce/template-tags.php:364
 msgid "Follow"
 msgstr ""
 
@@ -3425,7 +3424,7 @@ msgid "You can use any text, HTML or shortcodes here."
 msgstr ""
 
 #: inc/admin/redux/settings/shop.php:6 inc/admin/settings/shop.php:13
-#: inc/modules/sticky-toolbar.php:380
+#: inc/modules/sticky-toolbar.php:383
 msgid "Shop"
 msgstr ""
 
@@ -3433,243 +3432,243 @@ msgstr ""
 msgid "Search by product SKU"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:19 inc/admin/settings/shop.php:63
+#: inc/admin/redux/settings/shop.php:19 inc/admin/settings/shop.php:33
 #: inc/theme-setup.php:155
 msgid "Shop filters"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:20 inc/admin/settings/shop.php:64
+#: inc/admin/redux/settings/shop.php:20 inc/admin/settings/shop.php:34
 msgid "Enable shop filters widget's area above the products."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:26 inc/admin/settings/shop.php:75
+#: inc/admin/redux/settings/shop.php:26 inc/admin/settings/shop.php:45
 msgid "Shop filters area always opened"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:27 inc/admin/settings/shop.php:76
+#: inc/admin/redux/settings/shop.php:27 inc/admin/settings/shop.php:46
 msgid ""
 "If you enable this option the shop filters will be always opened on the "
 "shop page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:36 inc/admin/settings/shop.php:113
+#: inc/admin/redux/settings/shop.php:36 inc/admin/settings/shop.php:83
 msgid "Shop filters content type"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:37 inc/admin/settings/shop.php:114
+#: inc/admin/redux/settings/shop.php:37 inc/admin/settings/shop.php:84
 msgid ""
 "You can use widgets or custom HTML block with our Product filters WPBakery "
 "element."
 msgstr ""
 
 #: inc/admin/redux/settings/shop.php:39 inc/admin/redux/settings/shop.php:1018
-#: inc/admin/settings/shop.php:120 inc/admin/settings/shop.php:1866
+#: inc/admin/settings/shop.php:90 inc/admin/settings/shop.php:1836
 msgid "Widgets"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:40 inc/admin/settings/shop.php:124
+#: inc/admin/redux/settings/shop.php:40 inc/admin/settings/shop.php:94
 msgid "Custom content"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:50 inc/admin/settings/shop.php:142
+#: inc/admin/redux/settings/shop.php:50 inc/admin/settings/shop.php:112
 msgid "Shop filters custom content"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:51 inc/admin/settings/shop.php:143
+#: inc/admin/redux/settings/shop.php:51 inc/admin/settings/shop.php:113
 msgid ""
 "You can create an HTML Block in Dashboard -> HTML Blocks and add Product "
 "filters WPBakery element there."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:60 inc/admin/settings/shop.php:94
+#: inc/admin/redux/settings/shop.php:60 inc/admin/settings/shop.php:64
 msgid "Stop close filters after click"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:61 inc/admin/settings/shop.php:95
+#: inc/admin/redux/settings/shop.php:61 inc/admin/settings/shop.php:65
 msgid ""
 "This option will prevent filters area from closing when you click on "
 "certain filter links."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:70 inc/admin/settings/shop.php:161
+#: inc/admin/redux/settings/shop.php:70 inc/admin/settings/shop.php:131
 msgid "AJAX shop"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:71 inc/admin/settings/shop.php:162
+#: inc/admin/redux/settings/shop.php:71 inc/admin/settings/shop.php:132
 msgid "Enable AJAX functionality for filters widgets on shop."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:77 inc/admin/settings/shop.php:173
+#: inc/admin/redux/settings/shop.php:77 inc/admin/settings/shop.php:143
 msgid "Scroll to top after AJAX"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:78 inc/admin/settings/shop.php:174
+#: inc/admin/redux/settings/shop.php:78 inc/admin/settings/shop.php:144
 msgid "Disable - Enable scroll to top after AJAX."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:84 inc/admin/settings/shop.php:185
+#: inc/admin/redux/settings/shop.php:84 inc/admin/settings/shop.php:155
 msgid "Action after add to cart"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:85 inc/admin/settings/shop.php:186
+#: inc/admin/redux/settings/shop.php:85 inc/admin/settings/shop.php:156
 msgid ""
 "Choose between showing informative popup and opening shopping cart widget. "
 "Only for shop page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:88 inc/admin/settings/shop.php:191
+#: inc/admin/redux/settings/shop.php:88 inc/admin/settings/shop.php:161
 msgid "Show popup"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:92 inc/admin/settings/shop.php:196
+#: inc/admin/redux/settings/shop.php:92 inc/admin/settings/shop.php:166
 msgid "Display widget"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:96 inc/admin/settings/shop.php:201
+#: inc/admin/redux/settings/shop.php:96 inc/admin/settings/shop.php:171
 msgid "No action"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:106 inc/admin/settings/shop.php:214
+#: inc/admin/redux/settings/shop.php:106 inc/admin/settings/shop.php:184
 msgid "Hide widget automatically"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:107 inc/admin/settings/shop.php:215
+#: inc/admin/redux/settings/shop.php:107 inc/admin/settings/shop.php:185
 msgid "After adding to cart the shopping cart widget will be hidden automatically"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:117 inc/admin/settings/shop.php:233
+#: inc/admin/redux/settings/shop.php:117 inc/admin/settings/shop.php:203
 msgid "Hide widget after"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:118 inc/admin/settings/shop.php:234
+#: inc/admin/redux/settings/shop.php:118 inc/admin/settings/shop.php:204
 msgid ""
 "Set the number of seconds for the shopping cart widget to be displayed "
 "after adding to cart"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:132 inc/admin/settings/shop.php:260
+#: inc/admin/redux/settings/shop.php:132 inc/admin/settings/shop.php:230
 msgid "\"Quick Shop\" for variable products"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:133 inc/admin/settings/shop.php:261
+#: inc/admin/redux/settings/shop.php:133 inc/admin/settings/shop.php:231
 msgid "Allow your users to purchase variable products directly from the shop page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:139 inc/admin/settings/shop.php:272
+#: inc/admin/redux/settings/shop.php:139 inc/admin/settings/shop.php:242
 msgid "Category description position"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:140 inc/admin/settings/shop.php:273
+#: inc/admin/redux/settings/shop.php:140 inc/admin/settings/shop.php:243
 msgid ""
 "You can change default products category description position and move it "
 "below the products."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:142 inc/admin/settings/shop.php:278
+#: inc/admin/redux/settings/shop.php:142 inc/admin/settings/shop.php:248
 msgid "Before product grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:143 inc/admin/settings/shop.php:282
+#: inc/admin/redux/settings/shop.php:143 inc/admin/settings/shop.php:252
 msgid "After product grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:150 inc/admin/settings/shop.php:294
+#: inc/admin/redux/settings/shop.php:150 inc/admin/settings/shop.php:264
 msgid "Empty cart text"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:151 inc/admin/settings/shop.php:295
+#: inc/admin/redux/settings/shop.php:151 inc/admin/settings/shop.php:265
 msgid "Text will be displayed if user don't add any products to cart"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:166 inc/admin/settings/shop.php:316
+#: inc/admin/redux/settings/shop.php:166 inc/admin/settings/shop.php:286
 msgid "Products per page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:167 inc/admin/settings/shop.php:317
+#: inc/admin/redux/settings/shop.php:167 inc/admin/settings/shop.php:287
 msgid "Number of products per page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:173 inc/admin/settings/shop.php:328
+#: inc/admin/redux/settings/shop.php:173 inc/admin/settings/shop.php:298
 msgid "Products per page links"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:174 inc/admin/settings/shop.php:329
+#: inc/admin/redux/settings/shop.php:174 inc/admin/settings/shop.php:299
 msgid "Allow customers to change number of products per page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:180 inc/admin/settings/shop.php:340
+#: inc/admin/redux/settings/shop.php:180 inc/admin/settings/shop.php:310
 msgid "Products per page variations"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:182 inc/admin/settings/shop.php:341
+#: inc/admin/redux/settings/shop.php:182 inc/admin/settings/shop.php:311
 msgid "For ex.: 12,24,36,-1. Use -1 to show all products on the page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:190 inc/admin/settings/shop.php:359
+#: inc/admin/redux/settings/shop.php:190 inc/admin/settings/shop.php:329
 msgid "Shop products view"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:191 inc/admin/settings/shop.php:360
+#: inc/admin/redux/settings/shop.php:191 inc/admin/settings/shop.php:330
 msgid "You can set different view mode for the shop page"
 msgstr ""
 
 #: inc/admin/redux/settings/shop.php:193 inc/admin/settings/product.php:658
-#: inc/admin/settings/shop.php:365
-#: inc/integrations/visual-composer/maps/instagram.php:161
+#: inc/admin/settings/shop.php:335
+#: inc/integrations/visual-composer/maps/instagram.php:134
 #: inc/integrations/visual-composer/maps/products.php:148
 #: inc/integrations/visual-composer/maps/testimonials.php:51
 msgid "Grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:194 inc/admin/settings/shop.php:369
+#: inc/admin/redux/settings/shop.php:194 inc/admin/settings/shop.php:339
 #: inc/integrations/visual-composer/maps/list.php:15
 #: inc/integrations/visual-composer/maps/list.php:73
 #: inc/integrations/visual-composer/maps/products.php:149
 msgid "List"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:195 inc/admin/settings/shop.php:373
+#: inc/admin/redux/settings/shop.php:195 inc/admin/settings/shop.php:343
 msgid "Grid / List"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:196 inc/admin/settings/shop.php:377
+#: inc/admin/redux/settings/shop.php:196 inc/admin/settings/shop.php:347
 msgid "List / Grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:203 inc/admin/settings/shop.php:389
+#: inc/admin/redux/settings/shop.php:203 inc/admin/settings/shop.php:359
 msgid "Products columns"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:204 inc/admin/settings/shop.php:390
+#: inc/admin/redux/settings/shop.php:204 inc/admin/settings/shop.php:360
 msgid "How many products you want to show per row"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:220 inc/admin/settings/shop.php:430
+#: inc/admin/redux/settings/shop.php:220 inc/admin/settings/shop.php:400
 msgid "Products columns on mobile"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:221 inc/admin/settings/shop.php:431
+#: inc/admin/redux/settings/shop.php:221 inc/admin/settings/shop.php:401
 msgid "How many products you want to show per row on mobile devices"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:234 inc/admin/settings/shop.php:460
+#: inc/admin/redux/settings/shop.php:234 inc/admin/settings/shop.php:430
 #: inc/integrations/visual-composer/maps/products.php:205
 msgid "Space between products"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:235 inc/admin/settings/shop.php:461
+#: inc/admin/redux/settings/shop.php:235 inc/admin/settings/shop.php:431
 msgid "You can set different spacing between blocks on shop page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:252 inc/admin/settings/shop.php:505
+#: inc/admin/redux/settings/shop.php:252 inc/admin/settings/shop.php:475
 msgid "Products pagination"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:253 inc/admin/settings/shop.php:506
+#: inc/admin/redux/settings/shop.php:253 inc/admin/settings/shop.php:476
 msgid "Choose a type for the pagination on your shop page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:255 inc/admin/settings/shop.php:511
+#: inc/admin/redux/settings/shop.php:255 inc/admin/settings/shop.php:481
 #: inc/integrations/visual-composer/maps/blog.php:111
 #: inc/integrations/visual-composer/maps/blog.php:124
 #: inc/integrations/visual-composer/maps/blog.php:128
@@ -3680,281 +3679,281 @@ msgstr ""
 msgid "Pagination"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:264 inc/admin/settings/shop.php:531
+#: inc/admin/redux/settings/shop.php:264 inc/admin/settings/shop.php:501
 msgid "Number of columns selector"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:265 inc/admin/settings/shop.php:532
+#: inc/admin/redux/settings/shop.php:265 inc/admin/settings/shop.php:502
 msgid "Allow customers to change number of columns per row"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:274 inc/admin/settings/shop.php:550
+#: inc/admin/redux/settings/shop.php:274 inc/admin/settings/shop.php:520
 msgid "Available products columns variations"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:275 inc/admin/settings/shop.php:551
+#: inc/admin/redux/settings/shop.php:275 inc/admin/settings/shop.php:521
 msgid "What columns users may select to be displayed on the product page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:293 inc/admin/settings/shop.php:594
+#: inc/admin/redux/settings/shop.php:293 inc/admin/settings/shop.php:564
 msgid "Products styles"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:301 inc/admin/settings/shop.php:603
+#: inc/admin/redux/settings/shop.php:301 inc/admin/settings/shop.php:573
 msgid "Useful if your products have different height."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:310 inc/admin/settings/shop.php:621
+#: inc/admin/redux/settings/shop.php:310 inc/admin/settings/shop.php:591
 #: inc/integrations/visual-composer/maps/products.php:189
 msgid "Products grid with different sizes"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:311 inc/admin/settings/shop.php:622
+#: inc/admin/redux/settings/shop.php:311 inc/admin/settings/shop.php:592
 #: inc/integrations/visual-composer/maps/products.php:190
 msgid ""
 "In this situation, some of the products will be twice bigger in width than "
 "others. Recommended to use with 6 columns grid only."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:320 inc/admin/settings/shop.php:640
+#: inc/admin/redux/settings/shop.php:320 inc/admin/settings/shop.php:610
 msgid "Hover on product"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:321 inc/admin/settings/shop.php:641
+#: inc/admin/redux/settings/shop.php:321 inc/admin/settings/shop.php:611
 msgid "Choose one of those hover effects for products"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:331 inc/admin/settings/shop.php:706
+#: inc/admin/redux/settings/shop.php:331 inc/admin/settings/shop.php:676
 msgid "Open product on click on mobile"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:332 inc/admin/settings/shop.php:707
+#: inc/admin/redux/settings/shop.php:332 inc/admin/settings/shop.php:677
 msgid ""
 "If you disable this option, when user click on the product on mobile "
 "devices, it will see its description text and add to cart button. The "
 "product page will be opened on second click."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:341 inc/admin/settings/shop.php:725
+#: inc/admin/redux/settings/shop.php:341 inc/admin/settings/shop.php:695
 #: inc/integrations/visual-composer/maps/products.php:462
 msgid "Bordered grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:342 inc/admin/settings/shop.php:726
+#: inc/admin/redux/settings/shop.php:342 inc/admin/settings/shop.php:696
 #: inc/integrations/visual-composer/maps/products.php:463
 msgid "Add borders between the products in your grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:348 inc/admin/settings/shop.php:737
+#: inc/admin/redux/settings/shop.php:348 inc/admin/settings/shop.php:707
 msgid "Hover image"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:349 inc/admin/settings/shop.php:738
+#: inc/admin/redux/settings/shop.php:349 inc/admin/settings/shop.php:708
 msgid "Disable - Enable hover image for products on the shop page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:355 inc/admin/settings/shop.php:749
+#: inc/admin/redux/settings/shop.php:355 inc/admin/settings/shop.php:719
 msgid "Hover content"
 msgstr ""
 
 #: inc/admin/redux/settings/shop.php:357 inc/admin/settings/blog.php:215
-#: inc/admin/settings/shop.php:754
+#: inc/admin/settings/shop.php:724
 msgid "Excerpt"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:358 inc/admin/settings/shop.php:758
+#: inc/admin/redux/settings/shop.php:358 inc/admin/settings/shop.php:728
 msgid "Additional information"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:382 inc/admin/settings/shop.php:805
+#: inc/admin/redux/settings/shop.php:382 inc/admin/settings/shop.php:775
 msgid "Show product category next to title"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:388 inc/admin/settings/shop.php:816
+#: inc/admin/redux/settings/shop.php:388 inc/admin/settings/shop.php:786
 msgid "Show product brands next to title"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:395 inc/admin/settings/shop.php:828
+#: inc/admin/redux/settings/shop.php:395 inc/admin/settings/shop.php:798
 msgid "Product title lines limit"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:397 inc/admin/settings/shop.php:833
+#: inc/admin/redux/settings/shop.php:397 inc/admin/settings/shop.php:803
 msgid "One line"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:398 inc/admin/settings/shop.php:837
+#: inc/admin/redux/settings/shop.php:398 inc/admin/settings/shop.php:807
 msgid "Two line"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:407 inc/admin/settings/shop.php:854
+#: inc/admin/redux/settings/shop.php:407 inc/admin/settings/shop.php:824
 msgid "Сategories styles"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:414 inc/admin/settings/shop.php:862
+#: inc/admin/redux/settings/shop.php:414 inc/admin/settings/shop.php:832
 #: inc/integrations/visual-composer/maps/categories.php:251
 msgid "Categories design"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:415 inc/admin/settings/shop.php:863
+#: inc/admin/redux/settings/shop.php:415 inc/admin/settings/shop.php:833
 msgid "Choose one of those designs for categories"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:421 inc/admin/settings/shop.php:896
+#: inc/admin/redux/settings/shop.php:421 inc/admin/settings/shop.php:866
 #: inc/integrations/visual-composer/maps/categories.php:272
 msgid "Categories with shadow"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:434 inc/admin/settings/shop.php:924
+#: inc/admin/redux/settings/shop.php:434 inc/admin/settings/shop.php:894
 msgid "Hide product count on category"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:443 inc/admin/settings/shop.php:936
+#: inc/admin/redux/settings/shop.php:443 inc/admin/settings/shop.php:906
 msgid "Sidebar & Page title"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:450 inc/admin/settings/shop.php:944
+#: inc/admin/redux/settings/shop.php:450 inc/admin/settings/shop.php:914
 msgid "Shop Layout"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:451 inc/admin/settings/shop.php:945
+#: inc/admin/redux/settings/shop.php:451 inc/admin/settings/shop.php:915
 msgid "Select main content and sidebar alignment for shop pages."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:475 inc/admin/settings/shop.php:974
+#: inc/admin/redux/settings/shop.php:475 inc/admin/settings/shop.php:944
 msgid "You can set different sizes for your shop pages sidebar"
 msgstr ""
 
 #: inc/admin/redux/settings/shop.php:490 inc/admin/redux/settings/shop.php:500
-#: inc/admin/redux/settings/shop.php:510 inc/admin/settings/shop.php:1007
-#: inc/admin/settings/shop.php:1026 inc/admin/settings/shop.php:1045
+#: inc/admin/redux/settings/shop.php:510 inc/admin/settings/shop.php:977
+#: inc/admin/settings/shop.php:996 inc/admin/settings/shop.php:1015
 msgid "You can can hide sidebar and show nicely on button click on the shop page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:499 inc/admin/settings/shop.php:1025
+#: inc/admin/redux/settings/shop.php:499 inc/admin/settings/shop.php:995
 msgid "Off canvas sidebar for tablet"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:509 inc/admin/settings/shop.php:1044
+#: inc/admin/redux/settings/shop.php:509 inc/admin/settings/shop.php:1014
 msgid "Off canvas sidebar for desktop"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:519 inc/admin/settings/shop.php:1063
+#: inc/admin/redux/settings/shop.php:519 inc/admin/settings/shop.php:1033
 msgid "Sticky off canvas sidebar button"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:520 inc/admin/settings/shop.php:1064
+#: inc/admin/redux/settings/shop.php:520 inc/admin/settings/shop.php:1034
 msgid ""
 "Display the filters button fixed on the screen for mobile and tablet "
 "devices."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:527 inc/admin/settings/shop.php:1077
-#: inc/admin/settings/shop.php:1090 inc/admin/settings/shop.php:1103
-#: inc/admin/settings/shop.php:1124 inc/admin/settings/shop.php:1143
+#: inc/admin/redux/settings/shop.php:527 inc/admin/settings/shop.php:1047
+#: inc/admin/settings/shop.php:1060 inc/admin/settings/shop.php:1073
+#: inc/admin/settings/shop.php:1094 inc/admin/settings/shop.php:1113
 msgid "Shop page title options"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:532 inc/admin/settings/shop.php:1075
+#: inc/admin/redux/settings/shop.php:532 inc/admin/settings/shop.php:1045
 msgid "Shop title"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:533 inc/admin/settings/shop.php:1076
+#: inc/admin/redux/settings/shop.php:533 inc/admin/settings/shop.php:1046
 msgid "Show title for shop page, product categories or tags."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:539 inc/admin/settings/shop.php:1088
+#: inc/admin/redux/settings/shop.php:539 inc/admin/settings/shop.php:1058
 msgid "Categories in page title"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:540 inc/admin/settings/shop.php:1089
+#: inc/admin/redux/settings/shop.php:540 inc/admin/settings/shop.php:1059
 msgid ""
 "This categories menu is generated automatically based on all categories in "
 "the shop. You are not able to manage this menu as other WordPress menus."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:546 inc/admin/settings/shop.php:1101
-#: inc/integrations/visual-composer/maps/product-filters.php:109
+#: inc/admin/redux/settings/shop.php:546 inc/admin/settings/shop.php:1071
+#: inc/integrations/visual-composer/maps/product-filters.php:108
 msgid "Show current category ancestors"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:547 inc/admin/settings/shop.php:1102
-#: inc/integrations/visual-composer/maps/product-filters.php:111
+#: inc/admin/redux/settings/shop.php:547 inc/admin/settings/shop.php:1072
+#: inc/integrations/visual-composer/maps/product-filters.php:110
 msgid ""
 "If you visit category Man, for example, only man's subcategories will be "
 "shown in the page title like T-shirts, Coats, Shoes etc."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:556 inc/admin/settings/shop.php:1122
+#: inc/admin/redux/settings/shop.php:556 inc/admin/settings/shop.php:1092
 msgid "Show category neighbors if there is no children"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:557 inc/admin/settings/shop.php:1123
+#: inc/admin/redux/settings/shop.php:557 inc/admin/settings/shop.php:1093
 msgid ""
 "If the category you visit doesn't contain any subcategories, the page title "
 "menu will display this category's neighbors categories."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:566 inc/admin/settings/shop.php:1142
+#: inc/admin/redux/settings/shop.php:566 inc/admin/settings/shop.php:1112
 msgid "Show products count for each category"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:576 inc/admin/settings/shop.php:1162
+#: inc/admin/redux/settings/shop.php:576 inc/admin/settings/shop.php:1132
 msgid "Attribute swatches"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:584 inc/admin/settings/shop.php:1171
+#: inc/admin/redux/settings/shop.php:584 inc/admin/settings/shop.php:1141
 msgid "Choose attribute that will be shown on products grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:590 inc/admin/settings/shop.php:1183
+#: inc/admin/redux/settings/shop.php:590 inc/admin/settings/shop.php:1153
 msgid "Use images from product variations"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:591 inc/admin/settings/shop.php:1184
+#: inc/admin/redux/settings/shop.php:591 inc/admin/settings/shop.php:1154
 msgid ""
 "If enabled swatches buttons will be filled with images choosed for product "
 "variations and not with images uploaded to attribute terms."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:598 inc/admin/settings/shop.php:1196
+#: inc/admin/redux/settings/shop.php:598 inc/admin/settings/shop.php:1166
 #: inc/integrations/visual-composer/maps/brands.php:32
 #: inc/integrations/visual-composer/maps/brands.php:85
 msgid "Brands"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:605 inc/admin/settings/shop.php:1204
+#: inc/admin/redux/settings/shop.php:605 inc/admin/settings/shop.php:1174
 msgid "Brand attribute"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:606 inc/admin/settings/shop.php:1205
+#: inc/admin/redux/settings/shop.php:606 inc/admin/settings/shop.php:1175
 msgid ""
 "If you want to show brand image on your product page select desired "
 "attribute here"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:614 inc/admin/settings/shop.php:1220
-#: inc/admin/settings/shop.php:1233 inc/admin/settings/shop.php:1256
-#: inc/admin/settings/shop.php:1269
+#: inc/admin/redux/settings/shop.php:614 inc/admin/settings/shop.php:1190
+#: inc/admin/settings/shop.php:1203 inc/admin/settings/shop.php:1226
+#: inc/admin/settings/shop.php:1239
 msgid "Brand on the single product page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:619 inc/admin/settings/shop.php:1218
+#: inc/admin/redux/settings/shop.php:619 inc/admin/settings/shop.php:1188
 msgid "Show brand on the single product page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:620 inc/admin/settings/shop.php:1219
+#: inc/admin/redux/settings/shop.php:620 inc/admin/settings/shop.php:1189
 msgid "You can disable/enable product's brand image on the single page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:626 inc/admin/settings/shop.php:1231
+#: inc/admin/redux/settings/shop.php:626 inc/admin/settings/shop.php:1201
 msgid "Brand position on the product page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:627 inc/admin/settings/shop.php:1232
+#: inc/admin/redux/settings/shop.php:627 inc/admin/settings/shop.php:1202
 msgid "Select a position of the brand image on the single product page."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:629 inc/admin/settings/shop.php:1238
+#: inc/admin/redux/settings/shop.php:629 inc/admin/settings/shop.php:1208
 msgid "Above product title"
 msgstr ""
 
@@ -3962,154 +3961,154 @@ msgstr ""
 msgid " Sidebar"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:640 inc/admin/settings/shop.php:1254
+#: inc/admin/redux/settings/shop.php:640 inc/admin/settings/shop.php:1224
 msgid "Show tab with brand information"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:641 inc/admin/settings/shop.php:1255
+#: inc/admin/redux/settings/shop.php:641 inc/admin/settings/shop.php:1225
 msgid ""
 "If enabled you will see additional tab with brand description on the single "
 "product page. Text will be taken from \"Description\" field for each brand "
 "(attribute term)."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:647 inc/admin/settings/shop.php:1267
+#: inc/admin/redux/settings/shop.php:647 inc/admin/settings/shop.php:1237
 msgid "Use brand name for tab title"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:648 inc/admin/settings/shop.php:1268
+#: inc/admin/redux/settings/shop.php:648 inc/admin/settings/shop.php:1238
 msgid ""
 "If you enable this option, the tab with brand's information will be called "
 "like \"About Nike\"."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:662 inc/admin/settings/shop.php:1281
-#: inc/admin/settings/shop.php:1289
-#: inc/integrations/woocommerce/modules/quick-view.php:93
+#: inc/admin/redux/settings/shop.php:662 inc/admin/settings/shop.php:1251
+#: inc/admin/settings/shop.php:1259
+#: inc/integrations/woocommerce/modules/quick-view.php:90
 msgid "Quick View"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:663 inc/admin/settings/shop.php:1290
+#: inc/admin/redux/settings/shop.php:663 inc/admin/settings/shop.php:1260
 msgid "Enable Quick view option. Ability to see the product information with AJAX."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:669 inc/admin/settings/shop.php:1301
+#: inc/admin/redux/settings/shop.php:669 inc/admin/settings/shop.php:1271
 msgid "Show variations on quick view"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:670 inc/admin/settings/shop.php:1302
+#: inc/admin/redux/settings/shop.php:670 inc/admin/settings/shop.php:1272
 msgid ""
 "Enable Quick view option for variable products. Will allow your users to "
 "purchase variable products directly from the quick view."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:679 inc/admin/settings/shop.php:1320
+#: inc/admin/redux/settings/shop.php:679 inc/admin/settings/shop.php:1290
 msgid "Quick view layout"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:680 inc/admin/settings/shop.php:1321
+#: inc/admin/redux/settings/shop.php:680 inc/admin/settings/shop.php:1291
 msgid "Choose between horizontal and vertical layouts for the quick view window."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:683 inc/admin/settings/shop.php:1327
+#: inc/admin/redux/settings/shop.php:683 inc/admin/settings/shop.php:1297
 msgid "Horizontal"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:687 inc/admin/settings/shop.php:1332
+#: inc/admin/redux/settings/shop.php:687 inc/admin/settings/shop.php:1302
 msgid "Vertical"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:699 inc/admin/settings/shop.php:1351
+#: inc/admin/redux/settings/shop.php:699 inc/admin/settings/shop.php:1321
 msgid "Quick view width"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:700 inc/admin/settings/shop.php:1352
+#: inc/admin/redux/settings/shop.php:700 inc/admin/settings/shop.php:1322
 msgid "Set width of the quick view in pixels."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:722 inc/admin/settings/shop.php:1382
+#: inc/admin/redux/settings/shop.php:722 inc/admin/settings/shop.php:1352
 msgid "Enable compare"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:723 inc/admin/settings/shop.php:1383
+#: inc/admin/redux/settings/shop.php:723 inc/admin/settings/shop.php:1353
 msgid ""
 "Enable compare functionality built in with the theme. Read more information "
 "in our documentation."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:732 inc/admin/settings/shop.php:1394
+#: inc/admin/redux/settings/shop.php:732 inc/admin/settings/shop.php:1364
 msgid "Compare page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:733 inc/admin/settings/shop.php:1395
+#: inc/admin/redux/settings/shop.php:733 inc/admin/settings/shop.php:1365
 msgid ""
 "Select a page for compare table. It should contain the shortcode shortcode: "
 "[woodmart_compare]"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:738 inc/admin/settings/shop.php:1408
+#: inc/admin/redux/settings/shop.php:738 inc/admin/settings/shop.php:1378
 msgid "Show button on product grid"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:739 inc/admin/settings/shop.php:1409
+#: inc/admin/redux/settings/shop.php:739 inc/admin/settings/shop.php:1379
 msgid "Display compare product button on all products grids and lists."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:745 inc/admin/settings/shop.php:1420
+#: inc/admin/redux/settings/shop.php:745 inc/admin/settings/shop.php:1390
 msgid "Select fields for compare table"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:746 inc/admin/settings/shop.php:1421
+#: inc/admin/redux/settings/shop.php:746 inc/admin/settings/shop.php:1391
 msgid ""
 "Choose which fields should be presented on the product compare page with "
 "table."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:752 inc/admin/settings/shop.php:1439
+#: inc/admin/redux/settings/shop.php:752 inc/admin/settings/shop.php:1409
 msgid "Empty compare text"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:753 inc/admin/settings/shop.php:1440
+#: inc/admin/redux/settings/shop.php:753 inc/admin/settings/shop.php:1410
 msgid "Text will be displayed if user don't add any products to compare"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:761 inc/admin/settings/shop.php:1453
+#: inc/admin/redux/settings/shop.php:761 inc/admin/settings/shop.php:1423
 msgid "Catalog mode"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:768 inc/admin/settings/shop.php:1461
+#: inc/admin/redux/settings/shop.php:768 inc/admin/settings/shop.php:1431
 msgid "Enable catalog mode"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:769 inc/admin/settings/shop.php:1462
+#: inc/admin/redux/settings/shop.php:769 inc/admin/settings/shop.php:1432
 msgid ""
 "You can hide all \"Add to cart\" buttons, cart widget, cart and checkout "
 "pages. This will allow you to showcase your products as an online catalog "
 "without ability to make a purchase."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:776 inc/admin/settings/shop.php:1474
-#: inc/integrations/woocommerce/template-tags.php:1330
+#: inc/admin/redux/settings/shop.php:776 inc/admin/settings/shop.php:1444
+#: inc/integrations/woocommerce/template-tags.php:1298
 msgid "Login to see prices"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:783 inc/admin/settings/shop.php:1482
+#: inc/admin/redux/settings/shop.php:783 inc/admin/settings/shop.php:1452
 msgid "Login to see add to cart and prices"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:784 inc/admin/settings/shop.php:1483
+#: inc/admin/redux/settings/shop.php:784 inc/admin/settings/shop.php:1453
 msgid "You can restrict shopping functions only for logged in customers."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:791 inc/admin/settings/shop.php:1495
+#: inc/admin/redux/settings/shop.php:791 inc/admin/settings/shop.php:1465
 msgid "Cookie Law Info"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:798 inc/admin/settings/shop.php:1503
+#: inc/admin/redux/settings/shop.php:798 inc/admin/settings/shop.php:1473
 msgid "Show cookies info"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:799 inc/admin/settings/shop.php:1504
+#: inc/admin/redux/settings/shop.php:799 inc/admin/settings/shop.php:1474
 msgid ""
 "Under EU privacy regulations, websites must make it clear to visitors what "
 "information about them is being stored. This specifically includes cookies. "
@@ -4117,242 +4116,242 @@ msgid ""
 "that your web-site is using cookies."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:805 inc/admin/settings/shop.php:1515
+#: inc/admin/redux/settings/shop.php:805 inc/admin/settings/shop.php:1485
 msgid "Popup text"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:806 inc/admin/settings/shop.php:1516
+#: inc/admin/redux/settings/shop.php:806 inc/admin/settings/shop.php:1486
 msgid ""
 "Place here some information about cookies usage that will be shown in the "
 "popup."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:807 inc/admin/settings/shop.php:1520
+#: inc/admin/redux/settings/shop.php:807 inc/admin/settings/shop.php:1490
 msgid ""
 "We use cookies to improve your experience on our website. By browsing this "
 "website, you agree to our use of cookies."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:812 inc/admin/settings/shop.php:1528
+#: inc/admin/redux/settings/shop.php:812 inc/admin/settings/shop.php:1498
 msgid "Page with details"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:813 inc/admin/settings/shop.php:1529
+#: inc/admin/redux/settings/shop.php:813 inc/admin/settings/shop.php:1499
 msgid "Choose page that will contain detailed information about your Privacy Policy"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:819 inc/admin/settings/shop.php:1541
+#: inc/admin/redux/settings/shop.php:819 inc/admin/settings/shop.php:1511
 msgid "Cookies version"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:820 inc/admin/settings/shop.php:1542
+#: inc/admin/redux/settings/shop.php:820 inc/admin/settings/shop.php:1512
 msgid ""
 "If you change your cookie policy information you can increase their version "
 "to show the popup to all visitors again."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:827 inc/admin/settings/shop.php:1555
+#: inc/admin/redux/settings/shop.php:827 inc/admin/settings/shop.php:1525
 msgid "Promo popup"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:834 inc/admin/settings/shop.php:1563
+#: inc/admin/redux/settings/shop.php:834 inc/admin/settings/shop.php:1533
 msgid "Enable promo popup"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:835 inc/admin/settings/shop.php:1564
+#: inc/admin/redux/settings/shop.php:835 inc/admin/settings/shop.php:1534
 msgid "Show promo popup to users when they enter the site."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:841 inc/admin/settings/shop.php:1575
+#: inc/admin/redux/settings/shop.php:841 inc/admin/settings/shop.php:1545
 msgid "Promo popup text"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:842 inc/admin/settings/shop.php:1576
+#: inc/admin/redux/settings/shop.php:842 inc/admin/settings/shop.php:1546
 msgid "Place here some promo text or use HTML block and place here it's shortcode"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:848 inc/admin/settings/shop.php:1587
+#: inc/admin/redux/settings/shop.php:848 inc/admin/settings/shop.php:1557
 msgid "Show popup after"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:850 inc/admin/settings/shop.php:1593
+#: inc/admin/redux/settings/shop.php:850 inc/admin/settings/shop.php:1563
 msgid "some time"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:851 inc/admin/settings/shop.php:1597
+#: inc/admin/redux/settings/shop.php:851 inc/admin/settings/shop.php:1567
 msgid "user scroll"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:858 inc/admin/settings/shop.php:1609
+#: inc/admin/redux/settings/shop.php:858 inc/admin/settings/shop.php:1579
 msgid "Popup delay"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:859 inc/admin/settings/shop.php:1610
+#: inc/admin/redux/settings/shop.php:859 inc/admin/settings/shop.php:1580
 msgid "Show popup after some time (in milliseconds)"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:868 inc/admin/settings/shop.php:1651
+#: inc/admin/redux/settings/shop.php:868 inc/admin/settings/shop.php:1621
 msgid "Popup version"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:869 inc/admin/settings/shop.php:1652
+#: inc/admin/redux/settings/shop.php:869 inc/admin/settings/shop.php:1622
 msgid ""
 "If you change your promo popup you can increase its version to show the "
 "popup to all visitors again."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:875 inc/admin/settings/shop.php:1629
+#: inc/admin/redux/settings/shop.php:875 inc/admin/settings/shop.php:1599
 msgid "Show after user scroll down the page"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:876 inc/admin/settings/shop.php:1630
+#: inc/admin/redux/settings/shop.php:876 inc/admin/settings/shop.php:1600
 msgid "Set the number of pixels users have to scroll down before popup opens"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:889 inc/admin/settings/shop.php:1663
+#: inc/admin/redux/settings/shop.php:889 inc/admin/settings/shop.php:1633
 msgid "Show after number of pages visited"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:890 inc/admin/settings/shop.php:1664
+#: inc/admin/redux/settings/shop.php:890 inc/admin/settings/shop.php:1634
 msgid "You can choose how much pages user should change before popup will be shown."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:900 inc/admin/settings/shop.php:1679
+#: inc/admin/redux/settings/shop.php:900 inc/admin/settings/shop.php:1649
 msgid "Popup background"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:901 inc/admin/settings/shop.php:1680
+#: inc/admin/redux/settings/shop.php:901 inc/admin/settings/shop.php:1650
 msgid "Set background image or color for promo popup"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:913 inc/admin/settings/shop.php:1697
+#: inc/admin/redux/settings/shop.php:913 inc/admin/settings/shop.php:1667
 msgid "Popup width"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:914 inc/admin/settings/shop.php:1698
+#: inc/admin/redux/settings/shop.php:914 inc/admin/settings/shop.php:1668
 msgid "Set width of the promo popup in pixels."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:924 inc/admin/settings/shop.php:1712
+#: inc/admin/redux/settings/shop.php:924 inc/admin/settings/shop.php:1682
 msgid "Hide for mobile devices"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:925 inc/admin/settings/shop.php:1713
+#: inc/admin/redux/settings/shop.php:925 inc/admin/settings/shop.php:1683
 msgid "You can disable this option for mobile devices completely."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:939 inc/admin/settings/shop.php:1725
-#: inc/admin/settings/shop.php:1733
+#: inc/admin/redux/settings/shop.php:939 inc/admin/settings/shop.php:1695
+#: inc/admin/settings/shop.php:1703
 msgid "Header banner"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:940 inc/admin/settings/shop.php:1734
+#: inc/admin/redux/settings/shop.php:940 inc/admin/settings/shop.php:1704
 msgid "Header banner above the header"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:946 inc/admin/settings/shop.php:1745
+#: inc/admin/redux/settings/shop.php:946 inc/admin/settings/shop.php:1715
 #: inc/integrations/visual-composer/maps/promo-banner.php:188
 msgid "Banner link"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:947 inc/admin/settings/shop.php:1746
+#: inc/admin/redux/settings/shop.php:947 inc/admin/settings/shop.php:1716
 msgid "The link will be added to the whole banner area."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:953 inc/admin/settings/shop.php:1757
+#: inc/admin/redux/settings/shop.php:953 inc/admin/settings/shop.php:1727
 #: inc/integrations/visual-composer/maps/promo-banner.php:554
 msgid "Banner content"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:954 inc/admin/settings/shop.php:1758
+#: inc/admin/redux/settings/shop.php:954 inc/admin/settings/shop.php:1728
 msgid ""
 "Place here shortcodes you want to see in the banner above the header. You "
 "can use shortcodes. Ex.: [social_buttons] or place an HTML Block built with "
 "WPBakery Page Builder builder there like [html_block id=\"258\"]"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:960 inc/admin/settings/shop.php:1770
+#: inc/admin/redux/settings/shop.php:960 inc/admin/settings/shop.php:1740
 msgid "Banner height for desktop"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:961 inc/admin/settings/shop.php:1771
+#: inc/admin/redux/settings/shop.php:961 inc/admin/settings/shop.php:1741
 msgid "The height for the banner area in pixels on desktop devices."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:971 inc/admin/settings/shop.php:1785
+#: inc/admin/redux/settings/shop.php:971 inc/admin/settings/shop.php:1755
 msgid "Banner height for mobile"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:972 inc/admin/settings/shop.php:1786
+#: inc/admin/redux/settings/shop.php:972 inc/admin/settings/shop.php:1756
 msgid "The height for the banner area in pixels on mobile devices."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:982 inc/admin/settings/shop.php:1800
+#: inc/admin/redux/settings/shop.php:982 inc/admin/settings/shop.php:1770
 msgid "Banner text color"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:983 inc/admin/settings/shop.php:1801
+#: inc/admin/redux/settings/shop.php:983 inc/admin/settings/shop.php:1771
 msgid ""
 "Set light or dark text color scheme depending on the banner's background "
 "color."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:993 inc/admin/settings/shop.php:1822
+#: inc/admin/redux/settings/shop.php:993 inc/admin/settings/shop.php:1792
 msgid "Banner background"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1000 inc/admin/settings/shop.php:1833
+#: inc/admin/redux/settings/shop.php:1000 inc/admin/settings/shop.php:1803
 msgid "Close button"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1001 inc/admin/settings/shop.php:1834
+#: inc/admin/redux/settings/shop.php:1001 inc/admin/settings/shop.php:1804
 msgid "Show close banner button"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1007 inc/admin/settings/shop.php:1846
+#: inc/admin/redux/settings/shop.php:1007 inc/admin/settings/shop.php:1816
 msgid "Banner version"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1008 inc/admin/settings/shop.php:1847
+#: inc/admin/redux/settings/shop.php:1008 inc/admin/settings/shop.php:1817
 msgid ""
 "If you change your banner you can increase their version to show the banner "
 "to all visitors again."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1025 inc/admin/settings/shop.php:1874
+#: inc/admin/redux/settings/shop.php:1025 inc/admin/settings/shop.php:1844
 msgid "Toggle function for categories widget"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1026 inc/admin/settings/shop.php:1875
+#: inc/admin/redux/settings/shop.php:1026 inc/admin/settings/shop.php:1845
 msgid ""
 "Turn it on to enable accordion JS for the WooCommerce Product Categories "
 "widget. Useful if you have a lot of categories and subcategories."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1032 inc/admin/settings/shop.php:1886
+#: inc/admin/redux/settings/shop.php:1032 inc/admin/settings/shop.php:1856
 msgid "Scroll for filters widgets"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1033 inc/admin/settings/shop.php:1887
+#: inc/admin/redux/settings/shop.php:1033 inc/admin/settings/shop.php:1857
 msgid ""
 "You can limit your Layered Navigation widgets by height and enable nice "
 "scroll for them. Useful if you have a lot of product colors/sizes or other "
 "attributes for filters."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1039 inc/admin/settings/shop.php:1898
+#: inc/admin/redux/settings/shop.php:1039 inc/admin/settings/shop.php:1868
 msgid "Height for filters widgets"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1040 inc/admin/settings/shop.php:1899
+#: inc/admin/redux/settings/shop.php:1040 inc/admin/settings/shop.php:1869
 msgid "Set widgets height in pixels."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1054 inc/admin/settings/shop.php:1921
+#: inc/admin/redux/settings/shop.php:1054 inc/admin/settings/shop.php:1891
 msgid "Product labels"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1061 inc/admin/settings/shop.php:1929
+#: inc/admin/redux/settings/shop.php:1061 inc/admin/settings/shop.php:1899
 msgid "Label shape"
 msgstr ""
 
@@ -4361,38 +4360,38 @@ msgstr ""
 #: inc/admin/redux/settings/styles-colors.php:192
 #: inc/admin/redux/settings/styles-colors.php:217
 #: inc/admin/settings/colors.php:231 inc/admin/settings/colors.php:265
-#: inc/admin/settings/colors.php:299 inc/admin/settings/shop.php:1935
+#: inc/admin/settings/colors.php:299 inc/admin/settings/shop.php:1905
 #: inc/integrations/visual-composer/maps/list.php:110
 msgid "Rounded"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1068 inc/admin/settings/shop.php:1940
+#: inc/admin/redux/settings/shop.php:1068 inc/admin/settings/shop.php:1910
 msgid "Rectangular"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1077 inc/admin/settings/shop.php:1952
+#: inc/admin/redux/settings/shop.php:1077 inc/admin/settings/shop.php:1922
 msgid "Shop sale label in percentage"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1078 inc/admin/settings/shop.php:1953
+#: inc/admin/redux/settings/shop.php:1078 inc/admin/settings/shop.php:1923
 msgid "Works with Simple, Variable and External products only."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1084 inc/admin/settings/shop.php:1964
+#: inc/admin/redux/settings/shop.php:1084 inc/admin/settings/shop.php:1934
 msgid "\"New\" label on products"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1085 inc/admin/settings/shop.php:1965
+#: inc/admin/redux/settings/shop.php:1085 inc/admin/settings/shop.php:1935
 msgid ""
 "This label is displayed for products if you enabled this option for "
 "particular items."
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1091 inc/admin/settings/shop.php:1976
+#: inc/admin/redux/settings/shop.php:1091 inc/admin/settings/shop.php:1946
 msgid "\"Hot\" label on products"
 msgstr ""
 
-#: inc/admin/redux/settings/shop.php:1092 inc/admin/settings/shop.php:1977
+#: inc/admin/redux/settings/shop.php:1092 inc/admin/settings/shop.php:1947
 msgid "Your products marked as \"Featured\" will have a badge with \"Hot\" label."
 msgstr ""
 
@@ -5144,14 +5143,6 @@ msgstr ""
 msgid "Favicon retina image"
 msgstr ""
 
-#: inc/admin/settings/general.php:97
-msgid "Instagram generate token"
-msgstr ""
-
-#: inc/admin/settings/general.php:98
-msgid "Instagram API"
-msgstr ""
-
 #: inc/admin/settings/import.php:14
 msgid "Import / Export"
 msgstr ""
@@ -5167,73 +5158,38 @@ msgid ""
 "configure it in Dashboard -> SEO -> Search Appearance -> Breadcrumbs."
 msgstr ""
 
-#: inc/admin/settings/performance.php:63
-msgid "CSS"
-msgstr ""
-
-#: inc/admin/settings/performance.php:72
+#: inc/admin/settings/performance.php:97
 msgid "\"font-display\" for Google Fonts"
 msgstr ""
 
-#: inc/admin/settings/performance.php:83 inc/admin/settings/performance.php:117
+#: inc/admin/settings/performance.php:108
+#: inc/admin/settings/performance.php:142
 msgid "Block"
 msgstr ""
 
-#: inc/admin/settings/performance.php:87 inc/admin/settings/performance.php:121
+#: inc/admin/settings/performance.php:112
+#: inc/admin/settings/performance.php:146
 msgid "Swap"
 msgstr ""
 
-#: inc/admin/settings/performance.php:91 inc/admin/settings/performance.php:125
+#: inc/admin/settings/performance.php:116
+#: inc/admin/settings/performance.php:150
 msgid "Fallback"
 msgstr ""
 
-#: inc/admin/settings/performance.php:106
+#: inc/admin/settings/performance.php:131
 msgid "\"font-display\" for icon fonts (not recommended)"
 msgstr ""
 
-#: inc/admin/settings/performance.php:140
+#: inc/admin/settings/performance.php:165
 msgid "Disable Font Awesome font"
 msgstr ""
 
-#: inc/admin/settings/performance.php:141
+#: inc/admin/settings/performance.php:166
 msgid ""
 "This option will remove font awesome CSS files that are loaded in our "
 "theme. It is useful when you have other plugins that loads font awesome "
 "library too."
-msgstr ""
-
-#: inc/admin/settings/performance.php:152
-msgid "Light Font Awesome version"
-msgstr ""
-
-#: inc/admin/settings/performance.php:153
-msgid "Removes all unnecessary icons that are not used by our theme elements."
-msgstr ""
-
-#: inc/admin/settings/performance.php:171
-msgid "Light bootstrap version"
-msgstr ""
-
-#: inc/admin/settings/performance.php:172
-msgid "Clean bootstrap CSS from code that are not used by the theme."
-msgstr ""
-
-#: inc/admin/settings/performance.php:183
-msgid "Disable Gutenberg styles"
-msgstr ""
-
-#: inc/admin/settings/performance.php:184
-msgid ""
-"If you are not using Gutenberg elements you will not need these files to be "
-"loaded."
-msgstr ""
-
-#: inc/admin/settings/performance.php:198
-msgid "JS"
-msgstr ""
-
-#: inc/admin/settings/performance.php:248
-msgid "Lazy loading"
 msgstr ""
 
 #: inc/admin/settings/product.php:12
@@ -5253,7 +5209,7 @@ msgstr ""
 #: inc/admin/settings/product.php:662 inc/configs/base-options.php:56
 #: inc/configs/base-options.php:68
 #: inc/integrations/visual-composer/maps/info-box.php:32
-#: inc/integrations/visual-composer/maps/instagram.php:162
+#: inc/integrations/visual-composer/maps/instagram.php:135
 #: inc/integrations/visual-composer/maps/promo-banner.php:37
 #: inc/integrations/visual-composer/maps/slider.php:15
 #: inc/integrations/visual-composer/maps/slider.php:23
@@ -5262,69 +5218,61 @@ msgstr ""
 msgid "Slider"
 msgstr ""
 
-#: inc/admin/settings/shop.php:33
-msgid "Show SKU on AJAX results"
-msgstr ""
-
-#: inc/admin/settings/shop.php:51
-msgid "Use Relevanssi for AJAX search"
-msgstr ""
-
-#: inc/admin/settings/shop.php:308
+#: inc/admin/settings/shop.php:278
 msgid "Products grid"
 msgstr ""
 
-#: inc/admin/settings/shop.php:647 inc/configs/product-hovers.php:11
+#: inc/admin/settings/shop.php:617 inc/configs/product-hovers.php:11
 #: inc/integrations/visual-composer/maps/products.php:390
 msgid "Full info on hover"
 msgstr ""
 
-#: inc/admin/settings/shop.php:652 inc/configs/product-hovers.php:15
+#: inc/admin/settings/shop.php:622 inc/configs/product-hovers.php:15
 #: inc/integrations/visual-composer/maps/products.php:391
 msgid "Full info on image"
 msgstr ""
 
-#: inc/admin/settings/shop.php:657 inc/configs/product-hovers.php:19
+#: inc/admin/settings/shop.php:627 inc/configs/product-hovers.php:19
 #: inc/integrations/visual-composer/maps/products.php:392
 msgid "Icons and \"add to cart\" on hover"
 msgstr ""
 
-#: inc/admin/settings/shop.php:662 inc/configs/product-hovers.php:23
+#: inc/admin/settings/shop.php:632 inc/configs/product-hovers.php:23
 #: inc/integrations/visual-composer/maps/products.php:393
 msgid "Icons on hover"
 msgstr ""
 
-#: inc/admin/settings/shop.php:667 inc/configs/product-hovers.php:27
+#: inc/admin/settings/shop.php:637 inc/configs/product-hovers.php:27
 #: inc/integrations/visual-composer/maps/products.php:394
 msgid "Quick"
 msgstr ""
 
-#: inc/admin/settings/shop.php:672 inc/configs/product-hovers.php:31
+#: inc/admin/settings/shop.php:642 inc/configs/product-hovers.php:31
 #: inc/integrations/visual-composer/maps/products.php:395
 msgid "Show button on hover on image"
 msgstr ""
 
-#: inc/admin/settings/shop.php:677 inc/configs/product-hovers.php:35
+#: inc/admin/settings/shop.php:647 inc/configs/product-hovers.php:35
 #: inc/integrations/visual-composer/maps/products.php:396
 msgid "Show summary on hover"
 msgstr ""
 
-#: inc/admin/settings/shop.php:682 inc/configs/product-hovers.php:39
+#: inc/admin/settings/shop.php:652 inc/configs/product-hovers.php:39
 #: inc/integrations/visual-composer/maps/products.php:397
 msgid "Standard button"
 msgstr ""
 
-#: inc/admin/settings/shop.php:687 inc/configs/product-hovers.php:43
+#: inc/admin/settings/shop.php:657 inc/configs/product-hovers.php:43
 #: inc/integrations/visual-composer/maps/products.php:398
 msgid "Tiled"
 msgstr ""
 
-#: inc/admin/settings/shop.php:879 inc/configs/categories-designs.php:19
+#: inc/admin/settings/shop.php:849 inc/configs/categories-designs.php:19
 #: inc/integrations/visual-composer/maps/categories.php:258
 msgid "Center title"
 msgstr ""
 
-#: inc/admin/settings/shop.php:884 inc/configs/categories-designs.php:23
+#: inc/admin/settings/shop.php:854 inc/configs/categories-designs.php:23
 #: inc/integrations/visual-composer/maps/categories.php:259
 msgid "Replace title"
 msgstr ""
@@ -5378,8 +5326,7 @@ msgstr ""
 msgid "Header settings"
 msgstr ""
 
-#: inc/builder/Backend.php:68 inc/classes/Cssgenerator.php:240
-#: inc/classes/Wpbcssgenerator.php:199
+#: inc/builder/Backend.php:68 inc/classes/Cssgenerator.php:237
 #: inc/integrations/woocommerce/modules/product-360-view.php:43
 #: inc/integrations/woocommerce/modules/product-360-view.php:63
 msgid "Delete"
@@ -5752,7 +5699,7 @@ msgstr ""
 
 #: inc/builder/elements/Cart.php:20 inc/builder/elements/Cart.php:95
 #: inc/modules/sticky-toolbar.php:26 inc/modules/sticky-toolbar.php:78
-#: inc/modules/sticky-toolbar.php:257
+#: inc/modules/sticky-toolbar.php:261
 msgid "Cart"
 msgstr ""
 
@@ -5792,7 +5739,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/categories.php:85
 #: inc/integrations/visual-composer/maps/portfolio.php:76
 #: inc/integrations/visual-composer/maps/products-widget.php:119
-#: inc/integrations/woocommerce/template-tags.php:691
+#: inc/integrations/woocommerce/template-tags.php:658
 #: inc/shortcodes/categories.php:13 inc/shortcodes/product-filters.php:60
 #: inc/template-tags.php:1453
 msgid "Categories"
@@ -5933,7 +5880,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/images-gallery.php:352
 #: inc/integrations/visual-composer/maps/info-box.php:122
 #: inc/integrations/visual-composer/maps/info-box.php:953
-#: inc/integrations/visual-composer/maps/instagram.php:267
+#: inc/integrations/visual-composer/maps/instagram.php:240
 #: inc/integrations/visual-composer/maps/list.php:67
 #: inc/integrations/visual-composer/maps/mega-menu.php:66
 #: inc/integrations/visual-composer/maps/menu-price.php:77
@@ -5942,9 +5889,9 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/pricing-tables.php:28
 #: inc/integrations/visual-composer/maps/pricing-tables.php:252
 #: inc/integrations/visual-composer/maps/product-filters.php:49
-#: inc/integrations/visual-composer/maps/product-filters.php:127
-#: inc/integrations/visual-composer/maps/product-filters.php:213
-#: inc/integrations/visual-composer/maps/product-filters.php:236
+#: inc/integrations/visual-composer/maps/product-filters.php:126
+#: inc/integrations/visual-composer/maps/product-filters.php:212
+#: inc/integrations/visual-composer/maps/product-filters.php:235
 #: inc/integrations/visual-composer/maps/products-tabs.php:142
 #: inc/integrations/visual-composer/maps/products-widget.php:172
 #: inc/integrations/visual-composer/maps/products.php:618
@@ -6289,15 +6236,15 @@ msgstr ""
 msgid "You can show the icon only or display \"Wishlist\" text too."
 msgstr ""
 
-#: inc/classes/Cssgenerator.php:132
+#: inc/classes/Cssgenerator.php:129
 msgid "Custom CSS file generator"
 msgstr ""
 
-#: inc/classes/Cssgenerator.php:194 inc/classes/Wpbcssgenerator.php:153
+#: inc/classes/Cssgenerator.php:191
 msgid "Generate file"
 msgstr ""
 
-#: inc/classes/Cssgenerator.php:237 inc/classes/Wpbcssgenerator.php:196
+#: inc/classes/Cssgenerator.php:234
 #: inc/integrations/tgm-plugin-activation.php:2808
 msgid "Update"
 msgstr ""
@@ -6359,10 +6306,6 @@ msgstr ""
 
 #: inc/classes/Vctemplates.php:178
 msgid "Add template"
-msgstr ""
-
-#: inc/classes/Wpbcssgenerator.php:121
-msgid "WPBakery Custom CSS file generator"
 msgstr ""
 
 #: inc/configs/base-options.php:41
@@ -7097,7 +7040,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/images-gallery.php:350
 #: inc/integrations/visual-composer/maps/info-box.php:120
 #: inc/integrations/visual-composer/maps/info-box.php:951
-#: inc/integrations/visual-composer/maps/instagram.php:264
+#: inc/integrations/visual-composer/maps/instagram.php:237
 #: inc/integrations/visual-composer/maps/list.php:65
 #: inc/integrations/visual-composer/maps/mega-menu.php:64
 #: inc/integrations/visual-composer/maps/menu-price.php:75
@@ -7106,9 +7049,9 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/pricing-tables.php:26
 #: inc/integrations/visual-composer/maps/pricing-tables.php:250
 #: inc/integrations/visual-composer/maps/product-filters.php:47
-#: inc/integrations/visual-composer/maps/product-filters.php:125
-#: inc/integrations/visual-composer/maps/product-filters.php:211
-#: inc/integrations/visual-composer/maps/product-filters.php:234
+#: inc/integrations/visual-composer/maps/product-filters.php:124
+#: inc/integrations/visual-composer/maps/product-filters.php:210
+#: inc/integrations/visual-composer/maps/product-filters.php:233
 #: inc/integrations/visual-composer/maps/products-tabs.php:140
 #: inc/integrations/visual-composer/maps/products-widget.php:170
 #: inc/integrations/visual-composer/maps/products.php:616
@@ -7199,8 +7142,8 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/pricing-tables.php:39
 #: inc/integrations/visual-composer/maps/product-filters.php:31
 #: inc/integrations/visual-composer/maps/product-filters.php:61
-#: inc/integrations/visual-composer/maps/product-filters.php:138
-#: inc/integrations/visual-composer/maps/product-filters.php:224
+#: inc/integrations/visual-composer/maps/product-filters.php:137
+#: inc/integrations/visual-composer/maps/product-filters.php:223
 #: inc/integrations/visual-composer/maps/products-tabs.php:20
 #: inc/integrations/visual-composer/maps/products-tabs.php:162
 #: inc/integrations/visual-composer/maps/products-widget.php:17
@@ -7412,7 +7355,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/info-box.php:775
 #: inc/integrations/visual-composer/maps/info-box.php:787
 #: inc/integrations/visual-composer/maps/info-box.php:792
-#: inc/integrations/visual-composer/maps/instagram.php:61
+#: inc/integrations/visual-composer/maps/instagram.php:35
 #: inc/integrations/visual-composer/maps/list.php:77
 #: inc/integrations/visual-composer/maps/menu-price.php:28
 #: inc/integrations/visual-composer/maps/pricing-tables.php:49
@@ -7457,7 +7400,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/extra-menu.php:139
 #: inc/integrations/visual-composer/maps/image-hotspot.php:253
 #: inc/integrations/visual-composer/maps/info-box.php:937
-#: inc/integrations/visual-composer/maps/instagram.php:127
+#: inc/integrations/visual-composer/maps/instagram.php:100
 #: inc/integrations/visual-composer/maps/menu-price.php:51
 msgid "Link"
 msgstr ""
@@ -7468,7 +7411,7 @@ msgstr ""
 
 #: inc/integrations/visual-composer/maps/author-area.php:138
 #: inc/integrations/visual-composer/maps/image-hotspot.php:243
-#: inc/integrations/visual-composer/maps/instagram.php:142
+#: inc/integrations/visual-composer/maps/instagram.php:115
 msgid "Link text"
 msgstr ""
 
@@ -7487,14 +7430,14 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/images-gallery.php:320
 #: inc/integrations/visual-composer/maps/info-box.php:101
 #: inc/integrations/visual-composer/maps/info-box.php:913
-#: inc/integrations/visual-composer/maps/instagram.php:259
+#: inc/integrations/visual-composer/maps/instagram.php:232
 #: inc/integrations/visual-composer/maps/mega-menu.php:59
 #: inc/integrations/visual-composer/maps/menu-price.php:69
 #: inc/integrations/visual-composer/maps/popup.php:58
 #: inc/integrations/visual-composer/maps/portfolio.php:169
 #: inc/integrations/visual-composer/maps/pricing-tables.php:244
-#: inc/integrations/visual-composer/maps/product-filters.php:120
-#: inc/integrations/visual-composer/maps/product-filters.php:206
+#: inc/integrations/visual-composer/maps/product-filters.php:119
+#: inc/integrations/visual-composer/maps/product-filters.php:205
 #: inc/integrations/visual-composer/maps/products-widget.php:147
 #: inc/integrations/visual-composer/maps/products.php:587
 #: inc/integrations/visual-composer/maps/promo-banner.php:116
@@ -7757,7 +7700,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/categories.php:185
 #: inc/integrations/visual-composer/maps/images-gallery.php:203
 #: inc/integrations/visual-composer/maps/info-box.php:77
-#: inc/integrations/visual-composer/maps/instagram.php:225
+#: inc/integrations/visual-composer/maps/instagram.php:198
 #: inc/integrations/visual-composer/maps/products.php:288
 #: inc/integrations/visual-composer/maps/promo-banner.php:82
 #: inc/integrations/visual-composer/maps/testimonials.php:136
@@ -7769,7 +7712,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/categories.php:187
 #: inc/integrations/visual-composer/maps/images-gallery.php:205
 #: inc/integrations/visual-composer/maps/info-box.php:79
-#: inc/integrations/visual-composer/maps/instagram.php:227
+#: inc/integrations/visual-composer/maps/instagram.php:200
 #: inc/integrations/visual-composer/maps/products.php:290
 #: inc/integrations/visual-composer/maps/promo-banner.php:84
 #: inc/integrations/visual-composer/maps/testimonials.php:138
@@ -7781,7 +7724,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/categories.php:199
 #: inc/integrations/visual-composer/maps/images-gallery.php:217
 #: inc/integrations/visual-composer/maps/info-box.php:87
-#: inc/integrations/visual-composer/maps/instagram.php:240
+#: inc/integrations/visual-composer/maps/instagram.php:213
 #: inc/integrations/visual-composer/maps/products.php:302
 #: inc/integrations/visual-composer/maps/promo-banner.php:92
 #: inc/integrations/visual-composer/maps/testimonials.php:150
@@ -7793,7 +7736,7 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/categories.php:201
 #: inc/integrations/visual-composer/maps/images-gallery.php:219
 #: inc/integrations/visual-composer/maps/info-box.php:89
-#: inc/integrations/visual-composer/maps/instagram.php:242
+#: inc/integrations/visual-composer/maps/instagram.php:215
 #: inc/integrations/visual-composer/maps/products.php:304
 #: inc/integrations/visual-composer/maps/promo-banner.php:94
 #: inc/integrations/visual-composer/maps/testimonials.php:152
@@ -8053,8 +7996,8 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/categories.php:106
 #: inc/integrations/visual-composer/maps/images-gallery.php:53
 #: inc/integrations/visual-composer/maps/info-box.php:431
-#: inc/integrations/visual-composer/maps/instagram.php:152
-#: inc/integrations/visual-composer/maps/instagram.php:157
+#: inc/integrations/visual-composer/maps/instagram.php:125
+#: inc/integrations/visual-composer/maps/instagram.php:130
 #: inc/integrations/visual-composer/maps/portfolio.php:27
 #: inc/integrations/visual-composer/maps/products.php:140
 #: inc/integrations/visual-composer/maps/responsive-text-block.php:160
@@ -8643,8 +8586,8 @@ msgstr ""
 #: inc/integrations/visual-composer/maps/image-hotspot.php:322
 #: inc/integrations/visual-composer/maps/image-hotspot.php:345
 #: inc/integrations/visual-composer/maps/image-hotspot.php:367
-#: inc/integrations/woocommerce/modules/compare.php:681
-#: inc/integrations/woocommerce/modules/compare.php:701
+#: inc/integrations/woocommerce/modules/compare.php:601
+#: inc/integrations/woocommerce/modules/compare.php:621
 msgid "Sku"
 msgstr ""
 
@@ -8669,7 +8612,7 @@ msgid "Justified gallery"
 msgstr ""
 
 #: inc/integrations/visual-composer/maps/images-gallery.php:71
-#: inc/integrations/visual-composer/maps/instagram.php:191
+#: inc/integrations/visual-composer/maps/instagram.php:164
 msgid "Space between images"
 msgstr ""
 
@@ -9052,84 +8995,64 @@ msgstr ""
 msgid "Instagram photos"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:35
-msgid "Data"
-msgstr ""
-
-#: inc/integrations/visual-composer/maps/instagram.php:40
-msgid "API request type"
-msgstr ""
-
-#: inc/integrations/visual-composer/maps/instagram.php:43
-msgid "Scrape"
-msgstr ""
-
-#: inc/integrations/visual-composer/maps/instagram.php:44
-msgid "AJAX"
-msgstr ""
-
-#: inc/integrations/visual-composer/maps/instagram.php:45
-msgid "API"
-msgstr ""
-
-#: inc/integrations/visual-composer/maps/instagram.php:72
+#: inc/integrations/visual-composer/maps/instagram.php:46
 #: woocommerce/myaccount/form-login.php:81
 msgid "Username"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:73
+#: inc/integrations/visual-composer/maps/instagram.php:47
 msgid "Enter your Instagram username. For example: asos"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:79
+#: inc/integrations/visual-composer/maps/instagram.php:53
 msgid "Number of photos"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:104
+#: inc/integrations/visual-composer/maps/instagram.php:78
 msgid "Photo size"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:108
+#: inc/integrations/visual-composer/maps/instagram.php:81
 msgid "Thumbnail"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:116
+#: inc/integrations/visual-composer/maps/instagram.php:89
 msgid "Instagram text"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:119
+#: inc/integrations/visual-composer/maps/instagram.php:92
 msgid "Add here few words about your instagram profile."
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:132
+#: inc/integrations/visual-composer/maps/instagram.php:105
 msgid "Open link in"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:135
+#: inc/integrations/visual-composer/maps/instagram.php:108
 msgid "Current window (_self)"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:136
+#: inc/integrations/visual-composer/maps/instagram.php:109
 msgid "New window (_blank)"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:168
+#: inc/integrations/visual-composer/maps/instagram.php:141
 msgid "Photos per row"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:177
+#: inc/integrations/visual-composer/maps/instagram.php:150
 msgid "Number of photos per row for grid design or items in slider per view."
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:181
+#: inc/integrations/visual-composer/maps/instagram.php:154
 msgid "Add spaces between photos"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:205
+#: inc/integrations/visual-composer/maps/instagram.php:178
 msgid "Rounded corners for images"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/instagram.php:215
+#: inc/integrations/visual-composer/maps/instagram.php:188
 msgid "Hide likes and comments"
 msgstr ""
 
@@ -9285,8 +9208,8 @@ msgid "Showcase your menu"
 msgstr ""
 
 #: inc/integrations/visual-composer/maps/menu-price.php:39
-#: inc/integrations/woocommerce/modules/compare.php:665
-#: inc/integrations/woocommerce/modules/compare.php:700
+#: inc/integrations/woocommerce/modules/compare.php:585
+#: inc/integrations/woocommerce/modules/compare.php:620
 #: inc/integrations/woocommerce/modules/swatches.php:91
 msgid "Description"
 msgstr ""
@@ -9339,7 +9262,7 @@ msgstr ""
 
 #: inc/integrations/visual-composer/maps/popup.php:33
 #: inc/integrations/visual-composer/maps/product-filters.php:67
-#: inc/integrations/visual-composer/maps/product-filters.php:144
+#: inc/integrations/visual-composer/maps/product-filters.php:143
 #: inc/integrations/visual-composer/maps/row-divider.php:24
 msgid "General options"
 msgstr ""
@@ -9492,84 +9415,80 @@ msgstr ""
 msgid "Count"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:85
-msgid "Category order"
-msgstr ""
-
-#: inc/integrations/visual-composer/maps/product-filters.php:91
+#: inc/integrations/visual-composer/maps/product-filters.php:90
 msgid "Show hierarchy"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:100
+#: inc/integrations/visual-composer/maps/product-filters.php:99
 msgid "Hide empty categories"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:134
+#: inc/integrations/visual-composer/maps/product-filters.php:133
 msgid "Filter attribute"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:155
+#: inc/integrations/visual-composer/maps/product-filters.php:154
 #: inc/widgets/class-widget-layered-nav.php:58
 msgid "Attribute"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:162
+#: inc/integrations/visual-composer/maps/product-filters.php:161
 msgid "Show in categories"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:169
+#: inc/integrations/visual-composer/maps/product-filters.php:168
 msgid ""
 "Choose on which categories pages you want to display this filter. Or leave "
 "empty to show on all pages."
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:174
+#: inc/integrations/visual-composer/maps/product-filters.php:173
 #: inc/integrations/visual-composer/maps/products.php:524
 #: inc/widgets/class-widget-layered-nav.php:72
 msgid "Query type"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:176
+#: inc/integrations/visual-composer/maps/product-filters.php:175
 msgid ""
 "If you select “AND”, you will be allowed to select only one attribute. In "
 "case of “OR”, you will be able to select multiple values."
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:178
+#: inc/integrations/visual-composer/maps/product-filters.php:177
 #: inc/integrations/visual-composer/maps/products.php:529
 #: inc/widgets/class-widget-layered-nav.php:74
 msgid "AND"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:179
+#: inc/integrations/visual-composer/maps/product-filters.php:178
 #: inc/integrations/visual-composer/maps/products.php:528
 #: inc/widgets/class-widget-layered-nav.php:75
 msgid "OR"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:185
+#: inc/integrations/visual-composer/maps/product-filters.php:184
 #: inc/widgets/class-widget-layered-nav.php:94
 msgid "Swatches size"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:188
+#: inc/integrations/visual-composer/maps/product-filters.php:187
 msgid "Normal (25px)"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:189
+#: inc/integrations/visual-composer/maps/product-filters.php:188
 msgid "Small (15px)"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:190
+#: inc/integrations/visual-composer/maps/product-filters.php:189
 msgid "Large (35px)"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:196
+#: inc/integrations/visual-composer/maps/product-filters.php:195
 #: inc/widgets/class-widget-layered-nav.php:105
 msgid "Show labels"
 msgstr ""
 
-#: inc/integrations/visual-composer/maps/product-filters.php:220
+#: inc/integrations/visual-composer/maps/product-filters.php:219
 msgid "Filter price"
 msgstr ""
 
@@ -9649,7 +9568,7 @@ msgid "Widget title"
 msgstr ""
 
 #: inc/integrations/visual-composer/maps/products-widget.php:58
-#: inc/integrations/woocommerce/template-tags.php:560
+#: inc/integrations/woocommerce/template-tags.php:527
 #: woocommerce/cart/mini-cart.php:51
 msgid "Show"
 msgstr ""
@@ -10417,31 +10336,31 @@ msgstr ""
 msgid "About brand"
 msgstr ""
 
-#: inc/integrations/woocommerce/modules/compare.php:367
+#: inc/integrations/woocommerce/modules/compare.php:287
 msgid "Compare list is empty."
 msgstr ""
 
-#: inc/integrations/woocommerce/modules/compare.php:374
+#: inc/integrations/woocommerce/modules/compare.php:294
 #: inc/integrations/woocommerce/modules/wishlist/class-ui.php:225
 msgid "Return to shop"
 msgstr ""
 
-#: inc/integrations/woocommerce/modules/compare.php:582
+#: inc/integrations/woocommerce/modules/compare.php:502
 msgid "In stock"
 msgstr ""
 
-#: inc/integrations/woocommerce/modules/compare.php:669
-#: inc/integrations/woocommerce/modules/compare.php:706
+#: inc/integrations/woocommerce/modules/compare.php:589
+#: inc/integrations/woocommerce/modules/compare.php:626
 msgid "Dimensions"
 msgstr ""
 
-#: inc/integrations/woocommerce/modules/compare.php:673
-#: inc/integrations/woocommerce/modules/compare.php:705
+#: inc/integrations/woocommerce/modules/compare.php:593
+#: inc/integrations/woocommerce/modules/compare.php:625
 msgid "Weight"
 msgstr ""
 
-#: inc/integrations/woocommerce/modules/compare.php:677
-#: inc/integrations/woocommerce/modules/compare.php:702
+#: inc/integrations/woocommerce/modules/compare.php:597
+#: inc/integrations/woocommerce/modules/compare.php:622
 msgid "Availability"
 msgstr ""
 
@@ -10511,8 +10430,8 @@ msgid "Wishlist is available only for logged in visitors."
 msgstr ""
 
 #: inc/integrations/woocommerce/modules/wishlist/class-ui.php:115
-#: inc/integrations/woocommerce/template-tags.php:1411
-#: inc/integrations/woocommerce/template-tags.php:1673
+#: inc/integrations/woocommerce/template-tags.php:1379
+#: inc/integrations/woocommerce/template-tags.php:1641
 msgid "Sign in"
 msgstr ""
 
@@ -10533,8 +10452,8 @@ msgid "Add to wishlist"
 msgstr ""
 
 #: inc/integrations/woocommerce/modules/wishlist/class-ui.php:309
-#: inc/integrations/woocommerce/template-tags.php:1536
-#: inc/integrations/woocommerce/template-tags.php:1727
+#: inc/integrations/woocommerce/template-tags.php:1504
+#: inc/integrations/woocommerce/template-tags.php:1695
 #: inc/shortcodes/user-panel.php:42
 msgid "Logout"
 msgstr ""
@@ -10580,7 +10499,7 @@ msgid "Text will be displayed if user don't add any products to wishlist."
 msgstr ""
 
 #: inc/integrations/woocommerce/template-tags.php:31
-#: inc/integrations/woocommerce/template-tags.php:1647
+#: inc/integrations/woocommerce/template-tags.php:1615
 msgid "Shopping cart"
 msgstr ""
 
@@ -10588,182 +10507,178 @@ msgstr ""
 msgid "Order complete"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:194
+#: inc/integrations/woocommerce/template-tags.php:165
 msgid "Previous product"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:217
+#: inc/integrations/woocommerce/template-tags.php:188
 #: inc/template-tags.php:1040
 msgid "Back to products"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:223
+#: inc/integrations/woocommerce/template-tags.php:194
 msgid "Next product"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:353
+#: inc/integrations/woocommerce/template-tags.php:320
 msgid "Watch video"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:363
+#: inc/integrations/woocommerce/template-tags.php:330
 msgid "Click to enlarge"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:417
+#: inc/integrations/woocommerce/template-tags.php:384
 msgid "Tag your photos with <span>%s</span> on Instagram."
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:447
-#: inc/integrations/woocommerce/template-tags.php:1287
+#: inc/integrations/woocommerce/template-tags.php:414
+#: inc/integrations/woocommerce/template-tags.php:1255
 msgid "Filters"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:456
+#: inc/integrations/woocommerce/template-tags.php:423
 #: inc/widgets/class-widget-sorting.php:30
 msgid "Sort by"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:468
+#: inc/integrations/woocommerce/template-tags.php:435
 #: inc/widgets/class-widget-price-filter.php:32
 msgid "Price filter"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:532
+#: inc/integrations/woocommerce/template-tags.php:499
 msgid "Show sidebar"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:568
-#: inc/integrations/woocommerce/template-tags.php:697
+#: inc/integrations/woocommerce/template-tags.php:535
+#: inc/integrations/woocommerce/template-tags.php:664
 #: inc/shortcodes/portfolio.php:124 inc/widgets/class-widget-layered-nav.php:24
 #: inc/widgets/class-widget-price-filter.php:237
 #: inc/widgets/class-widget-recent-posts.php:187
 msgid "All"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:699
+#: inc/integrations/woocommerce/template-tags.php:666
 msgid "products"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:768
+#: inc/integrations/woocommerce/template-tags.php:735
 msgid "No product categories exist."
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:807
+#: inc/integrations/woocommerce/template-tags.php:775
 msgid "product"
 msgid_plural "products"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/integrations/woocommerce/template-tags.php:934
+#: inc/integrations/woocommerce/template-tags.php:905
 msgid "View details"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:966
+#: inc/integrations/woocommerce/template-tags.php:937
 msgid "item"
 msgid_plural "items"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/integrations/woocommerce/template-tags.php:1023
+#: inc/integrations/woocommerce/template-tags.php:994
 #: woocommerce/loop/sale-flash.php:16
 msgid "Sale"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1028
+#: inc/integrations/woocommerce/template-tags.php:999
 msgid "Sold out"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1032
+#: inc/integrations/woocommerce/template-tags.php:1003
 msgid "Hot"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1036
+#: inc/integrations/woocommerce/template-tags.php:1007
 msgid "New"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1099
+#: inc/integrations/woocommerce/template-tags.php:1070
 msgid "View cart"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1192
+#: inc/integrations/woocommerce/template-tags.php:1160
 msgid "Clear filters"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1230
+#: inc/integrations/woocommerce/template-tags.php:1198
 msgid "Select options"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1390
+#: inc/integrations/woocommerce/template-tags.php:1358
 msgid "My Account"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1399
+#: inc/integrations/woocommerce/template-tags.php:1367
 msgid "Hello, %s"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1403
+#: inc/integrations/woocommerce/template-tags.php:1371
 msgid "Login / Register"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1411
-#: inc/integrations/woocommerce/template-tags.php:1681
+#: inc/integrations/woocommerce/template-tags.php:1379
+#: inc/integrations/woocommerce/template-tags.php:1649
 msgid "Create an Account"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1576
+#: inc/integrations/woocommerce/template-tags.php:1544
 msgid "Username or email"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1580
+#: inc/integrations/woocommerce/template-tags.php:1548
 #: woocommerce/myaccount/form-login.php:95
 msgid "Password"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1591
+#: inc/integrations/woocommerce/template-tags.php:1559
 msgid "Log in"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1595
+#: inc/integrations/woocommerce/template-tags.php:1563
 msgid "Lost your password?"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1597
+#: inc/integrations/woocommerce/template-tags.php:1565
 msgid "Remember me"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1602
+#: inc/integrations/woocommerce/template-tags.php:1570
 msgid "Or login with"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1606
+#: inc/integrations/woocommerce/template-tags.php:1574
 #: inc/shortcodes/social.php:54
 msgid "Facebook"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1611
+#: inc/integrations/woocommerce/template-tags.php:1579
 msgid "Google"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1616
+#: inc/integrations/woocommerce/template-tags.php:1584
 msgid "VKontakte"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1648
-#: inc/integrations/woocommerce/template-tags.php:1674
-#: inc/modules/search.php:109 sidebar.php:19
+#: inc/integrations/woocommerce/template-tags.php:1616
+#: inc/integrations/woocommerce/template-tags.php:1642
+#: inc/modules/search.php:108 sidebar.php:19
 msgid "close"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1680
+#: inc/integrations/woocommerce/template-tags.php:1648
 msgid "No account yet?"
 msgstr ""
 
-#: inc/integrations/woocommerce/template-tags.php:1724
+#: inc/integrations/woocommerce/template-tags.php:1692
 msgid "Vendor dashboard"
-msgstr ""
-
-#: inc/integrations/woocommerce/template-tags.php:1757
-msgid "Your cart is currently empty."
 msgstr ""
 
 #: inc/modules/nav-menu-images/inc/admin.php:89
@@ -10868,31 +10783,27 @@ msgstr ""
 msgid "\"Call to action\" button"
 msgstr ""
 
-#: inc/modules/search.php:88
+#: inc/modules/search.php:87
 msgid "Start typing to see products you are looking for."
 msgstr ""
 
-#: inc/modules/search.php:93
+#: inc/modules/search.php:92
 msgid "Start typing to see projects you are looking for."
 msgstr ""
 
-#: inc/modules/search.php:98
+#: inc/modules/search.php:97
 msgid "Start typing to see posts you are looking for."
 msgstr ""
 
-#: inc/modules/search.php:147 inc/modules/search.php:150
+#: inc/modules/search.php:146 inc/modules/search.php:149
 msgid "Select category"
 msgstr ""
 
-#: inc/modules/search.php:266 woocommerce/single-product/meta.php:32
-msgid "SKU:"
-msgstr ""
-
-#: inc/modules/search.php:280
+#: inc/modules/search.php:274
 msgid "No products found"
 msgstr ""
 
-#: inc/modules/search.php:280
+#: inc/modules/search.php:274
 msgid "No posts found"
 msgstr ""
 
@@ -10920,16 +10831,12 @@ msgstr ""
 msgid "My wishlist"
 msgstr ""
 
-#: inc/modules/sticky-toolbar.php:250
+#: inc/modules/sticky-toolbar.php:252
 msgid "My cart"
 msgstr ""
 
-#: inc/modules/sticky-toolbar.php:376 inc/template-tags.php:1077
+#: inc/modules/sticky-toolbar.php:379 inc/template-tags.php:1077
 msgid "Home"
-msgstr ""
-
-#: inc/options/class-page.php:97 inc/options/class-page.php:100
-msgid "Theme Dashboard"
 msgstr ""
 
 #: inc/options/class-page.php:128 inc/options/class-page.php:132
@@ -11033,26 +10940,6 @@ msgstr ""
 msgid "Export options"
 msgstr ""
 
-#: inc/options/controls/instagram-api/class-instagram-api.php:72
-msgid "Client ID"
-msgstr ""
-
-#: inc/options/controls/instagram-api/class-instagram-api.php:75
-msgid "Enter your client id"
-msgstr ""
-
-#: inc/options/controls/instagram-api/class-instagram-api.php:79
-msgid "Client secret"
-msgstr ""
-
-#: inc/options/controls/instagram-api/class-instagram-api.php:82
-msgid "Enter your client secret"
-msgstr ""
-
-#: inc/options/controls/instagram-api/class-instagram-api.php:90
-msgid "Save and generate token"
-msgstr ""
-
 #: inc/options/controls/range/class-range.php:33
 msgid "Value:"
 msgstr ""
@@ -11094,35 +10981,25 @@ msgstr ""
 msgid "Show map"
 msgstr ""
 
-#: inc/shortcodes/instagram.php:223
-msgid "Instagram did not return any images."
-msgstr ""
-
-#: inc/shortcodes/instagram.php:234
-msgid ""
-"You need generate access token in Theme settings -> General -> Instagram "
-"generate token"
-msgstr ""
-
-#: inc/shortcodes/instagram.php:245
-msgid "Instagram API did not return any images."
-msgstr ""
-
-#: inc/shortcodes/instagram.php:252 inc/shortcodes/instagram.php:321
-msgid "Instagram Image"
-msgstr ""
-
-#: inc/shortcodes/instagram.php:285
+#: inc/shortcodes/instagram.php:178
 msgid "Unable to communicate with Instagram."
 msgstr ""
 
-#: inc/shortcodes/instagram.php:289
+#: inc/shortcodes/instagram.php:182
 msgid "Instagram did not return a 200."
 msgstr ""
 
-#: inc/shortcodes/instagram.php:302 inc/shortcodes/instagram.php:310
-#: inc/shortcodes/instagram.php:314
+#: inc/shortcodes/instagram.php:195 inc/shortcodes/instagram.php:203
+#: inc/shortcodes/instagram.php:207
 msgid "Instagram has returned invalid data."
+msgstr ""
+
+#: inc/shortcodes/instagram.php:214
+msgid "Instagram Image"
+msgstr ""
+
+#: inc/shortcodes/instagram.php:246
+msgid "Instagram did not return any images."
 msgstr ""
 
 #: inc/shortcodes/portfolio.php:158
@@ -11133,13 +11010,13 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: inc/shortcodes/product-filters.php:134
+#: inc/shortcodes/product-filters.php:129
 #: inc/widgets/class-widget-layered-nav.php:51
 #: inc/widgets/class-widget-layered-nav.php:714
 msgid "Filter by"
 msgstr ""
 
-#: inc/shortcodes/product-filters.php:187
+#: inc/shortcodes/product-filters.php:182
 msgid "Filter by price"
 msgstr ""
 
@@ -11935,8 +11812,12 @@ msgstr ""
 msgid "This product is currently out of stock and unavailable."
 msgstr ""
 
-#: woocommerce/single-product/add-to-cart/variable.php:148
+#: woocommerce/single-product/add-to-cart/variable.php:150
 msgid "Clear"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "SKU:"
 msgstr ""
 
 #: woocommerce/single-product/meta.php:32
@@ -12146,32 +12027,37 @@ msgctxt "Page title"
 msgid "Checkout"
 msgstr ""
 
-#: inc/modules/search.php:87
+#: inc/integrations/woocommerce/modules/compare.php:74
+msgctxt "add_button"
+msgid "Compare"
+msgstr ""
+
+#: inc/modules/search.php:86
 msgctxt "submit button"
 msgid "Search for products"
 msgstr ""
 
-#: inc/modules/search.php:92
+#: inc/modules/search.php:91
 msgctxt "submit button"
 msgid "Search for projects"
 msgstr ""
 
-#: inc/modules/search.php:97
+#: inc/modules/search.php:96
 msgctxt "submit button"
 msgid "Search for posts"
 msgstr ""
 
-#: inc/modules/search.php:116
+#: inc/modules/search.php:115
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: inc/modules/sticky-toolbar.php:218
+#: inc/modules/sticky-toolbar.php:220
 msgctxt "toolbar"
 msgid "Wishlist"
 msgstr ""
 
-#: inc/modules/sticky-toolbar.php:352
+#: inc/modules/sticky-toolbar.php:353
 msgctxt "toolbar"
 msgid "My account"
 msgstr ""

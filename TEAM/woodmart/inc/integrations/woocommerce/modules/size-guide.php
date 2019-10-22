@@ -202,7 +202,7 @@ if( ! function_exists( 'woodmart_sguide_display_table_template' ) ) {
                 <?php endif; ?>
             </div>
             
-            <div class="sizeguide-btn-wrapp wd-action-btn wd-sizeguide-btn wd-style-text">
+            <div class="sizeguide-btn-wrapp">
                 <a class="woodmart-open-popup woodmart-sizeguide-btn" href="#woodmart_sizeguide"><?php esc_html_e( 'Size Guide', 'woodmart' ); ?></a>
             </div>
         <?php

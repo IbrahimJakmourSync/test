@@ -91,7 +91,6 @@ class Options extends Singleton {
 		'editor'           => 'XTS\Options\Controls\Editor',
 		'import'           => 'XTS\Options\Controls\Import',
 		'notice'           => 'XTS\Options\Controls\Notice',
-		'instagram_api'    => 'XTS\Options\Controls\Instagram_Api',
 	);
 
 	/**
@@ -555,6 +554,7 @@ class Options extends Singleton {
 			$sanitized_options['last_message'] = 'reset';
 			$reset                             = true;
 		}
+		
 
 		foreach ( self::$_fields as $key => $field ) {
 			if ( isset( $imported_options[ $field->get_id() ] ) ) {

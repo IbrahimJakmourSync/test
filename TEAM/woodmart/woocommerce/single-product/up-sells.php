@@ -43,8 +43,6 @@ if ( $upsells ) : ?>
 					'products_bordered_grid' => woodmart_get_opt( 'products_bordered_grid' ),
 					'custom_sizes' => apply_filters( 'woodmart_cross_sells_custom_sizes', false )
 				);
-				
-				woodmart_set_loop_prop( 'products_view', 'carousel' );
 
 				echo woodmart_generate_posts_slider( $slider_args, false, $upsells );
 			}elseif ( $related_product_view == 'grid' ) {

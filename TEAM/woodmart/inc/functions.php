@@ -494,7 +494,7 @@ if( ! function_exists( 'woodmart_get_html_block' ) ) {
 
 if( ! function_exists( 'woodmart_get_static_blocks_array' ) ) {
 	function woodmart_get_static_blocks_array( $new = false ) {
-		$args = array( 'posts_per_page' => 500, 'post_type' => 'cms_block' );
+		$args = array( 'posts_per_page' => 200, 'post_type' => 'cms_block' );
 		$blocks_posts = get_posts( $args );
 		$array = array();
 		foreach ( $blocks_posts as $post ) :
@@ -1143,7 +1143,7 @@ if( ! function_exists( 'woodmart_get_gradient_attr' ) ) {
 			$gradient_css = woodmart_get_gradient_css( $attr['woodmart_color_gradient'] );
 			$output = preg_replace_callback('/woodmart-row-gradient-enable.*?>/',
 				function ( $matches ) use( $gradient_css ) {
-				   return strtolower( $matches[0] . '<div class="woodmart-row-gradient wd-fill" style="' . $gradient_css . '"></div>' );
+				   return strtolower( $matches[0] . '<div class="woodmart-row-gradient" style="' . $gradient_css . '"></div>' );
 				}, $output );
 		}
 		return $output;

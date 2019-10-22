@@ -8,7 +8,7 @@ var wooFile = false;
 
 		var woodmartTheme = {
 			popupEffect: 'mfp-move-horizontal',
-			bootstrapTooltips: '.woodmart-tooltip, .woodmart-hover-icons .woodmart-buttons .wd-action-btn:not(.wd-add-cart-btn) > a, .woodmart-hover-icons .woodmart-buttons .wd-add-cart-btn, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base .wd-bottom-actions .wd-action-btn.wd-style-icon:not(.wd-add-cart-btn) > a, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base .wd-bottom-actions .wd-action-btn.wd-style-icon.wd-add-cart-btn, .woodmart-hover-base .wd-compare-btn > a, .woodmart-products-nav .woodmart-back-btn',
+			bootstrapTooltips: '.woodmart-tooltip, .product-actions-btns > a, .wrapp-buttons .woodmart-buttons > div:not(.woodmart-add-btn) a, .wrapp-buttons .woodmart-buttons .woodmart-add-btn, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base:not(.product-in-carousel) .woodmart-buttons > div:not(.woodmart-add-btn) a, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base.hover-width-small:not(.product-in-carousel) .woodmart-add-btn, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base.add-small-button:not(.product-in-carousel) .woodmart-add-btn, .woodmart-hover-base .product-compare-button a',
 		};
 
 		return {
@@ -199,10 +199,6 @@ var wooFile = false;
 				this.variationsPrice();
 
 				this.wishlist();
-
-				this.singleProductTabsAccordion();
-
-				this.singleProductTabsCommentsFix();
 			},
 
 			googleMapInit: function () {
@@ -856,8 +852,7 @@ var wooFile = false;
 			 */
 
 			fullScreenMenu: function () {
-				$('.full-screen-burger-icon > a').on('click', function (e) {
-					e.preventDefault();
+				$('.full-screen-burger-icon').on('click', function () {
 					$('body').toggleClass('full-screen-menu-open');
 				});
 
@@ -1508,8 +1503,7 @@ var wooFile = false;
 					$('.mobile-' + menuName + '-menu').addClass('active');
 				});
 
-				body.on("click", ".mobile-nav-icon > a", function (e) {
-					e.preventDefault();
+				body.on("click", ".mobile-nav-icon", function () {
 
 					if (mobileNav.hasClass("act-mobile-menu")) {
 						closeMenu();
@@ -2115,7 +2109,7 @@ var wooFile = false;
 
 				if ($(window).width() <= 1024) return;
 
-				var $tooltips = $('.woodmart-css-tooltip, .woodmart-buttons[class*="wd-pos-r"] div > a'),
+				var $tooltips = $('.woodmart-css-tooltip, .product-grid-item:not(.woodmart-hover-base):not(.woodmart-hover-icons) .woodmart-buttons > div a, .woodmart-hover-base.product-in-carousel .woodmart-buttons > div a'),
 					$bootstrapTooltips = $(woodmartTheme.bootstrapTooltips);
 
 				// .product-grid-item .add_to_cart_button
@@ -2250,8 +2244,7 @@ var wooFile = false;
 						$results = $this.parent().find('.woodmart-search-results'),
 						postType = $this.data('post_type'),
 						url = woodmart_settings.ajaxurl + '?action=woodmart_ajax_search',
-						price = parseInt($this.data('price')),
-						sku = parseInt($this.data('sku'));
+						price = parseInt($this.data('price'));
 
 					if (number > 0) url += '&number=' + number;
 					url += '&post_type=' + postType;
@@ -2315,10 +2308,6 @@ var wooFile = false;
 								.replace(/&lt;(\/?strong)&gt;/g, '<$1>') + '</h4>';
 
 							if (suggestion.no_found) returnValue = '<div class="suggestion-title no-found-msg">' + suggestion.value + '</div>';
-
-							if (sku && suggestion.sku) {
-								returnValue += ' <div class="suggestion-sku">' + suggestion.sku + '</div>';
-							}
 
 							if (price && suggestion.price) {
 								returnValue += ' <div class="suggestion-price price">' + suggestion.price + '</div>';
@@ -2698,40 +2687,6 @@ var wooFile = true;
 	}
 
 	/**
-	 *-------------------------------------------------------------------------------------------------------------------------------------------
-	 * Single page tabs fix with comments not in tabs
-	 *-------------------------------------------------------------------------------------------------------------------------------------------
-	 */
-	woodmartThemeModule.singleProductTabsCommentsFix = function () {
-		var url   = window.location.href;
-		var hash  = window.location.hash;
-		var $tabs = $( 'body' ).find( '.wc-tabs, ul.tabs' ).first();
-
-		if ( ! $('.single-product-page').hasClass('reviews-location-separate') ) {
-			return;
-		}
-		if ( hash.toLowerCase().indexOf( 'comment-' ) >= 0 || hash === '#reviews' || hash === '#tab-reviews' ) {
-			$tabs.find( 'li:first a' ).click();
-		} else if ( url.indexOf( 'comment-page-' ) > 0 || url.indexOf( 'cpage=' ) > 0 ) {
-			$tabs.find( 'li:first a' ).click();
-		}
-	};
-
-	/**
-	 *-------------------------------------------------------------------------------------------------------------------------------------------
-	 * Single page accordion/tabs
-	 *-------------------------------------------------------------------------------------------------------------------------------------------
-	 */
-	woodmartThemeModule.singleProductTabsAccordion = function () {
-		if ( $(window).width() >= 1024 ) {
-			return;
-		}
-
-        $('.woocommerce-tabs').removeClass('tabs-layout-tabs').addClass('tabs-layout-accordion');
-        $('.single-product-page').removeClass('tabs-type-tabs').addClass('tabs-type-accordion');
-	};
-
-	/**
 	*-------------------------------------------------------------------------------------------------------------------------------------------
 	* Wishlist
 	*-------------------------------------------------------------------------------------------------------------------------------------------
@@ -2750,7 +2705,7 @@ var wooFile = true;
 		var $widget = $('.woodmart-wishlist-info-widget');
 		var cookie = Cookies.get(cookiesName);
 
-		if ($widget.length > 0 && 'undefined' !== typeof cookie) {
+		if ($widget.length > 0) {
 			try {
 				var count = JSON.parse(cookie);
 				$widget.find('.wishlist-count').text(count);
@@ -3354,14 +3309,14 @@ var wooFile = true;
 	woodmartThemeModule.loginDropdown = function () {
 		if ($(window).width() <= 1024) return;
 
-		$('.wd-tools-element:not(.login-side-opener)').on('mouseover', function () {
-			$(this).find('.menu-item-register').addClass('opened');
+		$('.menu-item-register:not(.login-side-opener)').on('mouseover', function () {
+			$(this).addClass('opened');
 		}).on('mouseout', function (event) {
 			if (!$(event.target).is('input')) {
-				$(this).find('.menu-item-register').removeClass('opened');
+				$(this).removeClass('opened');
 			}
 		}).on('mouseleave', function () {
-			var $this = $(this).find('.menu-item-register');
+			var $this = $(this);
 			setTimeout(function () {
 				$this.removeClass('opened');
 			}, 300);
@@ -4044,11 +3999,7 @@ var wooFile = true;
 	 */
 
 	woodmartThemeModule.quickShop = function () {
-		if ('no' === woodmart_settings.quick_shop) {
-			return;
-		}
-
-		var btnSelector = '.product-type-variable .add_to_cart_button';
+		var btnSelector = '.quick-shop-on.product-type-variable .add_to_cart_button';
 
 		$(document).on('click', btnSelector, function (e) {
 			e.preventDefault();
@@ -4557,15 +4508,15 @@ var wooFile = true;
 			}
 
 
-			if ($(this).hasClass('active-swatch')) {
+			if ($(this).hasClass('current-swatch')) {
 				src = srcOrig;
 				srcset = srcsetOrig;
 				image_sizes = sizesOrig;
-				$(this).removeClass('active-swatch');
+				$(this).removeClass('current-swatch');
 				product.removeClass('product-swatched');
 			} else {
-				$(this).parent().find('.active-swatch').removeClass('active-swatch');
-				$(this).addClass('active-swatch');
+				$(this).parent().find('.current-swatch').removeClass('current-swatch');
+				$(this).addClass('current-swatch');
 				product.addClass('product-swatched');
 				src = imageSrc;
 				srcset = imageSrcset;
@@ -5062,7 +5013,7 @@ var wooFile = true;
 			$widget = $('.woodmart-compare-info-widget'),
 			compareCookie = Cookies.get(cookiesName);
 
-		if ($widget.length > 0 && 'undefined' !== typeof compareCookie) {
+		if ($widget.length > 0) {
 			try {
 				var ids = JSON.parse(compareCookie);
 				$widget.find('.compare-count').text(ids.length);
@@ -5110,7 +5061,7 @@ var wooFile = true;
 					} else {
 						$this.text(addedText);
 					}
-			},
+				},
 			});
 
 		});
@@ -5118,10 +5069,13 @@ var wooFile = true;
 		// Remove from compare action
 
 		$body.on('click', '.woodmart-compare-remove', function (e) {
+			var $table = $('.woodmart-compare-table');
+
 			e.preventDefault();
 			var $this = $(this),
 				id = $this.data('id');
 
+			$table.addClass('loading');
 			$this.addClass('loading');
 
 			jQuery.ajax({
@@ -5143,6 +5097,7 @@ var wooFile = true;
 					console.log('We cant remove product compare. Something wrong with AJAX response. Probably some PHP conflict.');
 				},
 				complete: function () {
+					$table.removeClass('loading');
 					$this.addClass('loading');
 				},
 			});
@@ -5369,9 +5324,7 @@ var wooFile = true;
 
 		//this.categoriesMenuBtns();
 
-		$('body').on('click', '.icon-drop-category', function (e) {
-			e.preventDefault();
-
+		$('body').on('click', '.icon-drop-category', function () {
 			if ($(this).closest('.has-sub').find('> ul').hasClass('child-open')) {
 				$(this).removeClass("woodmart-act-icon").closest('.has-sub').find('> ul').slideUp(time).removeClass('child-open');
 			} else {
@@ -5392,10 +5345,8 @@ var wooFile = true;
 		});
 
 		$('body').on('click', '.woodmart-product-categories a', function (e) {
-			if (!$(e.target).hasClass('icon-drop-category')) {
-				closeCats();
-				categories.stop().attr('style', '');
-			}
+			closeCats();
+			categories.stop().attr('style', '');
 		});
 
 		var isOpened = function () {
@@ -5914,27 +5865,19 @@ var wooFile = true;
 			});
 		}
 
-		$('.woodmart-hover-base').each(function () {
+		$('.product-grid-item').each(function () {
 			var $el = $(this),
-				$elBtn = $el.find('.woodmart-add-btn'),
 				widthHiddenInfo = $el.outerWidth();
 
-			if (!woodmart_settings.hover_width_small) {
-				return;
-			}
+			if ($(window).width() <= 1024 && $el.hasClass('woodmart-hover-icons') || !woodmart_settings.hover_width_small) return;
 
 			if (widthHiddenInfo < 255 || $(window).width() <= 1024) {
-				$el.addClass('add-small-content');
-				
-				if ($el.hasClass('woodmart-hover-base')) {
-					$elBtn.addClass('wd-action-btn wd-add-cart-btn wd-style-icon');
-				}
+				$el.removeClass('hover-width-big').addClass('hover-width-small');
 			} else {
-				if ($el.hasClass('woodmart-hover-base') && ($('body').hasClass('catalog-mode-on') || $('body').hasClass('login-see-prices'))) {
-					$el.find('.wd-bottom-actions .wd-action-btn').removeClass('wd-style-icon').addClass('wd-style-text');
-				}
+				$el.removeClass('hover-width-small').addClass('hover-width-big');
 			}
-		});
+		})
+
 	};
 	/**
 	 *-------------------------------------------------------------------------------------------------------------------------------------------

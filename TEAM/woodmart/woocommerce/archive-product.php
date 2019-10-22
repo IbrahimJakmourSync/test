@@ -17,7 +17,7 @@
 
 	defined( 'ABSPATH' ) || exit;
 
-	if( woodmart_is_woo_ajax() === 'fragments' ) {
+	if( woodmart_is_woo_ajax() == 'fragments' ) {
 		woodmart_woocommerce_main_loop( true );
 		die();
 	}

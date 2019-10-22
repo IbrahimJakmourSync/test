@@ -39,18 +39,22 @@ woodmart_set_loop_prop( 'swatches', woodmart_swatches_list() );
 // Extra post classes
 $classes = array( 'product-grid-item' );
 
-if ( 'info' === $hover && ( get_post_meta( $product->get_id(), '_woodmart_new_label', true ) && woodmart_get_opt( 'new_label' ) ) || woodmart_get_product_attributes_label() || $product->is_on_sale() || $product->is_featured() || ! $product->is_in_stock() ) {
-	$classes[] = 'wd-with-labels';
-}
+//Label classes
+if ( get_post_meta( $product->get_id(), '_woodmart_new_label', true ) && woodmart_get_opt( 'new_label' ) ) $classes[] = 'new-label'; 
+if ( woodmart_get_product_attributes_label() ) $classes[] = 'attributes-label'; 
 
-$classes[] = 'product';
+$classes[] = 'product'; 
+$classes[] = ( get_option( 'woocommerce_enable_review_rating' ) == 'yes' && $product->get_rating_count() > 0 ) ? 'has-stars' : 'without-stars'; 
+$classes[] = ( ! woodmart_loop_prop( 'swatches' ) ) ? 'product-no-swatches' : 'product-with-swatches';
 
-if ( get_option( 'woocommerce_enable_review_rating' ) == 'yes' && $product->get_rating_count() > 0 && 'base' === $hover ) {
-	$classes[] = 'has-stars';
-}
+//Quick shop class
+if( woodmart_get_opt( 'quick_shop_variable' ) ) $classes[] = 'quick-shop-on'; 
 
-if ( 'base' === $hover && ! woodmart_loop_prop( 'swatches' ) ) {
-	$classes[] = 'product-no-swatches';
+//Quick view class
+if ( woodmart_get_opt( 'quick_view' ) ) {
+	$classes[] = 'quick-view-on'; 
+}else{
+	$classes[] = 'quick-view-off'; 
 }
 
 //Grid or list style
@@ -78,7 +82,8 @@ if( $different_sizes && in_array( $woocommerce_loop, woodmart_get_wide_items_arr
 
 if( ! $is_slider ){
 	$classes[] = woodmart_get_grid_el_class( $woocommerce_loop , $products_columns, $different_sizes, $xs_size );
-} elseif ( 'base' === $hover  ) {
+	$classes[] = 'product-in-grid';
+}else{
 	$classes[] = 'product-in-carousel';
 }
 

@@ -45,7 +45,6 @@ if ( ! class_exists( 'WOODMART_Instagram_Widget' ) ) {
 			$instance['spacing'] = 1;
 			$instance['spacing_custom'] = 6;
 			$instance['per_row'] = 3;
-			$instance['username'] = $instance['username'] ? $instance['username'] : 'flickr';
 
 			echo woodmart_shortcode_instagram( $instance );
 

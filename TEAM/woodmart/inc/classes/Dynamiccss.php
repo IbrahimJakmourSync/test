@@ -7,7 +7,7 @@ if ( ! defined( 'WOODMART_THEME_DIR' ) ) {
 use XTS\Options;
 
 /**
- * Dynamic css classwc-extra
+ * Dynamic css class
  *
  * @since 1.0.0
  */
@@ -18,24 +18,9 @@ class WOODMART_Dynamiccss {
 	 */
 	public function __construct() {
 		$this->_notices = WOODMART_Registry()->notices;
-		add_action( 'admin_init', array( $this, 'check_file_version' ), 90 );
 		add_action( 'admin_init', array( $this, 'save_css' ), 100 );
 		add_action( 'admin_init', array( $this, 'write_file' ), 200 );
 		add_action( 'wp', array( $this, 'print_styles' ), 100 );
-	}
-	
-	/**
-	 * Check file version.
-	 *
-	 * @since 1.0.0
-	 */
-	public function check_file_version() {
-		$file_data = get_option( 'woodmart-dynamic-css-file' );
-		
-		if ( ! isset( $file_data['theme_version'] ) || ( isset( $file_data['theme_version'] ) && ! $file_data['theme_version'] ) || version_compare( woodmart_get_theme_info( 'Version' ), $file_data['theme_version'], '>') ) {
-			delete_option( 'woodmart-dynamic-css-file' );
-			delete_option( 'woodmart-dynamic-css-data' );
-		}
 	}
 
 	/**
@@ -135,9 +120,8 @@ class WOODMART_Dynamiccss {
 			update_option(
 				'woodmart-dynamic-css-file',
 				array(
-					'url'           => $this->get_file_info( 'url' ),
-					'path'          => $this->get_file_info( 'path' ),
-					'theme_version' => woodmart_get_theme_info( 'Version' ),
+					'url'  => $this->get_file_info( 'url' ),
+					'path' => $this->get_file_info( 'path' ),
 				)
 			);
 
@@ -364,19 +348,15 @@ class WOODMART_Dynamiccss {
 		$output .= '}';
 		
 		if ( ! woodmart_get_opt( 'disable_font_awesome_theme_css' ) ) {
-			$prefix = '';
-			if ( woodmart_get_opt( 'light_font_awesome_version' ) ) {
-				$prefix = '-light';
-			}
 			// FontAwesome
 			$output .= '@font-face {
 				font-family: "FontAwesome";
-				src: url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont' . $prefix . '.eot?v=4.7.0");
-				src: url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont' . $prefix . '.eot?#iefix&v=4.7.0") format("embedded-opentype"),
-				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont' . $prefix . '.woff2?v=4.7.0") format("woff2"),
-				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont' . $prefix . '.woff?v=4.7.0") format("woff"),
-				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont' . $prefix . '.ttf?v=4.7.0") format("truetype"),
-				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont' . $prefix . '.svg?v=4.7.0#fontawesomeregular") format("svg");
+				src: url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont.eot?v=4.7.0");
+				src: url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+				url("' . WOODMART_THEME_DIR . '/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
 				font-weight: normal;
 				font-style: normal;';
 	
