@@ -1,17 +1,6 @@
 <?php 
 global $product;
 
-$action_classes  = '';
-$add_btn_classes = '';
-
-
-if ( 'carousel' === woodmart_loop_prop('products_view') ) {
-	$action_classes  .= ' woodmart-buttons wd-pos-r-t';
-	$add_btn_classes .= ' wd-action-btn wd-add-cart-btn wd-style-icon';
-} else {
-	$action_classes  .= ' wd-bottom-actions';
-}
-
 do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
 <div class="product-wrapper">
@@ -29,7 +18,7 @@ do_action( 'woocommerce_before_shop_loop_item' ); ?>
 			?>
 		</a>
 		<?php woodmart_hover_image(); ?>
-		<div class="wrapp-swatches"><?php echo woodmart_swatches_list();?><?php woodmart_add_to_compare_loop_btn(); ?></div>
+		<div class="wrapp-swatches"><?php echo woodmart_swatches_list();?><?php woodmart_compare_btn(); ?></div>
 		<?php woodmart_quick_shop_wrapper(); ?>
 	</div>
 
@@ -72,9 +61,9 @@ do_action( 'woocommerce_before_shop_loop_item' ); ?>
 					?>
 				</div>
 			</div>
-			<div class="<?php echo esc_attr( $action_classes ); ?>">
+			<div class="woodmart-buttons">
 				<div class="wrap-wishlist-button"><?php do_action( 'woodmart_product_action_buttons' ); ?></div>
-				<div class="woodmart-add-btn<?php echo esc_attr( $add_btn_classes ); ?>"><?php do_action( 'woocommerce_after_shop_loop_item' ); ?></div>
+				<div class="woodmart-add-btn"><?php do_action( 'woocommerce_after_shop_loop_item' ); ?></div>
 				<div class="wrap-quickview-button"><?php woodmart_quick_view_btn( get_the_ID() ); ?></div>
 			</div>
 			<?php if ( woodmart_loop_prop( 'progress_bar' ) ): ?>

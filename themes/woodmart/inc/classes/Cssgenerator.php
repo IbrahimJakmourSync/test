@@ -51,7 +51,7 @@ class WOODMART_Cssgenerator {
 
 	private function _render_option( $opt ) {
 		?>
-			<div class="css-checkbox <?php echo esc_attr( $opt['id'] ); ?>" data-parent="<?php echo ( isset( $opt['parent'] ) ) ? $opt['parent'] : 'none'; ?>">
+			<div class="css-checkbox" data-parent="<?php echo ( isset( $opt['parent'] ) ) ? $opt['parent'] : 'none'; ?>">
 				<input type="checkbox" id="<?php echo esc_attr( $opt['id'] ); ?>" name="<?php echo esc_attr( $opt['id'] ); ?>" <?php $this->_checked( $opt ); ?> <?php disabled( isset( $opt['disabled'] ) && $opt['disabled'], true ); ?> value="true">
 				<label for="<?php echo esc_attr( $opt['id'] ); ?>"><?php echo esc_html( $opt['title'] ); ?>
 				<?php if ( isset( $opt['image'] ) || isset( $opt['description'] ) ) : ?>
@@ -82,9 +82,6 @@ class WOODMART_Cssgenerator {
 		echo '<div class="css-checkbox-children">';
 
 		foreach ( $children as $id => $option ) {
-			if ( 'wc-product' === $id ) {
-				echo '<h4>WooCommerce extra features</h4>';
-			}
 			$this->_render_option( $option );
 		}
 
@@ -138,7 +135,7 @@ class WOODMART_Cssgenerator {
 		</p>
 
 		<form action="" method="post" class="woodmart-form woodmart-generator-form">
-			<div class="woodmart-row woodmart-four-columns">
+			<div class="woodmart-row woodmart-three-columns">
 				<div class="woodmart-column">
 					<div class="woodmart-column-inner">
 						<div class="css-options-box">
@@ -163,7 +160,7 @@ class WOODMART_Cssgenerator {
 						</div>
 					</div>
 				</div>
-				<div class="woodmart-column woomart-woo-column">
+				<div class="woodmart-column">
 					<div class="woodmart-column-inner">
 						<div class="css-options-box">
 							<h4>WooCommerce styles</h4>
@@ -188,7 +185,7 @@ class WOODMART_Cssgenerator {
 					</div>
 				</div>
 			</div>
-			
+
 			<input type="hidden" name="css-data">
 
 			<input class="button-primary" name="generate-css" type="submit" value="<?php esc_attr_e( 'Generate file', 'woodmart' ); ?>" />

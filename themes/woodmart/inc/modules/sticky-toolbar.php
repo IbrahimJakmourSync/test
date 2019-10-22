@@ -205,14 +205,16 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_wishlist_template' ) ) {
 		}
 
 		?>
-		<div class="woodmart-wishlist-info-widget whb-wishlist-icon wd-tools-element<?php echo esc_attr( $classes ); ?>" title="<?php echo esc_attr__( 'My wishlist', 'woodmart' ); ?>">
+		<div class="woodmart-wishlist-info-widget whb-wishlist-icon<?php echo esc_attr( $classes ); ?>" title="<?php echo esc_attr__( 'My wishlist', 'woodmart' ); ?>">
 			<a href="<?php echo esc_url( woodmart_get_whishlist_page_url() ); ?>">
-				<span class="wishlist-icon wd-tools-icon">
-					<?php if ( $product_count ) : ?>
-						<span class="wishlist-count wd-tools-count">
-							<?php echo esc_html( woodmart_get_wishlist_count() ); ?>
-						</span>
-					<?php endif; ?>
+				<span class="wishlist-info-wrap">
+					<span class="wishlist-icon">
+						<?php if ( $product_count ) : ?>
+							<span class="wishlist-count">
+								<?php echo esc_html( woodmart_get_wishlist_count() ); ?>
+							</span>
+						<?php endif; ?>
+					</span>
 				</span>
 				<span class="woodmart-toolbar-label">
 					<?php echo esc_html_x( 'Wishlist', 'toolbar', 'woodmart' ); ?>
@@ -247,11 +249,13 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_cart_template' ) ) {
 		}
 
 		?>
-		<div class="woodmart-shopping-cart woodmart-cart-design-5 woodmart-cart-alt wd-tools-element<?php echo esc_attr( $classes ); ?>" title="<?php echo esc_attr__( 'My cart', 'woodmart' ); ?>">
+		<div class="woodmart-shopping-cart woodmart-cart-design-5 woodmart-cart-alt<?php echo esc_attr( $classes ); ?>" title="<?php echo esc_attr__( 'My cart', 'woodmart' ); ?>">
 			<a href="<?php echo esc_url( wc_get_cart_url() ); ?>">
-				<span class="woodmart-cart-icon wd-tools-element"></span>
-				<span class="woodmart-cart-totals">
-					<?php woodmart_cart_count(); ?>
+				<span class="woodmart-cart-wrapper">
+					<span class="woodmart-cart-icon"></span>
+					<span class="woodmart-cart-totals">
+						<?php woodmart_cart_count(); ?>
+					</span>
 				</span>
 				<span class="woodmart-toolbar-label">
 					<?php esc_html_e( 'Cart', 'woodmart' ); ?>
@@ -287,12 +291,14 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_compare_template' ) ) {
 		}
 
 		?>
-		<div class="woodmart-compare-info-widget whb-compare-icon wd-tools-element<?php echo esc_attr( $classes ); ?>" title="<?php echo esc_attr__( 'Compare products', 'woodmart' ); ?>">
+		<div class="woodmart-compare-info-widget whb-compare-icon<?php echo esc_attr( $classes ); ?>" title="<?php echo esc_attr__( 'Compare products', 'woodmart' ); ?>">
 			<a href="<?php echo esc_url( woodmart_get_compare_page_url() ); ?>">
-				<span class="compare-icon wd-tools-icon">
-					<?php if ( $product_count ) : ?>
-						<span class="compare-count wd-tools-count"><?php echo woodmart_get_compare_count(); ?></span>
-					<?php endif; ?>
+				<span class="compare-info-wrap">
+					<span class="compare-icon">
+						<?php if ( $product_count ) : ?>
+							<span class="compare-count"><?php echo woodmart_get_compare_count(); ?></span>
+						<?php endif; ?>
+					</span>
 				</span>
 				<span class="woodmart-toolbar-label">
 					<?php esc_html_e( 'Compare', 'woodmart' ); ?>
@@ -339,19 +345,16 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_account_template' ) ) {
 		$classes  = ! is_user_logged_in() && $is_side ? ' login-side-opener' : '';
 
 		?>
-		<div class="woodmart-header-links wd-tools-element my-account-with-icon <?php echo esc_attr( $classes ); ?>">
-			<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>">
-				<span class="wd-tools-icon">
-					<?php
-					if ( $icon_type == 'custom' && $my_account_style == 'icon' ) {
-						echo whb_get_custom_icon( $params['custom_icon'] );
-					}
-					?>
-				</span>
-				<span class="woodmart-toolbar-label">
-					<?php echo esc_html_x( 'My account', 'toolbar', 'woodmart' ); ?>
-				</span>
-			</a>
+		<div class="whb-header-links woodmart-navigation woodmart-header-links">
+			<ul class="menu">
+				<li class="item-level-0 my-account-with-icon menu-item-register menu-simple-dropdown item-event-hover<?php echo esc_attr( $classes ); ?>">
+					<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>">
+						<span class="woodmart-toolbar-label">
+							<?php echo esc_html_x( 'My account', 'toolbar', 'woodmart' ); ?>
+						</span>
+					</a>
+				</li>
+			</ul>		
 		</div>
 		<?php
 	}
@@ -382,9 +385,8 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_page_link_template' ) ) {
 		}
 
 		?>
-		<div class="woodmart-toolbar-<?php echo esc_attr( $key ); ?> woodmart-toolbar-item wd-tools-element">
+		<div class="woodmart-toolbar-<?php echo esc_attr( $key ); ?> woodmart-toolbar-item">
 			<a href="<?php echo esc_url( $url ); ?>">
-				<span class="wd-tools-icon"></span>
 				<span class="woodmart-toolbar-label">
 					<?php echo $text; ?>
 				</span>
@@ -408,13 +410,13 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_custom_link_template' ) ) {
 		$text            = woodmart_get_opt( $key . '_text' );
 		$icon            = woodmart_get_opt( $key . '_icon' );
 
-		$wrapper_classes .= isset( $icon['id'] ) && $icon['id'] ? ' wd-tools-custom-icon' : '';
+		$wrapper_classes .= isset( $icon['id'] ) && $icon['id'] ? ' woodmart-with-icon' : '';
 
 		?>
 			<?php if ( $url && $text ) : ?>
-				<div class="woodmart-toolbar-link wd-tools-element woodmart-toolbar-item<?php echo esc_attr( $wrapper_classes ); ?>">
+				<div class="woodmart-toolbar-link woodmart-toolbar-item<?php echo esc_attr( $wrapper_classes ); ?>">
 					<a href="<?php echo esc_url( $url ); ?>">
-						<span class="woodmart-toolbar-icon wd-tools-icon woodmart-custom-icon">
+						<span class="woodmart-toolbar-icon">
 							<?php if ( isset( $icon['id'] ) && $icon['id'] ) : ?>
 								<?php echo wp_get_attachment_image( $icon['id'] ); ?>
 							<?php endif; ?>
@@ -440,13 +442,11 @@ if ( ! function_exists( 'woodmart_sticky_toolbar_mobile_menu_template' ) ) {
 	 */
 	function woodmart_sticky_toolbar_mobile_menu_template() {
 		?>
-		<div class="woodmart-burger-icon mobile-nav-icon whb-mobile-nav-icon mobile-style-icon wd-tools-element">
-			<a href="#">
-				<span class="woodmart-burger wd-tools-icon"></span>
-				<span class="woodmart-toolbar-label">
-					<?php esc_html_e( 'Menu', 'woodmart' ); ?>
-				</span>
-			</a>
+		<div class="woodmart-burger-icon mobile-nav-icon whb-mobile-nav-icon mobile-style-icon">
+			<span class="woodmart-burger"></span>
+			<span class="woodmart-toolbar-label">
+				<?php esc_html_e( 'Menu', 'woodmart' ); ?>
+			</span>
 		</div>
 		<?php
 	}

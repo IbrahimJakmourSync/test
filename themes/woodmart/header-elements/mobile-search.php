@@ -4,7 +4,7 @@ $extra_class = '';
 $icon_type = $params['icon_type'];
 
 if ( $icon_type == 'custom' ) {
-	$extra_class .= ' wd-tools-custom-icon';
+	$extra_class .= ' woodmart-search-custom-icon';
 }
 
 $settings = whb_get_settings();

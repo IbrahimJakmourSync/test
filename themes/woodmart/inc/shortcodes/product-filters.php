@@ -59,7 +59,7 @@ if ( ! function_exists( 'woodmart_filters_categories_shortcode' ) ) {
 		extract( shortcode_atts( array(
 			'title' => esc_html__( 'Categories', 'woodmart' ),
 			'hierarchical' => 1,
-			'order_by' => 'name',
+			'orderby' => 'name',
 			'hide_empty' => '',
 			'show_categories_ancestors' => '',
 			'el_class' => '',
@@ -74,14 +74,9 @@ if ( ! function_exists( 'woodmart_filters_categories_shortcode' ) ) {
  			'title_li' => false,
 			'walker' => new WOODMART_Custom_Walker_Category(),
 			'use_desc_for_title' => false,
-			'orderby' => $order_by,
+			'orderby' => $orderby,
 			'echo' => false,
 		);
-		
-		if ( 'order' === $order_by ) {
-			$list_args['orderby']  = 'meta_value_num';
-			$list_args['meta_key'] = 'order';
-		}
 
 		$cat_ancestors = array();
 

@@ -19,9 +19,9 @@
 				?>
 			</a>
 			<?php woodmart_hover_image(); ?>
-			<div class="woodmart-buttons wd-pos-r-t">
+			<div class="woodmart-buttons">
 				<?php woodmart_quick_view_btn( get_the_ID() ); ?>
-				<?php woodmart_add_to_compare_loop_btn(); ?>
+				<?php woodmart_compare_btn(); ?>
 				<?php do_action( 'woodmart_product_action_buttons' ); ?>
 			</div> 
 			<?php woodmart_quick_shop_wrapper(); ?>
@@ -55,6 +55,6 @@
 			<?php if ( woodmart_loop_prop( 'timer' ) ): ?>
 				<?php woodmart_product_sale_countdown(); ?>
 			<?php endif ?>
-			<div class="woodmart-add-btn wd-add-btn-replace"><?php do_action( 'woocommerce_after_shop_loop_item' ); ?></div>
+			<div class="woodmart-add-btn"><?php do_action( 'woocommerce_after_shop_loop_item' ); ?></div>
 		</div>
 	</div>

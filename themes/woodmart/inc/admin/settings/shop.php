@@ -29,36 +29,6 @@ Options::add_field(
 
 Options::add_field(
 	array(
-		'id'       => 'show_sku_on_ajax',
-		'name'     => esc_html__( 'Show SKU on AJAX results', 'woodmart' ),
-		'type'     => 'switcher',
-		'section'  => 'shop_section',
-		'requires' => array(
-			array(
-				'key'     => 'search_by_sku',
-				'compare' => 'equals',
-				'value'   => '1',
-			),
-		),
-		'default'  => false,
-		'priority' => 11,
-	)
-);
-
-Options::add_field(
-	array(
-		'id'          => 'relevanssi_search',
-		'name'        => esc_html__( 'Use Relevanssi for AJAX search', 'woodmart' ),
-		'description' => 'You will need to install and activate this <a href="https://ru.wordpress.org/plugins/relevanssi/" target="_blank">plugin</a>',
-		'type'        => 'switcher',
-		'section'     => 'shop_section',
-		'default'     => '0',
-		'priority'    => 12,
-	)
-);
-
-Options::add_field(
-	array(
 		'id'          => 'shop_filters',
 		'name'        => esc_html__( 'Shop filters', 'woodmart' ),
 		'description' => esc_html__( 'Enable shop filters widget\'s area above the products.', 'woodmart' ),

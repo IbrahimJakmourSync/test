@@ -35,8 +35,6 @@ if ( $cross_sells ) : ?>
 				'img_size' => 'woocommerce_thumbnail',
 				'custom_sizes' => apply_filters( 'woodmart_cross_sells_custom_sizes', false )
 			);
-		
-			woodmart_set_loop_prop( 'products_view', 'carousel' );
 
 			echo woodmart_generate_posts_slider( $slider_args, false, $cross_sells );
 			

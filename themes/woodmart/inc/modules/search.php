@@ -70,7 +70,6 @@ if( ! function_exists( 'woodmart_search_form' ) ) {
 			'price' => $price,
 			'post_type' => $post_type,
 			'count' => $count,
-			'sku' => woodmart_get_opt( 'show_sku_on_ajax' ) ? '1' : '0',
 			'symbols_count' => apply_filters( 'woodmart_ajax_search_symbols_count', 3 ),
 		);
 
@@ -125,7 +124,7 @@ if( ! function_exists( 'woodmart_search_form' ) ) {
 					<div class="search-info-text"><span><?php echo esc_html( $description ); ?></span></div>
 				<?php endif ?>
 				<?php if ( $ajax ): ?>
-					<div class="search-results-wrapper"><div class="woodmart-scroll"><div class="woodmart-search-results woodmart-scroll-content"></div></div><div class="woodmart-search-loader wd-fill"></div></div>
+					<div class="search-results-wrapper"><div class="woodmart-scroll"><div class="woodmart-search-results woodmart-scroll-content"></div></div><div class="woodmart-search-loader"></div></div>
 				<?php endif ?>
 			</div>
 		<?php
@@ -239,10 +238,6 @@ if ( ! function_exists( 'woodmart_ajax_suggestions' ) ) {
 		}
 
 		$results = new WP_Query( apply_filters( 'woodmart_ajax_search_args', $query_args ) );
-		
-		if ( woodmart_get_opt( 'relevanssi_search' ) && function_exists( 'relevanssi_do_query' ) ) {
-			relevanssi_do_query( $results );
-		}
 
 		$suggestions = array();
 
@@ -263,7 +258,6 @@ if ( ! function_exists( 'woodmart_ajax_suggestions' ) ) {
 						'permalink' => get_the_permalink(),
 						'price' => $product->get_price_html(),
 						'thumbnail' => $product->get_image(),
-						'sku' => $product->get_sku() ? esc_html__( 'SKU:', 'woodmart' ) . ' ' . $product->get_sku() : '',
 					);
 				} else {
 					$suggestions[] = array(
@@ -402,28 +396,4 @@ if ( ! function_exists( 'woodmart_sku_search_query_new' ) ) {
 		#remove_filters_for_anonymous_class('posts_search', 'WC_Admin_Post_Types', 'product_search', 10);
 		return $where;
 	}
-}
-
-if ( ! function_exists( 'woodmart_rlv_index_variation_skus' ) ) {
-	function woodmart_rlv_index_variation_skus( $content, $post ) {
-		if ( ! woodmart_get_opt( 'search_by_sku' ) || ! woodmart_get_opt( 'relevanssi_search' ) || ! function_exists( 'relevanssi_do_query' ) ) {
-			return $content;
-		}
-
-		if ( $post->post_type == 'product' ) {
-			
-			$args = array( 'post_parent' => $post->ID, 'post_type' => 'product_variation', 'posts_per_page' => -1 );
-			$variations = get_posts( $args );
-			if ( !empty( $variations)) {
-				foreach ( $variations as $variation ) {
-					$sku = get_post_meta( $variation->ID, '_sku', true );
-					$content .= " $sku";
-				}
-			}
-		}
-		
-		return $content;
-	}
-	
-	add_filter( 'relevanssi_content_to_index', 'woodmart_rlv_index_variation_skus', 10, 2 );
 }

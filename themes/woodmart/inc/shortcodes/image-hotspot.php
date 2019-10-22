@@ -129,7 +129,7 @@ if ( ! function_exists( 'woodmart_hotspot_shortcode' ) ) {
 		if ( ! $output ) return;
 		echo '<div class="woodmart-image-hotspot' . esc_attr( $classes ) . '" style="left: ' . esc_attr( $left ) . '%; top: ' . esc_attr( $top ) . '%;">';
 			echo '<span class="hotspot-sonar"></span>';
-			echo '<div class="hotspot-btn wd-fill"></div>';
+			echo '<div class="hotspot-btn"></div>';
 			echo apply_filters( 'woodmart_hotspot_content', $output );
 		echo '</div>';
 

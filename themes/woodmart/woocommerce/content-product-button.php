@@ -18,11 +18,11 @@
 		?>
 	</a>
 	<?php woodmart_hover_image(); ?>
-	<div class="woodmart-add-btn wd-add-btn-replace">
+	<div class="hover-mask">
 		<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 	</div> 
-	<div class="woodmart-buttons wd-pos-r-t color-scheme-light">
-		<?php woodmart_add_to_compare_loop_btn(); ?>
+	<div class="woodmart-buttons">
+		<?php woodmart_compare_btn(); ?>
 		<?php woodmart_quick_view_btn( get_the_ID() ); ?>
 		<?php do_action( 'woodmart_product_action_buttons' ); ?>
 	</div>

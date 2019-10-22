@@ -628,11 +628,6 @@ if( ! function_exists( 'woodmart_woocommerce_hooks' ) ) {
 
 		add_action( 'woocommerce_cart_is_empty', 'woodmart_empty_cart_text', 20 );
 
-		/**
-		 * Remove default empty cart text
-		 */
-		remove_action( 'woocommerce_cart_is_empty', 'wc_empty_cart_message', 10 );
-
 		// Wrapp cart totals
 
 		add_action( 'woocommerce_before_cart_totals', function() {
@@ -1138,55 +1133,8 @@ if ( ! function_exists( 'woodmart_get_grid_el_class' ) ) {
             }
         }
 
-		$sizes = array(
-			array(
-				'name' => 'col-lg',
-				'value' => $lg_size,
-			),
-			array(
-				'name' => 'col-md',
-				'value' => $md_size,
-			),
-			array(
-				'name' => 'col-sm',
-				'value' => $sm_size,
-			),
-			array(
-				'name' => 'col',
-				'value' => $xs_size,
-			),
-		);
-		
-		$result_sizes = array();
-		foreach ( $sizes as $index => $value ) {
-			if ( isset( $sizes[$index + 1] ) ) {
-				$next = $sizes[$index + 1];
-			} else {
-				continue;
-			}
-			
-			if ( $value['value'] === $next['value'] ) {
-				$result_sizes[$next['name']] = $next['value'];
-				unset($result_sizes[$value['name']]);
-			} else if ( $value['value'] !== $next['value'] ) {
-				$result_sizes[$value['name']] = $value['value'];
-				$result_sizes[$next['name']] = $next['value'];
-			}
-		}
-		
-		if ( apply_filters( 'woodmart_old_product_grid_classes', false ) ) {
-			$result_sizes = array(
-				'col-lg' => $lg_size,
-				'col-md' => $md_size,
-				'col-sm' => $sm_size,
-				'col' => $xs_size,
-			);
-		}
+		$classes .= ' col-' . $xs_size . ' col-sm-' . $sm_size . ' col-md-' . $md_size . ' col-lg-' . $lg_size;
 
-		foreach ( $result_sizes as $size => $value ) {
-			$classes .= ' ' . $size . '-' . $value;
-		}
-		
 		if ( $loop > 0 && $columns > 0 ) {
 			if ( 0 == ( $loop - 1 ) % $columns || 1 == $columns ) {
 				$classes .= ' first ';

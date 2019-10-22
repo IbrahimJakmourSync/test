@@ -187,10 +187,13 @@ if ( ! function_exists( 'woodmart_get_option_variations' ) ) {
 				$option_variation = array(
 					'variation_id' => $variation['variation_id'],
 					'is_in_stock'  => $variation['is_in_stock'],
-					'image_src'  => $variation['image']['src'],
-					'image_srcset'  => $variation['image']['srcset'],
-					'image_sizes'  => $variation['image']['sizes'],
 				);
+
+				// if ( $variation['image_id'] !== $product_image_id ) {
+					$option_variation['image_src'] = $variation['image']['src'];
+					$option_variation['image_srcset'] = $variation['image']['srcset'];
+					$option_variation['image_sizes'] = $variation['image']['sizes'];
+				// }
 			}
 
 			// Get only one variation by attribute option value
@@ -264,7 +267,7 @@ if ( ! function_exists( 'woodmart_swatches_list' ) ) {
 		}
 		$out = '';
 
-		$out .= '<div class="swatches-on-grid swatches-select">';
+		$out .= '<div class="swatches-on-grid">';
 
 		$swatch_size = woodmart_wc_get_attribute_term( $attribute_name, 'swatch_size' );
 
@@ -286,19 +289,11 @@ if ( ! function_exists( 'woodmart_swatches_list' ) ) {
 
 		foreach ( $swatches_to_show as $key => $swatch ) {
 			$style = $class = '';
-			
+
 			if ( ! empty( $swatch['color'] ) ) {
 				$style = 'background-color:' . $swatch['color'];
-				$class .= 'swatch-with-bg';
-			} elseif ( woodmart_get_opt( 'swatches_use_variation_images' ) && isset( $swatch['image_src'] ) ) {
-				$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $swatch['variation_id'] ), 'woocommerce_thumbnail' );
-				if ( ! empty( $thumb ) ) {
-					$style  = 'background-image: url(' . $thumb[0] . ')';
-					$class .= ' swatch-with-bg';
-				}
 			} elseif ( ! empty( $swatch['image'] ) ) {
 				$style = 'background-image: url(' . $swatch['image'] . ')';
-				$class .= 'swatch-with-bg';
 			} elseif ( ! empty( $swatch['not_dropdown'] ) ) {
 				$class .= 'text-only ';
 			}
@@ -308,9 +303,17 @@ if ( ! function_exists( 'woodmart_swatches_list' ) ) {
 			$data = '';
 
 			if ( isset( $swatch['image_src'] ) ) {
+				$class .= 'swatch-has-image';
 				$data  .= 'data-image-src="' . $swatch['image_src'] . '"';
 				$data  .= ' data-image-srcset="' . $swatch['image_srcset'] . '"';
 				$data  .= ' data-image-sizes="' . $swatch['image_sizes'] . '"';
+				if ( woodmart_get_opt( 'swatches_use_variation_images' ) ) {
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( $swatch['variation_id'] ), 'woocommerce_thumbnail' );
+					if ( ! empty( $thumb ) ) {
+						$style  = 'background-image: url(' . $thumb[0] . ')';
+						$class .= ' variation-image-used';
+					}
+				}
 
 				if ( ! $swatch['is_in_stock'] ) {
 					$class .= ' variation-out-of-stock';
@@ -321,7 +324,7 @@ if ( ! function_exists( 'woodmart_swatches_list' ) ) {
 
 			$term = get_term_by( 'slug', $key, $attribute_name );
 
-			$out .= '<div class="swatch-on-grid woodmart-swatch woodmart-tooltip ' . esc_attr( $class ) . '" style="' . esc_attr( $style ) . '" ' . $data . '>' . $term->name . '</div>';
+			$out .= '<div class="swatch-on-grid woodmart-tooltip ' . esc_attr( $class ) . '" style="' . esc_attr( $style ) . '" ' . $data . '>' . $term->name . '</div>';
 		}
 
 		$out .= '</div>';

@@ -18,12 +18,12 @@
 	}
 
 	if ( $icon_type == 'custom' ) {
-		$extra_class .= ' wd-tools-custom-icon';
+		$extra_class .= ' woodmart-search-custom-icon';
 	}
 ?>
-<div class="whb-search search-button wd-tools-element<?php echo esc_attr( $extra_class ); ?>" title="<?php echo esc_attr__( 'Search', 'woodmart' ); ?>">
+<div class="whb-search search-button<?php echo esc_attr( $extra_class ); ?>" title="<?php echo esc_attr__( 'Search', 'woodmart' ); ?>">
 	<a href="#">
-		<span class="search-button-icon wd-tools-icon">
+		<span class="search-button-icon">
 			<?php 
 				if ( $icon_type == 'custom' ) {
 					echo whb_get_custom_icon( $params['custom_icon'] );

@@ -90,14 +90,14 @@ class Page extends Singleton {
 	 *
 	 * @param object $admin_bar Admin bar object.
 	 */
-		public function admin_bar_links( $admin_bar ) {
+	public function admin_bar_links( $admin_bar ) {
 		$admin_bar->add_node(
 			array(
 				'id'    => 'theme-dashboard',
-				'title' => esc_html__( 'Theme Dashboard', 'woodmart' ),
+				'title' => esc_html__( 'Theme Settings', 'woodmart' ),
 				'href'  => admin_url( 'admin.php?page=xtemos_options' ),
 				'meta'  => array(
-					'title' => esc_html__( 'Theme Dashboard', 'woodmart' ),
+					'title' => esc_html__( 'Theme Settings', 'woodmart' ),
 				),
 			)
 		);
@@ -107,7 +107,7 @@ class Page extends Singleton {
 				'id'     => 'theme-settings',
 				'title'  => esc_html__( 'Theme Settings', 'woodmart' ),
 				'href'   => admin_url( 'admin.php?page=xtemos_options' ),
-				'parent' => 'theme-dashboard',
+				'parent' => 'space-dashboard',
 				'meta'   => array(
 					'title' => esc_html__( 'Theme Settings', 'woodmart' ),
 				),
@@ -121,13 +121,13 @@ class Page extends Singleton {
 			$header_id = $header->get_id();
 			$hb_url    = admin_url( 'admin.php?page=woodmart_dashboard&tab=builder#/builder/' . $header_id );
 		}
-		
+
 		$admin_bar->add_node(
 			array(
 				'id'     => 'header-builder',
 				'title'  => esc_html__( 'Edit header', 'woodmart' ),
 				'href'   => $hb_url,
-				'parent' => 'theme-dashboard',
+				'parent' => 'space-dashboard',
 				'meta'   => array(
 					'title' => esc_html__( 'Edit header', 'woodmart' ),
 				),

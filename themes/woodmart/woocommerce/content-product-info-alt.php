@@ -19,7 +19,7 @@
 	</a>
 	<?php woodmart_hover_image(); ?>
 
-	<div class="top-information wd-fill">
+	<div class="top-information">
 
 		<?php
 			/**
@@ -48,13 +48,13 @@
 			do_action( 'woocommerce_after_shop_loop_item_title' );
 		?>
 
-		<div class="woodmart-add-btn wd-add-btn-replace">
+		<div class="product-actions">
 			<?php do_action( 'woocommerce_after_shop_loop_item' ); ?>
 		</div> 
 	</div>
 
-	<div class="woodmart-buttons wd-pos-r-t color-scheme-light">
-		<?php woodmart_add_to_compare_loop_btn(); ?>
+	<div class="woodmart-buttons">
+		<?php woodmart_compare_btn(); ?>
 		<?php woodmart_quick_view_btn( get_the_ID() ); ?>
 		<?php do_action( 'woodmart_product_action_buttons' ); ?>
 	</div>

@@ -27,32 +27,6 @@ if( ! function_exists( 'woodmart_get_instagram_params' ) ) {
 	function woodmart_get_instagram_params() {
 		return apply_filters( 'woodmart_get_instagram_params', array(
 			/**
-			 * Data
-			 */
-			array(
-				'type' => 'woodmart_title_divider',
-				'holder' => 'div',
-				'title' => esc_html__( 'Data', 'woodmart' ),
-				'param_name' => 'data_divider'
-			),
-			array(
-				'type' => 'woodmart_button_set',
-				'heading' => esc_html__( 'API request type', 'woodmart' ),
-				'param_name' => 'data_source',
-				'value' => array(
-					esc_html__( 'Scrape', 'woodmart' ) => 'scrape',
-					esc_html__( 'AJAX', 'woodmart' ) => 'ajax',
-					esc_html__( 'API', 'woodmart' ) => 'api'
-				),
-				'hint' => 'API request type<br>
-Scrape - parse Instagram page and take photos by username. Now deprecated and may be blocked by Instagram.<br>
-AJAX - send AJAX request to the Instagram page on frontend. Works more stable then simple scrape.<br>
-API - the best safe and legal option to obtain Instagram photos. Requires Instagram APP configuration. <br>
-Follow our documentation <a href="https://xtemos.com/docs/woodmart/faq-guides/setup-instagram-api/" target="_blank">here</a>',
-				'edit_field_class' => 'vc_col-sm-6 vc_column',
-			),
-			
-			/**
 			* Content
 			*/
 			array(
@@ -78,7 +52,7 @@ Follow our documentation <a href="https://xtemos.com/docs/woodmart/faq-guides/se
 				'type' => 'woodmart_slider',
 				'heading' => esc_html__( 'Number of photos', 'woodmart' ),
 				'param_name' => 'number',
-				'value' => array(
+				'value' => array( 
 					'9' => '9',
 					'12' => '12',
 					'11' => '11',
@@ -93,7 +67,7 @@ Follow our documentation <a href="https://xtemos.com/docs/woodmart/faq-guides/se
 					'1' => '1',
 				),
 				'min' => '1',
-				'max' => '30',
+				'max' => '12',
 				'step' => '1',
 				'default' => '9',
 				'units' => '',
@@ -104,7 +78,6 @@ Follow our documentation <a href="https://xtemos.com/docs/woodmart/faq-guides/se
 				'heading' => esc_html__( 'Photo size', 'woodmart' ),
 				'param_name' => 'size',
 				'value' => array(
-					esc_html__( 'Medium', 'woodmart' ) => 'medium',
 					esc_html__( 'Thumbnail', 'woodmart' ) => 'thumbnail',
 					esc_html__( 'Large', 'woodmart' ) => 'large'
 				),

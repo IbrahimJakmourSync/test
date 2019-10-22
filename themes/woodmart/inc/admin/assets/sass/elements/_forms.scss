@@ -70,26 +70,6 @@
 		font-weight: 600;
 	}
 
-	.xts-insta-form-wrap {
-		
-		&:not(:first-child) {
-			margin-top: 10px;
-		}
-	}
-
-	.xts-insta-option {
-		margin-bottom: 15px;
-	}
-
-	.xts-insta-message-section {
-		margin-top: 15px;
-		max-width: $xts-input-width;
-
-		&:empty {
-			display: none;
-		}
-	}
-
 	.rtl & {
 
 		.input-append {

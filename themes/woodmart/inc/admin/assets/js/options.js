@@ -1509,40 +1509,6 @@ var woodmartOptions;
 					return elementBottom > viewportTop && elementTop < viewportBottom;
 				};
 			},
-
-			instagramAPI: function () {
-				$('.xts-instagram_api-control button').on('click', function(e){
-					e.preventDefault();
-
-					var redirect_uri = encodeURIComponent($('input[name="redirect_uri"]').val());
-					var client_id = $('input[name="xts-woodmart-options[insta_token][client_id]"]').val();
-					var client_secret = $('input[name="xts-woodmart-options[insta_token][client_secret]"]').val();
-
-					if ( ! client_id || ! client_secret || ! redirect_uri ) {
-						$('.xts-insta-message-section').text('Make sure all fields are filled').removeClass('xts-error').removeClass('xts-success').addClass('xts-warning');
-						return;
-					}
-
-					$.ajax({
-						url: woodmartConfig.ajaxUrl,
-						method: 'POST',
-						data: {
-							action: 'woodmart_save_insta_credentials',
-							data: {
-								client_id: client_id,
-								client_secret: client_secret,
-							},
-						},
-						dataType: 'json',
-						success: function (r) {
-							window.location.href = 'https://api.instagram.com/oauth/authorize?client_id=' + client_id + '&redirect_uri=' + redirect_uri + '&response_type=code';
-						},
-						error: function (r) {
-							console.log('ajax error', r);
-						},
-					});
-				});
-			},
 		};
 
 		return {
@@ -1563,7 +1529,6 @@ var woodmartOptions;
 					woodmartOptionsAdmin.fieldsDependencies();
 					woodmartOptionsAdmin.customFontsControl();
 					woodmartOptionsAdmin.settingsSearch();
-					woodmartOptionsAdmin.instagramAPI();
 				});
 			},
 		};

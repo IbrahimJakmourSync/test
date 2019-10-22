@@ -1037,7 +1037,7 @@ if( ! function_exists( 'woodmart_page_title' ) ) {
 if( ! function_exists( 'woodmart_back_btn' ) ) {
 	function woodmart_back_btn() {
 		?>
-			<a href="javascript:woodmartThemeModule.backHistory()" class="woodmart-back-btn"><span><?php esc_html_e('Back to products', 'woodmart') ?></span></a>
+			<a href="javascript:woodmartThemeModule.backHistory()" class="woodmart-back-btn woodmart-css-tooltip"><span><?php esc_html_e('Back to products', 'woodmart') ?></span></a>
 		<?php
 	}
 }
@@ -1822,7 +1822,7 @@ if ( ! function_exists( 'woodmart_display_icon' ) ) {
 		if( woodmart_is_svg( $icon_src ) ) {
 			return '<span class="svg-icon img-wrapper" style="width: ' . $sizes[0] . 'px;height: ' . $sizes[1] . 'px;">' . woodmart_get_any_svg( $icon_src, $icon_id ) . '</span>';
 		} else {
-			return '<span class="img-wrapper">' . $icon['thumbnail'] . '</span>';
+			return '<span class="img-wrapper">' . wp_kses( $icon['thumbnail'], array( 'img' => array( 'width' => true, 'height' => true, 'src' => true, 'alt' => true, 'data-wood-src' => true, 'data-srcset' => true, 'class' => true ) ) ) . '</span>';
 		}
 	}
 }

@@ -97,7 +97,7 @@ if( ! function_exists( 'woodmart_shortcode_google_map' ) ) {
 			<div class="google-map-container <?php echo esc_attr( $el_class );?>" style="height:<?php echo esc_attr( $height ); ?>px;" data-map-args='<?php echo wp_json_encode( $map_args ); ?>'>
 
 				<?php if ( 'page_load' !== $init_type && $placeholder ): ?>
-					<div class="woodmart-map-placeholder wd-fill">
+					<div class="woodmart-map-placeholder">
 						<?php echo $placeholder; ?>
 					</div>
 				<?php endif ?>

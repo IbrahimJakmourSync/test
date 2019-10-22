@@ -82,7 +82,6 @@ if ( ! function_exists( 'woodmart_vc_map_product_filters' ) ) {
 						esc_html__( 'ID', 'woodmart' ) => 'ID',
 						esc_html__( 'Slug', 'woodmart' ) => 'slug',
 						esc_html__( 'Count', 'woodmart' ) => 'count',
-						esc_html__( 'Category order', 'woodmart' ) => 'order',
 					),
 					'edit_field_class' => 'vc_col-sm-6 vc_column',
 				),

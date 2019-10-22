@@ -8,7 +8,7 @@ var wooFile = false;
 
 		var woodmartTheme = {
 			popupEffect: 'mfp-move-horizontal',
-			bootstrapTooltips: '.woodmart-tooltip, .woodmart-hover-icons .woodmart-buttons .wd-action-btn:not(.wd-add-cart-btn) > a, .woodmart-hover-icons .woodmart-buttons .wd-add-cart-btn, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base .wd-bottom-actions .wd-action-btn.wd-style-icon:not(.wd-add-cart-btn) > a, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base .wd-bottom-actions .wd-action-btn.wd-style-icon.wd-add-cart-btn, .woodmart-hover-base .wd-compare-btn > a, .woodmart-products-nav .woodmart-back-btn',
+			bootstrapTooltips: '.woodmart-tooltip, .product-actions-btns > a, .wrapp-buttons .woodmart-buttons > div:not(.woodmart-add-btn) a, .wrapp-buttons .woodmart-buttons .woodmart-add-btn, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base:not(.product-in-carousel) .woodmart-buttons > div:not(.woodmart-add-btn) a, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base.hover-width-small:not(.product-in-carousel) .woodmart-add-btn, body:not(.catalog-mode-on):not(.login-see-prices) .woodmart-hover-base.add-small-button:not(.product-in-carousel) .woodmart-add-btn, .woodmart-hover-base .product-compare-button a',
 		};
 
 		return {
@@ -199,10 +199,6 @@ var wooFile = false;
 				this.variationsPrice();
 
 				this.wishlist();
-
-				this.singleProductTabsAccordion();
-
-				this.singleProductTabsCommentsFix();
 			},
 
 			googleMapInit: function () {
@@ -856,8 +852,7 @@ var wooFile = false;
 			 */
 
 			fullScreenMenu: function () {
-				$('.full-screen-burger-icon > a').on('click', function (e) {
-					e.preventDefault();
+				$('.full-screen-burger-icon').on('click', function () {
 					$('body').toggleClass('full-screen-menu-open');
 				});
 
@@ -1508,8 +1503,7 @@ var wooFile = false;
 					$('.mobile-' + menuName + '-menu').addClass('active');
 				});
 
-				body.on("click", ".mobile-nav-icon > a", function (e) {
-					e.preventDefault();
+				body.on("click", ".mobile-nav-icon", function () {
 
 					if (mobileNav.hasClass("act-mobile-menu")) {
 						closeMenu();
@@ -2115,7 +2109,7 @@ var wooFile = false;
 
 				if ($(window).width() <= 1024) return;
 
-				var $tooltips = $('.woodmart-css-tooltip, .woodmart-buttons[class*="wd-pos-r"] div > a'),
+				var $tooltips = $('.woodmart-css-tooltip, .product-grid-item:not(.woodmart-hover-base):not(.woodmart-hover-icons) .woodmart-buttons > div a, .woodmart-hover-base.product-in-carousel .woodmart-buttons > div a'),
 					$bootstrapTooltips = $(woodmartTheme.bootstrapTooltips);
 
 				// .product-grid-item .add_to_cart_button
@@ -2250,8 +2244,7 @@ var wooFile = false;
 						$results = $this.parent().find('.woodmart-search-results'),
 						postType = $this.data('post_type'),
 						url = woodmart_settings.ajaxurl + '?action=woodmart_ajax_search',
-						price = parseInt($this.data('price')),
-						sku = parseInt($this.data('sku'));
+						price = parseInt($this.data('price'));
 
 					if (number > 0) url += '&number=' + number;
 					url += '&post_type=' + postType;
@@ -2315,10 +2308,6 @@ var wooFile = false;
 								.replace(/&lt;(\/?strong)&gt;/g, '<$1>') + '</h4>';
 
 							if (suggestion.no_found) returnValue = '<div class="suggestion-title no-found-msg">' + suggestion.value + '</div>';
-
-							if (sku && suggestion.sku) {
-								returnValue += ' <div class="suggestion-sku">' + suggestion.sku + '</div>';
-							}
 
 							if (price && suggestion.price) {
 								returnValue += ' <div class="suggestion-price price">' + suggestion.price + '</div>';
